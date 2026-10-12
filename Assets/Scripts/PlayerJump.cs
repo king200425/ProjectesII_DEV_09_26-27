@@ -17,19 +17,31 @@ public class PlayerJump : MonoBehaviour
     public float groundCheckRadius = 0.15f;
     public LayerMask groundLayer;
 
+    // Components
     private Rigidbody2D rb;
     private Transform groundCheck;
+    private Animator animator;
+
+    // Jump state
     private int jumpsRemaining;
     private bool wasGrounded;
     private bool waitingForTakeoff;
+    private bool hasBeenAirborne;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         groundCheck = transform.Find("GroundCheck");
+        animator = GetComponentInChildren<Animator>();
 
         jumpsRemaining = maxJumps;
-        wasGrounded = false;
+
+        // Check initial ground state
+        wasGrounded = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer
+        ) != null;
     }
 
     void Update()
@@ -41,17 +53,26 @@ public class PlayerJump : MonoBehaviour
             groundLayer
         ) != null;
 
-        // Wait until the player leaves the ground after jumping
+        // Detect takeoff
         if (waitingForTakeoff && !isGrounded)
         {
             waitingForTakeoff = false;
+            hasBeenAirborne = true;
         }
 
-        // Restore jumps after landing
-        if (isGrounded && !wasGrounded && !waitingForTakeoff
-            && rb.linearVelocity.y <= 0)
+        // Detect landing
+        if (isGrounded && !wasGrounded &&
+            !waitingForTakeoff && rb.linearVelocity.y <= 0)
         {
             jumpsRemaining = maxJumps;
+
+            if (hasBeenAirborne)
+            {
+                animator.ResetTrigger("JumpTrigger");
+                animator.SetTrigger("LandTrigger");
+            }
+
+            hasBeenAirborne = false;
         }
 
         wasGrounded = isGrounded;
@@ -61,10 +82,10 @@ public class PlayerJump : MonoBehaviour
         {
             float currentJumpForce = jumpForce;
 
-            // Lower second jump
+            // Reduce second jump strength
             if (jumpsRemaining < maxJumps)
             {
-                currentJumpForce = jumpForce * secondJumpMultiplier;
+                currentJumpForce *= secondJumpMultiplier;
             }
 
             rb.linearVelocity = new Vector2(
@@ -74,13 +95,21 @@ public class PlayerJump : MonoBehaviour
 
             jumpsRemaining--;
 
+            // Play jump animation
+            animator.ResetTrigger("LandTrigger");
+            animator.SetTrigger("JumpTrigger");
+
             if (isGrounded)
             {
                 waitingForTakeoff = true;
             }
+            else
+            {
+                hasBeenAirborne = true;
+            }
         }
 
-        // Short jump when releasing Space
+        // Short jump when Space is released
         if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(
@@ -88,11 +117,15 @@ public class PlayerJump : MonoBehaviour
                 rb.linearVelocity.y * lowJumpMultiplier
             );
         }
+
+        // Update Animator
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetFloat("verticalSpeed", rb.linearVelocity.y);
     }
 
     void FixedUpdate()
     {
-        // Stronger gravity while falling
+        // Stronger gravity when falling
         if (rb.linearVelocity.y < 0)
         {
             rb.gravityScale = normalGravity * fallGravityMultiplier;

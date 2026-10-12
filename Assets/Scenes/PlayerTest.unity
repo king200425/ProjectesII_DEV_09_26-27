@@ -318,7 +318,7 @@ MonoBehaviour:
   lowJumpMultiplier: 0.5
   maxJumps: 2
   secondJumpMultiplier: 0.8
-  normalGravity: 4.7
+  normalGravity: 5
   fallGravityMultiplier: 1.4
   groundCheckRadius: 0.15
   groundLayer:
