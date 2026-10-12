@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3803c94520ca014683f7d10e90a380a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &90202453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,8 +314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5dae7f576eb8e4eb8ef292cfd02983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  jumpForce: 21
+  jumpForce: 20
   lowJumpMultiplier: 0.5
+  maxJumps: 2
+  secondJumpMultiplier: 0.8
   normalGravity: 4.7
   fallGravityMultiplier: 1.4
   groundCheckRadius: 0.15

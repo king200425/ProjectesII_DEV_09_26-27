@@ -6,6 +6,8 @@ public class PlayerJump : MonoBehaviour
     // Jump settings
     public float jumpForce = 10f;
     public float lowJumpMultiplier = 0.5f;
+    public int maxJumps = 2;
+    public float secondJumpMultiplier = 0.8f;
 
     // Gravity settings
     public float normalGravity = 1f;
@@ -17,32 +19,68 @@ public class PlayerJump : MonoBehaviour
 
     private Rigidbody2D rb;
     private Transform groundCheck;
+    private int jumpsRemaining;
+    private bool wasGrounded;
+    private bool waitingForTakeoff;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         groundCheck = transform.Find("GroundCheck");
+
+        jumpsRemaining = maxJumps;
+        wasGrounded = false;
     }
 
     void Update()
     {
-        // Check if the player is grounded
+        // Check ground
         bool isGrounded = Physics2D.OverlapCircle(
             groundCheck.position,
             groundCheckRadius,
             groundLayer
         ) != null;
 
-        // Jump when Space is pressed
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        // Wait until the player leaves the ground after jumping
+        if (waitingForTakeoff && !isGrounded)
         {
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                jumpForce
-            );
+            waitingForTakeoff = false;
         }
 
-        // Reduce jump height when Space is released
+        // Restore jumps after landing
+        if (isGrounded && !wasGrounded && !waitingForTakeoff
+            && rb.linearVelocity.y <= 0)
+        {
+            jumpsRemaining = maxJumps;
+        }
+
+        wasGrounded = isGrounded;
+
+        // Jump
+        if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0)
+        {
+            float currentJumpForce = jumpForce;
+
+            // Lower second jump
+            if (jumpsRemaining < maxJumps)
+            {
+                currentJumpForce = jumpForce * secondJumpMultiplier;
+            }
+
+            rb.linearVelocity = new Vector2(
+                rb.linearVelocity.x,
+                currentJumpForce
+            );
+
+            jumpsRemaining--;
+
+            if (isGrounded)
+            {
+                waitingForTakeoff = true;
+            }
+        }
+
+        // Short jump when releasing Space
         if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(
@@ -54,7 +92,7 @@ public class PlayerJump : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Use stronger gravity while falling
+        // Stronger gravity while falling
         if (rb.linearVelocity.y < 0)
         {
             rb.gravityScale = normalGravity * fallGravityMultiplier;
