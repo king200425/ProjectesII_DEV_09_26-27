@@ -9,9 +9,12 @@ public class PlayerAim : MonoBehaviour
 
     private Camera mainCamera;
 
+    private Animator animator;
+
     void Start()
     {
         mainCamera = Camera.main;
+        animator = GetComponentInChildren<Animator>();
     }
 
     void LateUpdate()
@@ -32,6 +35,14 @@ public class PlayerAim : MonoBehaviour
 
         // Check if player is aiming left
         bool aimingLeft = direction.x < 0;
+
+        float horizontal = Input.GetAxisRaw("Horizontal");
+
+        bool movingBackward =
+            (horizontal > 0 && aimingLeft) ||
+            (horizontal < 0 && !aimingLeft);
+
+        animator.SetBool("isMovingBackward", movingBackward);
 
         // Flip the player
         playerSprite.flipX = aimingLeft;
