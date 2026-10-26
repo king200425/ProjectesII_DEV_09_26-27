@@ -356,8 +356,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
   bulletPrefab: {fileID: 8217844626581164295, guid: 420a93978e044c1438049504c5018e3c, type: 3}
   muzzlePoint: {fileID: 311862936}
-  fireRate: 0.1
+  fireRate: 0.05
   gunRecoil: {fileID: 1804605666}
+  gunPivot: {fileID: 1756466690}
 --- !u!1 &311862935
 GameObject:
   m_ObjectHideFlags: 0
