@@ -15,9 +15,12 @@ public class PlayerShooting : MonoBehaviour
     // Gun recoil component
     public GunRecoil gunRecoil;
 
+    // Gun aiming pivot
+    public Transform gunPivot;
+
     private float nextFireTime;
 
-    void Update()
+    void LateUpdate()
     {
         // Hold left mouse button to shoot continuously
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
@@ -33,7 +36,7 @@ public class PlayerShooting : MonoBehaviour
         Instantiate(
             bulletPrefab,
             muzzlePoint.position,
-            muzzlePoint.rotation
+            gunPivot.rotation
         );
 
         // Play recoil when shooting
