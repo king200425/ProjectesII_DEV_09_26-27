@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Durations")]
     public float invincibleDuration = 2f;
     public float weakDuration = 4f;
+    public float respawnDelay = 1f;
 
     [Header("Blink / Weak Visual")]
     public float blinkInterval = 0.1f;
@@ -28,6 +29,9 @@ public class PlayerHealth : MonoBehaviour
 
     private HealthState currentState = HealthState.Normal;
     private Color originalColor;
+
+    // Checkpoint
+    private Vector3 checkpointPosition;
 
     // Components
     private Animator animator;
@@ -48,10 +52,11 @@ public class PlayerHealth : MonoBehaviour
         playerShooting = GetComponent<PlayerShooting>();
         playerAim = GetComponent<PlayerAim>();
 
+        // Starting position is the default checkpoint
+        checkpointPosition = transform.position;
+
         if (lightningObject != null)
-        {
             lightningObject.SetActive(false);
-        }
     }
 
     void Update()
@@ -63,29 +68,32 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void SetCheckpoint(Vector3 position)
+    {
+        checkpointPosition = position;
+        UnityEngine.Debug.Log("Checkpoint saved: " + checkpointPosition);
+    }
+
     public void TakeDamage()
     {
-        // Ignore damage when dead or invincible
         if (currentState == HealthState.Dead ||
             currentState == HealthState.Invincible)
         {
             return;
         }
 
-        // Second hit during weak state
         if (currentState == HealthState.Weak)
         {
             Die();
             return;
         }
 
-        // First hit
         StartCoroutine(DamageSequence());
     }
 
     IEnumerator DamageSequence()
     {
-        // 1. Invincible blink
+        // 1. Invincible
         currentState = HealthState.Invincible;
 
         float elapsed = 0f;
@@ -100,13 +108,11 @@ public class PlayerHealth : MonoBehaviour
 
         playerSprite.enabled = true;
 
-        // 2. Weak state
+        // 2. Weak
         currentState = HealthState.Weak;
 
         if (lightningObject != null)
-        {
             lightningObject.SetActive(true);
-        }
 
         elapsed = 0f;
         float nextRedFlash = 0f;
@@ -125,9 +131,7 @@ public class PlayerHealth : MonoBehaviour
 
         // 3. Recover
         if (lightningObject != null)
-        {
             lightningObject.SetActive(false);
-        }
 
         playerSprite.color = originalColor;
         playerSprite.enabled = true;
@@ -145,26 +149,19 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        // Stop damage and flashing effects
         StopAllCoroutines();
         currentState = HealthState.Dead;
 
         playerSprite.enabled = true;
         playerSprite.color = originalColor;
 
-        // Stop lightning
         if (lightningObject != null)
-        {
             lightningObject.SetActive(false);
-        }
 
-        // Hide gun
         if (gunPivot != null)
-        {
             gunPivot.SetActive(false);
-        }
 
-        // Disable player controls
+        // Disable controls
         if (playerMovement != null)
             playerMovement.enabled = false;
 
@@ -177,8 +174,9 @@ public class PlayerHealth : MonoBehaviour
         if (playerAim != null)
             playerAim.enabled = false;
 
-        // Stop horizontal movement
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        // Stop movement
+        rb.linearVelocity = Vector2.zero;
+        rb.simulated = false;
 
         // Play death animation
         animator.ResetTrigger("JumpTrigger");
@@ -186,5 +184,52 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("isMoving", false);
         animator.SetBool("isMovingBackward", false);
         animator.SetTrigger("DeathTrigger");
+
+        // Start respawn
+        StartCoroutine(Respawn());
+    }
+
+    IEnumerator Respawn()
+    {
+        // Wait for death animation
+        yield return new WaitForSeconds(respawnDelay);
+
+        // Move player to the last checkpoint
+        transform.position = checkpointPosition;
+
+        // Restore physics
+        rb.simulated = true;
+        rb.linearVelocity = Vector2.zero;
+
+        // Restore player appearance
+        playerSprite.enabled = true;
+        playerSprite.color = originalColor;
+
+        if (lightningObject != null)
+            lightningObject.SetActive(false);
+
+        if (gunPivot != null)
+            gunPivot.SetActive(true);
+
+        // Restore controls
+        if (playerMovement != null)
+            playerMovement.enabled = true;
+
+        if (playerJump != null)
+            playerJump.enabled = true;
+
+        if (playerShooting != null)
+            playerShooting.enabled = true;
+
+        if (playerAim != null)
+            playerAim.enabled = true;
+
+        // Return to idle animation
+        animator.ResetTrigger("DeathTrigger");
+        animator.SetTrigger("RespawnTrigger");
+
+        currentState = HealthState.Normal;
+
+        UnityEngine.Debug.Log("Player respawned!");
     }
 }
