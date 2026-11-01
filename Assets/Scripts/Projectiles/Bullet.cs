@@ -1,23 +1,40 @@
-
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Bullet movement speed
     public float speed = 15f;
-
-    // Bullet lifetime in seconds
     public float lifetime = 3f;
+
+    private TimeSlow timeSlow;
+    private float lifeTimer = 0f;
 
     void Start()
     {
-        // Destroy the bullet after its lifetime
-        Destroy(gameObject, lifetime);
+        // Find the player's time slow component
+        timeSlow = FindFirstObjectByType<TimeSlow>();
     }
 
     void Update()
     {
-        // Move forward in the bullet's local right direction
-        transform.position += transform.right * speed * Time.deltaTime;
+        float multiplier = 1f;
+
+        // Slow down the bullet when Q is active
+        if (timeSlow != null && timeSlow.IsTimeSlowed)
+        {
+            multiplier = timeSlow.slowMultiplier;
+        }
+
+        float delta = Time.deltaTime * multiplier;
+
+        // Move the bullet
+        transform.position += transform.right * speed * delta;
+
+        // Count bullet lifetime using the same speed
+        lifeTimer += delta;
+
+        if (lifeTimer >= lifetime)
+        {
+            Destroy(gameObject);
+        }
     }
 }
