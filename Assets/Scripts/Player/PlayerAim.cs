@@ -46,7 +46,11 @@ public class PlayerAim : MonoBehaviour
         // Flip the player
         playerSprite.flipX = aimingLeft;
 
-        // Flip the gun and muzzle together
-        gunFlip.localScale = Vector3.one;
+        // Flip the gun vertically when aiming left
+        gunFlip.localScale = new Vector3(
+            1f,
+            aimingLeft ? -1f : 1f,
+            1f
+        );
     }
 }

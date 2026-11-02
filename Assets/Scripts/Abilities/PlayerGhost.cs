@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +6,10 @@ public class PlayerGhost : MonoBehaviour
 {
     [Header("Disappear Settings")]
     public float disappearDuration = 0.5f;
+
+    [Header("Ghost Gun")]
+    public Transform gunPivot;
+    public Transform gunFlip;
 
     private List<RecordedFrame> frames;
     private GhostAnimation ghostAnimation;
@@ -17,11 +20,45 @@ public class PlayerGhost : MonoBehaviour
     void Awake()
     {
         ghostAnimation = GetComponent<GhostAnimation>();
-        ghostSprite = GetComponentInChildren<SpriteRenderer>();
+
+        // Find the ghost body SpriteRenderer
+        SpriteRenderer[] sprites =
+            GetComponentsInChildren<SpriteRenderer>(true);
+
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            if (sprite.gameObject.name == "Visual")
+            {
+                ghostSprite = sprite;
+                break;
+            }
+        }
 
         if (ghostSprite == null)
         {
-            UnityEngine.Debug.LogError("Ghost SpriteRenderer missing!");
+            UnityEngine.Debug.LogError("Ghost Visual SpriteRenderer missing!");
+        }
+    }
+
+    // Set the initial ghost direction and gun angle
+    public void SetInitialPose(bool facingLeft, float gunAngle)
+    {
+        if (ghostSprite != null)
+            ghostSprite.flipX = facingLeft;
+
+        if (gunPivot != null)
+        {
+            gunPivot.rotation = Quaternion.Euler(
+                0f, 0f, gunAngle);
+        }
+
+        if (gunFlip != null)
+        {
+            gunFlip.localScale = new Vector3(
+                1f,
+                facingLeft ? -1f : 1f,
+                1f
+            );
         }
     }
 
@@ -54,26 +91,56 @@ public class PlayerGhost : MonoBehaviour
             RecordedFrame a = frames[index];
             RecordedFrame b = frames[index + 1];
 
-            float t = Mathf.InverseLerp(a.time, b.time, elapsed);
+            float t = Mathf.InverseLerp(
+                a.time,
+                b.time,
+                elapsed
+            );
 
+            // Replay movement
             transform.position = Vector3.Lerp(
                 a.position,
                 b.position,
                 t
             );
 
-            // Restore recorded facing direction
+            // Replay body direction
             if (ghostSprite != null)
                 ghostSprite.flipX = a.facingLeft;
 
-            // Restore recorded movement animation
+            // Replay walking animation
             if (ghostAnimation != null)
                 ghostAnimation.SetMoving(a.isMoving);
+
+            // Replay gun direction
+            float angle = Mathf.LerpAngle(
+                a.gunAngle,
+                b.gunAngle,
+                t
+            );
+
+            if (gunPivot != null)
+            {
+                gunPivot.rotation = Quaternion.Euler(
+                    0f, 0f, angle);
+            }
+
+            if (gunFlip != null)
+            {
+                bool aimingLeft =
+                    Mathf.Cos(angle * Mathf.Deg2Rad) < 0f;
+
+                gunFlip.localScale = new Vector3(
+                    1f,
+                    aimingLeft ? -1f : 1f,
+                    1f
+                );
+            }
 
             yield return null;
         }
 
-        // Final recorded position
+        // Restore final frame
         RecordedFrame lastFrame = frames[frames.Count - 1];
 
         transform.position = lastFrame.position;
@@ -81,7 +148,22 @@ public class PlayerGhost : MonoBehaviour
         if (ghostSprite != null)
             ghostSprite.flipX = lastFrame.facingLeft;
 
-        // Stop movement and play disappear animation
+        if (gunPivot != null)
+        {
+            gunPivot.rotation = Quaternion.Euler(
+                0f, 0f, lastFrame.gunAngle);
+        }
+
+        if (gunFlip != null)
+        {
+            gunFlip.localScale = new Vector3(
+                1f,
+                lastFrame.facingLeft ? -1f : 1f,
+                1f
+            );
+        }
+
+        // Play disappear animation
         if (ghostAnimation != null)
         {
             ghostAnimation.SetMoving(false);
@@ -92,10 +174,8 @@ public class PlayerGhost : MonoBehaviour
 
         UnityEngine.Debug.Log("Ghost disappearing!");
 
-        // Wait for the disappear animation
         yield return new WaitForSeconds(disappearDuration);
 
-        // Remove ghost
         Destroy(gameObject);
     }
 }
