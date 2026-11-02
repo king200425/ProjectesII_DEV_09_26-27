@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 90202454}
   - component: {fileID: 90202455}
   - component: {fileID: 90202456}
+  - component: {fileID: 90202457}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -474,6 +475,21 @@ MonoBehaviour:
   playerSprite: {fileID: 1380465762}
   lightningObject: {fileID: 1527122573}
   gunPivot: {fileID: 1756466689}
+--- !u!114 &90202457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90202447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a1435af4b1c7940b94e668f38fde36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRecorder
+  recordDuration: 4
+  ghostPrefab: {fileID: 8183898262000101826, guid: 28282b0e2c121e64bbb1e8f4638ff5b3, type: 3}
+  playerSprite: {fileID: 1380465762}
 --- !u!1 &199282267
 GameObject:
   m_ObjectHideFlags: 0
