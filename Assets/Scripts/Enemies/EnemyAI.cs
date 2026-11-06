@@ -4,31 +4,51 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyHealth))]
 public class EnemyAI : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 1f;
-    public float patrolRange = 2f;
-    public float edgeCheckDistance = 0.7f;
-    public LayerMask groundLayer = 1 << 3;
+    private enum State
+    {
+        Patrol,
+        Chase,
+        Return
+    }
 
-    [Header("Detection")]
-    public float detectionRange = 5f;
-    public float attackRange = 1.4f;
-    public float verticalTolerance = 2f;
+    [Header("Patrol")]
+    public float patrolRange = 2f;
+    public float patrolSpeed = 1f;
+    public float returnSpeed = 2f;
+
+    [Header("Chase")]
+    public float detectionRange = 10f;
+    public float leashRange = 12f;
+    public float chaseSpeed = 3f;
+    public float chaseVerticalTolerance = 6f;
+    public float losePlayerDelay = 1.5f;
 
     [Header("Attack")]
+    public float attackRange = 1.4f;
+    public float attackVerticalTolerance = 2f;
     public float attackWindup = 0.3f;
     public float attackCooldown = 1.6f;
+
+    [Header("Ground")]
+    public float edgeCheckDistance = 0.7f;
+    public LayerMask groundLayer = 1 << 3;
 
     private EnemyHealth health;
     private EnemyAnimator animator;
     private SpriteRenderer spriteRenderer;
     private PlayerHealth player;
 
-    private float leftBound;
-    private float rightBound;
+    private State state = State.Patrol;
+    private float spawnX;
+    private float patrolLeft;
+    private float patrolRight;
+    private float leashLeft;
+    private float leashRight;
     private int patrolDirection = 1;
     private float nextAttackTime;
     private bool isAttacking;
+    private float lastSeenTime;
+    private Vector3 lastKnownPlayerPosition;
 
     void Awake()
     {
@@ -39,8 +59,11 @@ public class EnemyAI : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
-        leftBound = transform.position.x - patrolRange;
-        rightBound = transform.position.x + patrolRange;
+        spawnX = transform.position.x;
+        patrolLeft = spawnX - patrolRange;
+        patrolRight = spawnX + patrolRange;
+        leashLeft = spawnX - leashRange;
+        leashRight = spawnX + leashRange;
     }
 
     void Start()
@@ -62,80 +85,149 @@ public class EnemyAI : MonoBehaviour
 
             if (player == null)
             {
-                Patrol();
+                if (state == State.Return)
+                    ReturnToPatrol();
+                else
+                    Patrol();
+
                 return;
             }
         }
 
-        float dx = player.transform.position.x - transform.position.x;
+        Vector3 playerPosition = player.transform.position;
+        float dx = playerPosition.x - transform.position.x;
+        float dy = Mathf.Abs(playerPosition.y - transform.position.y);
 
-        float dy = Mathf.Abs(
-            player.transform.position.y - transform.position.y);
+        bool playerVisible =
+            Mathf.Abs(dx) <= detectionRange &&
+            Mathf.Abs(dy) <= chaseVerticalTolerance &&
+            playerPosition.x >= leashLeft &&
+            playerPosition.x <= leashRight;
 
-        if (Mathf.Abs(dx) <= attackRange && dy <= verticalTolerance)
+        if (playerVisible)
         {
+            state = State.Chase;
+            lastSeenTime = Time.time;
+            lastKnownPlayerPosition = playerPosition;
+
             Face(dx);
-            StopMoving();
 
-            if (Time.time >= nextAttackTime)
-                StartCoroutine(AttackRoutine());
+            if (Mathf.Abs(dx) <= attackRange)
+            {
+                StopMoving();
+
+                if (dy <= attackVerticalTolerance &&
+                    Time.time >= nextAttackTime)
+                {
+                    StartCoroutine(AttackRoutine());
+                }
+
+                return;
+            }
+
+            ChasePlayer(playerPosition.x);
+            return;
         }
-        else if (Mathf.Abs(dx) <= detectionRange && dy <= verticalTolerance)
+
+        if (state == State.Chase)
         {
-            Chase(dx);
+            if (Time.time - lastSeenTime <= losePlayerDelay)
+            {
+                SearchLastKnownPosition();
+                return;
+            }
+
+            state = State.Return;
         }
-        else
+
+        if (state == State.Return)
         {
-            Patrol();
+            ReturnToPatrol();
+            return;
         }
+
+        Patrol();
     }
 
     void Patrol()
     {
-        if (transform.position.x >= rightBound)
-        {
-            patrolDirection = -1;
-        }
-        else if (transform.position.x <= leftBound)
-        {
-            patrolDirection = 1;
-        }
+        state = State.Patrol;
 
-        if (!HasGroundAhead(patrolDirection))
+        float targetX = patrolDirection > 0 ? patrolRight : patrolLeft;
+
+        if (Mathf.Abs(transform.position.x - targetX) < 0.1f ||
+            !HasGroundAhead(patrolDirection))
         {
             patrolDirection *= -1;
-            StopMoving();
-            return;
+            targetX = patrolDirection > 0 ? patrolRight : patrolLeft;
         }
 
-        Move(patrolDirection);
+        MoveTowards(targetX, patrolSpeed, patrolLeft, patrolRight);
+
+        if (Mathf.Abs(transform.position.x - targetX) < 0.1f)
+            patrolDirection *= -1;
     }
 
-    void Chase(float dx)
+    void ChasePlayer(float targetX)
     {
-        int direction = dx > 0f ? 1 : -1;
+        MoveTowards(targetX, chaseSpeed, leashLeft, leashRight);
+    }
 
-        float nextX =
-            transform.position.x + direction * moveSpeed * Time.deltaTime;
+    void SearchLastKnownPosition()
+    {
+        MoveTowards(
+            lastKnownPlayerPosition.x,
+            chaseSpeed,
+            leashLeft,
+            leashRight);
 
-        if (nextX < leftBound ||
-            nextX > rightBound ||
-            !HasGroundAhead(direction))
+        if (Mathf.Abs(transform.position.x - lastKnownPlayerPosition.x) < 0.1f)
+            StopMoving();
+    }
+
+    void ReturnToPatrol()
+    {
+        state = State.Return;
+
+        MoveTowards(spawnX, returnSpeed, leashLeft, leashRight);
+
+        if (Mathf.Abs(transform.position.x - spawnX) < 0.1f)
         {
-            Face(dx);
+            state = State.Patrol;
+            StopMoving();
+        }
+    }
+
+    void MoveTowards(float targetX, float speed, float minX, float maxX)
+    {
+        float distance = targetX - transform.position.x;
+
+        if (Mathf.Abs(distance) < 0.05f)
+        {
             StopMoving();
             return;
         }
 
-        Move(direction);
-    }
+        int direction = distance > 0f ? 1 : -1;
 
-    void Move(int direction)
-    {
-        float nextX =
-            transform.position.x + direction * moveSpeed * Time.deltaTime;
+        if (!HasGroundAhead(direction))
+        {
+            StopMoving();
+            return;
+        }
 
-        nextX = Mathf.Clamp(nextX, leftBound, rightBound);
+        float nextX = Mathf.MoveTowards(
+            transform.position.x,
+            targetX,
+            speed * Time.deltaTime);
+
+        nextX = Mathf.Clamp(nextX, minX, maxX);
+
+        if (Mathf.Abs(nextX - transform.position.x) < 0.0001f)
+        {
+            StopMoving();
+            return;
+        }
 
         transform.position = new Vector3(
             nextX,
@@ -236,17 +328,39 @@ public class EnemyAI : MonoBehaviour
             player.transform.position.y - transform.position.y);
 
         return dx <= attackRange + 0.3f &&
-               dy <= verticalTolerance;
+               dy <= attackVerticalTolerance;
     }
 
     void FindPlayer()
     {
-        player = FindFirstObjectByType<PlayerHealth>();
+        player = FindAnyObjectByType<PlayerHealth>();
     }
 
     void OnDisable()
     {
         StopAllCoroutines();
         isAttacking = false;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        float centerX = Application.isPlaying ? spawnX : transform.position.x;
+        float y = transform.position.y;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(
+            new Vector3(centerX - patrolRange, y, 0f),
+            new Vector3(centerX + patrolRange, y, 0f));
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(
+            new Vector3(centerX - leashRange, y, 0f),
+            new Vector3(centerX + leashRange, y, 0f));
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

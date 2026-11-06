@@ -232,14 +232,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e5f60718293a4b5c6d7e8f90123456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  moveSpeed: 1
   patrolRange: 2
+  patrolSpeed: 1
+  returnSpeed: 2
+  detectionRange: 10
+  leashRange: 12
+  chaseSpeed: 3
+  chaseVerticalTolerance: 6
+  losePlayerDelay: 1.5
+  attackRange: 1.4
+  attackVerticalTolerance: 2
+  attackWindup: 0.3
+  attackCooldown: 1.6
   edgeCheckDistance: 0.7
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  detectionRange: 5
-  attackRange: 1.4
-  verticalTolerance: 2
-  attackWindup: 0.3
-  attackCooldown: 1.6
