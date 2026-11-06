@@ -1,23 +1,62 @@
-
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Bullet movement speed
-    public float speed = 15f;
+    public float speed = 35f;
 
-    // Bullet lifetime in seconds
     public float lifetime = 3f;
+
+    public int damage = 1;
+
+    private Rigidbody2D rb;
+    private bool hasHit;
+    private int groundLayer;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        groundLayer = LayerMask.NameToLayer("Ground");
+    }
 
     void Start()
     {
-        // Destroy the bullet after its lifetime
         Destroy(gameObject, lifetime);
     }
 
     void Update()
     {
-        // Move forward in the bullet's local right direction
-        transform.position += transform.right * speed * Time.deltaTime;
+        if (rb == null)
+        {
+            transform.position +=
+                transform.right * speed * Time.deltaTime;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (rb != null)
+            rb.linearVelocity = transform.right * speed;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (hasHit)
+            return;
+
+        EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
+
+        if (enemy != null)
+        {
+            hasHit = true;
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
+
+        if (other.gameObject.layer == groundLayer)
+        {
+            hasHit = true;
+            Destroy(gameObject);
+        }
     }
 }
