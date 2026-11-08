@@ -16,10 +16,12 @@ Assets/
 │   └── Weapons/Guns/
 ├── Input/                      Input Actions 输入配置
 ├── Prefabs/                    可复用的预制体
+│   ├── Enemies/                DruidEnemy.prefab
 │   └── Projectiles/            Bullet.prefab
 ├── Scenes/                     当前场景
 │   └── Recovery/               历史恢复场景，仅供找回内容
 ├── Scripts/                    C# 玩法脚本
+│   ├── Enemies/
 │   ├── Player/
 │   ├── Projectiles/
 │   └── Weapons/
