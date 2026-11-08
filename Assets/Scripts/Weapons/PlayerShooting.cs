@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
@@ -19,6 +18,12 @@ public class PlayerShooting : MonoBehaviour
     public Transform gunPivot;
 
     private float nextFireTime;
+    private PlayerRecorder playerRecorder;
+
+    void Start()
+    {
+        playerRecorder = GetComponent<PlayerRecorder>();
+    }
 
     void LateUpdate()
     {
@@ -38,6 +43,15 @@ public class PlayerShooting : MonoBehaviour
             muzzlePoint.position,
             gunPivot.rotation
         );
+
+        // Record the shot during E recording
+        if (playerRecorder != null)
+        {
+            playerRecorder.RecordShot(
+                muzzlePoint.position,
+                gunPivot.rotation
+            );
+        }
 
         // Play recoil when shooting
         if (gunRecoil != null)

@@ -130,6 +130,8 @@ MonoBehaviour:
   disappearDuration: 0.5
   gunPivot: {fileID: 7690259457398956444}
   gunFlip: {fileID: 5432755158891043446}
+  muzzlePoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!1 &8183898262000101826
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +219,8 @@ MonoBehaviour:
   disappearDuration: 0.7
   gunPivot: {fileID: 7690259457398956444}
   gunFlip: {fileID: 5432755158891043446}
+  muzzlePoint: {fileID: 1538991526246246654}
+  bulletPrefab: {fileID: 8217844626581164295, guid: 07726f2f3e655b14eb182602efeafca5, type: 3}
 --- !u!1001 &7056829088068252339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -302,6 +306,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9807897d42d6b5f48b2a2774629ee29c, type: 3}
+--- !u!4 &1538991526246246654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8409764257696963149, guid: 9807897d42d6b5f48b2a2774629ee29c, type: 3}
+  m_PrefabInstance: {fileID: 7056829088068252339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5432755158891043446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3065793160252532933, guid: 9807897d42d6b5f48b2a2774629ee29c, type: 3}

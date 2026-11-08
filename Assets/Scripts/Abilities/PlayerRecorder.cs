@@ -1,9 +1,8 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// One recorded frame
+// One recorded movement frame
 [System.Serializable]
 public class RecordedFrame
 {
@@ -21,6 +20,22 @@ public class RecordedFrame
         facingLeft = left;
         isMoving = moving;
         gunAngle = angle;
+    }
+}
+
+// One recorded shot
+[System.Serializable]
+public class RecordedShot
+{
+    public float time;
+    public Vector3 position;
+    public Quaternion rotation;
+
+    public RecordedShot(float t, Vector3 pos, Quaternion rot)
+    {
+        time = t;
+        position = pos;
+        rotation = rot;
     }
 }
 
@@ -42,6 +57,8 @@ public class PlayerRecorder : MonoBehaviour
     private bool hasRecording = false;
 
     private List<RecordedFrame> recordedFrames = new List<RecordedFrame>();
+    private List<RecordedShot> recordedShots = new List<RecordedShot>();
+
     private float recordStartTime;
 
     void Start()
@@ -64,7 +81,7 @@ public class PlayerRecorder : MonoBehaviour
 
                 if (ghost != null)
                 {
-                    ghost.StartReplay(recordedFrames);
+                    ghost.StartReplay(recordedFrames, recordedShots);
                     hasRecording = false;
                 }
             }
@@ -99,12 +116,33 @@ public class PlayerRecorder : MonoBehaviour
         );
     }
 
+    // Record actual shots during recording
+    public void RecordShot(Vector3 position, Quaternion rotation)
+    {
+        if (!isRecording)
+            return;
+
+        float shotTime = Time.time - recordStartTime;
+
+        recordedShots.Add(
+            new RecordedShot(
+                shotTime,
+                position,
+                rotation
+            )
+        );
+
+        UnityEngine.Debug.Log("Shot recorded!");
+    }
+
     IEnumerator Record()
     {
         isRecording = true;
         hasRecording = false;
 
         recordedFrames.Clear();
+        recordedShots.Clear();
+
         recordStartTime = Time.time;
 
         // Record starting position and direction
@@ -119,7 +157,6 @@ public class PlayerRecorder : MonoBehaviour
                 Quaternion.identity
             );
 
-            // Set initial facing direction and gun angle
             PlayerGhost ghost = currentGhost.GetComponent<PlayerGhost>();
 
             if (ghost != null)
@@ -141,6 +178,10 @@ public class PlayerRecorder : MonoBehaviour
         SaveFrame(Time.time - recordStartTime);
 
         UnityEngine.Debug.Log(
-            "Recording completed! Frames: " + recordedFrames.Count);
+            "Recording completed! Frames: " +
+            recordedFrames.Count +
+            " | Shots: " +
+            recordedShots.Count
+        );
     }
 }

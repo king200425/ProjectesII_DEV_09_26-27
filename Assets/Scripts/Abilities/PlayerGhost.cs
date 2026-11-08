@@ -10,10 +10,15 @@ public class PlayerGhost : MonoBehaviour
     [Header("Ghost Gun")]
     public Transform gunPivot;
     public Transform gunFlip;
+    public Transform muzzlePoint;
+    public GameObject bulletPrefab;
 
     private List<RecordedFrame> frames;
+    private List<RecordedShot> shots;
+
     private GhostAnimation ghostAnimation;
     private SpriteRenderer ghostSprite;
+    private GunRecoil gunRecoil;
 
     private bool isReplaying = false;
 
@@ -21,7 +26,7 @@ public class PlayerGhost : MonoBehaviour
     {
         ghostAnimation = GetComponent<GhostAnimation>();
 
-        // Find the ghost body SpriteRenderer
+        // Find ghost body, not gun
         SpriteRenderer[] sprites =
             GetComponentsInChildren<SpriteRenderer>(true);
 
@@ -36,21 +41,23 @@ public class PlayerGhost : MonoBehaviour
 
         if (ghostSprite == null)
         {
-            UnityEngine.Debug.LogError("Ghost Visual SpriteRenderer missing!");
+            UnityEngine.Debug.LogError(
+                "Ghost Visual SpriteRenderer missing!");
+        }
+
+        if (gunPivot != null)
+        {
+            gunRecoil = gunPivot.GetComponentInChildren<GunRecoil>();
         }
     }
 
-    // Set the initial ghost direction and gun angle
     public void SetInitialPose(bool facingLeft, float gunAngle)
     {
         if (ghostSprite != null)
             ghostSprite.flipX = facingLeft;
 
         if (gunPivot != null)
-        {
-            gunPivot.rotation = Quaternion.Euler(
-                0f, 0f, gunAngle);
-        }
+            gunPivot.rotation = Quaternion.Euler(0f, 0f, gunAngle);
 
         if (gunFlip != null)
         {
@@ -62,40 +69,43 @@ public class PlayerGhost : MonoBehaviour
         }
     }
 
-    public void StartReplay(List<RecordedFrame> recordedFrames)
+    public void StartReplay(
+        List<RecordedFrame> recordedFrames,
+        List<RecordedShot> recordedShots)
     {
         if (isReplaying || recordedFrames.Count < 2)
             return;
 
         frames = new List<RecordedFrame>(recordedFrames);
-        isReplaying = true;
+        shots = new List<RecordedShot>(recordedShots);
 
+        isReplaying = true;
         StartCoroutine(Replay());
     }
 
     IEnumerator Replay()
     {
         float elapsed = 0f;
-        int index = 0;
+        int frameIndex = 0;
+        int shotIndex = 0;
 
-        while (elapsed < frames[frames.Count - 1].time)
+        float replayDuration = frames[frames.Count - 1].time;
+
+        while (elapsed < replayDuration)
         {
             elapsed += Time.deltaTime;
 
-            while (index < frames.Count - 2 &&
-                   frames[index + 1].time < elapsed)
+            // Find movement frame
+            while (frameIndex < frames.Count - 2 &&
+                   frames[frameIndex + 1].time < elapsed)
             {
-                index++;
+                frameIndex++;
             }
 
-            RecordedFrame a = frames[index];
-            RecordedFrame b = frames[index + 1];
+            RecordedFrame a = frames[frameIndex];
+            RecordedFrame b = frames[frameIndex + 1];
 
-            float t = Mathf.InverseLerp(
-                a.time,
-                b.time,
-                elapsed
-            );
+            float t = Mathf.InverseLerp(a.time, b.time, elapsed);
 
             // Replay movement
             transform.position = Vector3.Lerp(
@@ -104,15 +114,15 @@ public class PlayerGhost : MonoBehaviour
                 t
             );
 
-            // Replay body direction
+            // Replay facing direction
             if (ghostSprite != null)
                 ghostSprite.flipX = a.facingLeft;
 
-            // Replay walking animation
+            // Replay movement animation
             if (ghostAnimation != null)
                 ghostAnimation.SetMoving(a.isMoving);
 
-            // Replay gun direction
+            // Replay gun rotation
             float angle = Mathf.LerpAngle(
                 a.gunAngle,
                 b.gunAngle,
@@ -120,10 +130,7 @@ public class PlayerGhost : MonoBehaviour
             );
 
             if (gunPivot != null)
-            {
-                gunPivot.rotation = Quaternion.Euler(
-                    0f, 0f, angle);
-            }
+                gunPivot.rotation = Quaternion.Euler(0f, 0f, angle);
 
             if (gunFlip != null)
             {
@@ -137,10 +144,18 @@ public class PlayerGhost : MonoBehaviour
                 );
             }
 
+            // Replay shots at recorded times
+            while (shotIndex < shots.Count &&
+                   shots[shotIndex].time <= elapsed)
+            {
+                FireRecordedShot(shots[shotIndex]);
+                shotIndex++;
+            }
+
             yield return null;
         }
 
-        // Restore final frame
+        // Restore final recorded frame
         RecordedFrame lastFrame = frames[frames.Count - 1];
 
         transform.position = lastFrame.position;
@@ -163,6 +178,13 @@ public class PlayerGhost : MonoBehaviour
             );
         }
 
+        // Fire any shots recorded at the very end
+        while (shotIndex < shots.Count)
+        {
+            FireRecordedShot(shots[shotIndex]);
+            shotIndex++;
+        }
+
         // Play disappear animation
         if (ghostAnimation != null)
         {
@@ -170,12 +192,27 @@ public class PlayerGhost : MonoBehaviour
             ghostAnimation.Disappear();
         }
 
-        isReplaying = false;
-
         UnityEngine.Debug.Log("Ghost disappearing!");
 
         yield return new WaitForSeconds(disappearDuration);
 
         Destroy(gameObject);
+    }
+
+    void FireRecordedShot(RecordedShot shot)
+    {
+        if (bulletPrefab == null || muzzlePoint == null)
+            return;
+
+        // Spawn bullet from the ghost's own gun
+        Instantiate(
+            bulletPrefab,
+            muzzlePoint.position,
+            shot.rotation
+        );
+
+        // Play gun recoil
+        if (gunRecoil != null)
+            gunRecoil.PlayRecoil();
     }
 }
