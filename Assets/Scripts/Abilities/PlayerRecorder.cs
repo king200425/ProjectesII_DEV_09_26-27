@@ -56,26 +56,53 @@ public class PlayerRecorder : MonoBehaviour
     private bool isRecording = false;
     private bool hasRecording = false;
 
+    public bool IsRecording => isRecording;
+    public bool IsReplaying { get; private set; }
+
+    public bool HasRecording => hasRecording;
+
+    public float RecordingRemaining =>
+        isRecording ? Mathf.Max(0f, recordDuration - (Time.time - recordStartTime)) : 0f;
+
+    public void SetReplaying(bool replaying)
+    {
+        IsReplaying = replaying;
+
+        UnityEngine.Debug.Log("E Replay State: " + IsReplaying);
+    }
+
     private List<RecordedFrame> recordedFrames = new List<RecordedFrame>();
     private List<RecordedShot> recordedShots = new List<RecordedShot>();
 
     private float recordStartTime;
 
+    private TimeSlow timeSlow;
+
     void Start()
     {
         if (playerSprite == null)
             playerSprite = GetComponentInChildren<SpriteRenderer>();
+
+        timeSlow = GetComponent<TimeSlow>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (!isRecording && !hasRecording)
+            // Cannot use E while Q is active
+            if (timeSlow != null && timeSlow.IsTimeSlowed)
+                return;
+
+            // Cannot start another action while recording or replaying
+            if (isRecording || IsReplaying)
+                return;
+
+            if (!hasRecording)
             {
                 StartCoroutine(Record());
             }
-            else if (hasRecording && currentGhost != null)
+            else if (currentGhost != null)
             {
                 PlayerGhost ghost = currentGhost.GetComponent<PlayerGhost>();
 
