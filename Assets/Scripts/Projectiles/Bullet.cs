@@ -28,14 +28,14 @@ public class Bullet : MonoBehaviour
         if (rb == null)
         {
             transform.position +=
-                transform.right * speed * Time.deltaTime;
+                transform.right * speed * TimeSlowPrototype.WorldScale * Time.deltaTime;
         }
     }
 
     void FixedUpdate()
     {
         if (rb != null)
-            rb.linearVelocity = transform.right * speed;
+            rb.linearVelocity = transform.right * speed * TimeSlowPrototype.WorldScale;
     }
 
     void OnTriggerEnter2D(Collider2D other)
