@@ -2312,6 +2312,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9060669202709896660, guid: 0aa500422012b184cb0a5d0e39dd8c5e, type: 3}
+      propertyPath: orthographic size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060669202709896660, guid: 0aa500422012b184cb0a5d0e39dd8c5e, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -2355,9 +2359,9 @@ MonoBehaviour:
   target: {fileID: 538294018}
   smoothTime: 0.15
   offset: {x: 0, y: 1}
-  minBounds: {x: 9, y: 1}
-  maxBounds: {x: 211, y: 9}
-  orthographicSize: 5
+  minBounds: {x: 14.3, y: 1}
+  maxBounds: {x: 205.7, y: 9}
+  orthographicSize: 8
 --- !u!1 &1155132112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759e3a107c0c747b8cd8724d0e189d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSlowPrototype
-  slowScale: 0.15
+  slowScale: 0.02
   maxDuration: 8
   cooldown: 1.5
 --- !u!1 &1939254174
