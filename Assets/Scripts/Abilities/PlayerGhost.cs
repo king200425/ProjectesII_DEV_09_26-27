@@ -22,6 +22,8 @@ public class PlayerGhost : MonoBehaviour
 
     private bool isReplaying = false;
 
+    private PlayerRecorder playerRecorder;
+
     void Awake()
     {
         ghostAnimation = GetComponent<GhostAnimation>();
@@ -80,6 +82,15 @@ public class PlayerGhost : MonoBehaviour
         shots = new List<RecordedShot>(recordedShots);
 
         isReplaying = true;
+
+        // Find the player recorder
+        playerRecorder = FindFirstObjectByType<PlayerRecorder>();
+
+        if (playerRecorder != null)
+        {
+            playerRecorder.SetReplaying(true);
+        }
+
         StartCoroutine(Replay());
     }
 
@@ -195,6 +206,13 @@ public class PlayerGhost : MonoBehaviour
         UnityEngine.Debug.Log("Ghost disappearing!");
 
         yield return new WaitForSeconds(disappearDuration);
+
+        isReplaying = false;
+
+        if (playerRecorder != null)
+        {
+            playerRecorder.SetReplaying(false);
+        }
 
         Destroy(gameObject);
     }

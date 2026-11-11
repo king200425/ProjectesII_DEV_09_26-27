@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class TimeSlow : MonoBehaviour
 {
+    private PlayerRecorder playerRecorder;
+
+    void Start()
+    {
+        playerRecorder = GetComponent<PlayerRecorder>();
+    }
+
     [Header("Time Slow Settings")]
     public float duration = 4f;
     public float slowMultiplier = 0.02f;
@@ -21,6 +28,13 @@ public class TimeSlow : MonoBehaviour
             !IsTimeSlowed &&
             !IsCooldown)
         {
+            // Cannot use Q while E is recording or replaying
+            if (playerRecorder != null &&
+                (playerRecorder.IsRecording || playerRecorder.IsReplaying))
+            {
+                return;
+            }
+
             StartCoroutine(ActivateTimeSlow());
         }
     }

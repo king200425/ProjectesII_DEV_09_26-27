@@ -1,4 +1,3 @@
-
 using System.Collections;
 using UnityEngine;
 
@@ -40,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
     private PlayerJump playerJump;
     private PlayerShooting playerShooting;
     private PlayerAim playerAim;
+    private CameraShake cameraShake;
+    private DamageScreenFX damageScreenFX;
 
     void Start()
     {
@@ -51,6 +52,10 @@ public class PlayerHealth : MonoBehaviour
         playerJump = GetComponent<PlayerJump>();
         playerShooting = GetComponent<PlayerShooting>();
         playerAim = GetComponent<PlayerAim>();
+        cameraShake = FindFirstObjectByType<CameraShake>();
+
+        // Find screen damage effects
+        damageScreenFX = FindFirstObjectByType<DamageScreenFX>();
 
         // Starting position is the default checkpoint
         checkpointPosition = transform.position;
@@ -82,10 +87,22 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
 
+        // Shake camera when taking damage
+        if (cameraShake != null)
+        {
+            cameraShake.Shake();
+        }
+
         if (currentState == HealthState.Weak)
         {
             Die();
             return;
+        }
+
+        // Start screen damage effects
+        if (damageScreenFX != null)
+        {
+            damageScreenFX.StartDamage();
         }
 
         StartCoroutine(DamageSequence());
@@ -133,6 +150,12 @@ public class PlayerHealth : MonoBehaviour
         if (lightningObject != null)
             lightningObject.SetActive(false);
 
+        // Fade out screen damage effects
+        if (damageScreenFX != null)
+        {
+            damageScreenFX.Recover();
+        }
+
         playerSprite.color = originalColor;
         playerSprite.enabled = true;
         currentState = HealthState.Normal;
@@ -151,6 +174,13 @@ public class PlayerHealth : MonoBehaviour
     {
         StopAllCoroutines();
         currentState = HealthState.Dead;
+
+        // Clear screen damage effects
+        // Later we will replace this with the death fade
+        if (damageScreenFX != null)
+        {
+            damageScreenFX.StopEffects();
+        }
 
         playerSprite.enabled = true;
         playerSprite.color = originalColor;
