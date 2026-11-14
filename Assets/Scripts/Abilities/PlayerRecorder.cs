@@ -51,6 +51,9 @@ public class PlayerRecorder : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Transform gunPivot;
 
+    [Header("Recording HUD")]
+    public RecordingHUD recordingHUD;
+
     private GameObject currentGhost;
 
     private bool isRecording = false;
@@ -58,23 +61,31 @@ public class PlayerRecorder : MonoBehaviour
 
     public bool IsRecording => isRecording;
     public bool IsReplaying { get; private set; }
-
     public bool HasRecording => hasRecording;
 
     public float RecordingRemaining =>
-        isRecording ? Mathf.Max(0f, recordDuration - (Time.time - recordStartTime)) : 0f;
+        isRecording
+            ? Mathf.Max(0f, recordDuration - (Time.time - recordStartTime))
+            : 0f;
 
-    public void SetReplaying(bool replaying)
-    {
-        IsReplaying = replaying;
+    public float RecordingElapsed =>
+        isRecording
+            ? Mathf.Clamp(Time.time - recordStartTime, 0f, recordDuration)
+            : 0f;
 
-        UnityEngine.Debug.Log("E Replay State: " + IsReplaying);
-    }
+    public float ReplayElapsed =>
+        IsReplaying
+            ? Mathf.Clamp(Time.time - replayStartTime, 0f, recordDuration)
+            : 0f;
 
-    private List<RecordedFrame> recordedFrames = new List<RecordedFrame>();
-    private List<RecordedShot> recordedShots = new List<RecordedShot>();
+    private List<RecordedFrame> recordedFrames =
+        new List<RecordedFrame>();
+
+    private List<RecordedShot> recordedShots =
+        new List<RecordedShot>();
 
     private float recordStartTime;
+    private float replayStartTime;
 
     private TimeSlow timeSlow;
 
@@ -84,10 +95,33 @@ public class PlayerRecorder : MonoBehaviour
             playerSprite = GetComponentInChildren<SpriteRenderer>();
 
         timeSlow = GetComponent<TimeSlow>();
+
+        if (recordingHUD != null)
+        {
+            recordingHUD.duration = recordDuration;
+            recordingHUD.HideHUD();
+        }
     }
 
     void Update()
     {
+        // Update recording HUD
+        if (recordingHUD != null)
+        {
+            if (isRecording)
+            {
+                recordingHUD.ShowRecording(RecordingElapsed);
+            }
+            else if (IsReplaying)
+            {
+                recordingHUD.ShowPlaying(ReplayElapsed);
+            }
+            else if (hasRecording)
+            {
+                recordingHUD.ShowReady();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             // Cannot use E while Q is active
@@ -104,12 +138,19 @@ public class PlayerRecorder : MonoBehaviour
             }
             else if (currentGhost != null)
             {
-                PlayerGhost ghost = currentGhost.GetComponent<PlayerGhost>();
+                PlayerGhost ghost =
+                    currentGhost.GetComponent<PlayerGhost>();
 
                 if (ghost != null)
                 {
                     ghost.StartReplay(recordedFrames, recordedShots);
                     hasRecording = false;
+
+                    // Keep the HUD in PLAY mode
+                    if (recordingHUD != null && IsReplaying)
+                    {
+                        recordingHUD.ShowPlaying(0f);
+                    }
                 }
             }
         }
@@ -162,6 +203,29 @@ public class PlayerRecorder : MonoBehaviour
         UnityEngine.Debug.Log("Shot recorded!");
     }
 
+    // Called when ghost replay starts or ends
+    public void SetReplaying(bool replaying)
+    {
+        IsReplaying = replaying;
+
+        if (replaying)
+        {
+            replayStartTime = Time.time;
+
+            if (recordingHUD != null)
+                recordingHUD.ShowPlaying(0f);
+        }
+        else
+        {
+            if (recordingHUD != null)
+                recordingHUD.HideHUD();
+        }
+
+        UnityEngine.Debug.Log(
+            "E Replay State: " + IsReplaying
+        );
+    }
+
     IEnumerator Record()
     {
         isRecording = true;
@@ -171,6 +235,10 @@ public class PlayerRecorder : MonoBehaviour
         recordedShots.Clear();
 
         recordStartTime = Time.time;
+
+        // Show recording HUD
+        if (recordingHUD != null)
+            recordingHUD.ShowRecording(0f);
 
         // Record starting position and direction
         SaveFrame(0f);
@@ -184,7 +252,8 @@ public class PlayerRecorder : MonoBehaviour
                 Quaternion.identity
             );
 
-            PlayerGhost ghost = currentGhost.GetComponent<PlayerGhost>();
+            PlayerGhost ghost =
+                currentGhost.GetComponent<PlayerGhost>();
 
             if (ghost != null)
             {
@@ -199,10 +268,15 @@ public class PlayerRecorder : MonoBehaviour
 
         yield return new WaitForSeconds(recordDuration);
 
+        // Save final frame before finishing
+        SaveFrame(Time.time - recordStartTime);
+
         isRecording = false;
         hasRecording = true;
 
-        SaveFrame(Time.time - recordStartTime);
+        // Show READY HUD
+        if (recordingHUD != null)
+            recordingHUD.ShowReady();
 
         UnityEngine.Debug.Log(
             "Recording completed! Frames: " +
