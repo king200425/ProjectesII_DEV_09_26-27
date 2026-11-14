@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     // Components
     private Rigidbody2D rb;
     private Animator animator;
+    private PlayerJump playerJump;
 
     // Movement input
     private float horizontal;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         // Get player components
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        playerJump = GetComponent<PlayerJump>();
     }
 
     void Update()
@@ -44,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (playerJump != null && playerJump.OverridesHorizontalMovement)
+            return;
+
         // Calculate current movement speed
         float currentSpeed = moveSpeed;
 

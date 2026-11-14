@@ -9,11 +9,13 @@ public class PlayerAim : MonoBehaviour
     private Camera mainCamera;
 
     private Animator animator;
+    private PlayerJump playerJump;
 
     void Start()
     {
         mainCamera = Camera.main;
         animator = GetComponentInChildren<Animator>();
+        playerJump = GetComponent<PlayerJump>();
     }
 
     void LateUpdate()
@@ -44,7 +46,11 @@ public class PlayerAim : MonoBehaviour
         animator.SetBool("isMovingBackward", movingBackward);
 
         // Flip the player
-        playerSprite.flipX = aimingLeft;
+        int wallSide = playerJump != null ? playerJump.WallSide : 0;
+        int launchDirection = playerJump != null ? playerJump.WallLaunchDirection : 0;
+        playerSprite.flipX = wallSide != 0 ? wallSide > 0
+                           : launchDirection != 0 ? launchDirection < 0
+                           : aimingLeft;
 
         // Flip the gun vertically when aiming left
         gunFlip.localScale = new Vector3(
