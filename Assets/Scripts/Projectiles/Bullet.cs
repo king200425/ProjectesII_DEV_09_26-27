@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -6,6 +5,9 @@ public class Bullet : MonoBehaviour
     public float speed = 35f;
     public float lifetime = 3f;
     public int damage = 1;
+
+    [Header("Bullet Type")]
+    public bool isGhostBullet = false;
 
     private Rigidbody2D rb;
     private bool hasHit;
@@ -74,6 +76,19 @@ public class Bullet : MonoBehaviour
         if (hasHit)
             return;
 
+        // Hit laser emitter
+        LaserEmitter emitter =
+            other.GetComponentInParent<LaserEmitter>();
+
+        if (emitter != null)
+        {
+            hasHit = true;
+            emitter.Hit(isGhostBullet);
+            Destroy(gameObject);
+            return;
+        }
+
+        // Hit enemy
         EnemyHealth enemy =
             other.GetComponentInParent<EnemyHealth>();
 
@@ -85,6 +100,7 @@ public class Bullet : MonoBehaviour
             return;
         }
 
+        // Hit ground
         if (other.gameObject.layer == groundLayer)
         {
             hasHit = true;

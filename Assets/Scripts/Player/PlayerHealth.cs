@@ -170,8 +170,11 @@ public class PlayerHealth : MonoBehaviour
         playerSprite.color = originalColor;
     }
 
-    void Die()
+    public void Die()
     {
+        if (currentState == HealthState.Dead)
+            return;
+
         StopAllCoroutines();
         currentState = HealthState.Dead;
 
