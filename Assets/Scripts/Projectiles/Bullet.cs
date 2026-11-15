@@ -9,7 +9,19 @@ public class Bullet : MonoBehaviour
     [Header("Bullet Type")]
     public bool isGhostBullet = false;
 
+    [Header("Laser Visual")]
+    [SerializeField] private SpriteRenderer laserVisual;
+
+    [Header("Sparks")]
+    [SerializeField] private Material sparkMaterial;
+    [SerializeField] private Color sparkColor = new(1f, 0.31f, 0.09f);
+    [SerializeField] private Color sparkAccent = new(1f, 0.76f, 0.30f);
+
+    private static readonly int LaserLaunch = Shader.PropertyToID("_LaserLaunch");
+    private static MaterialPropertyBlock laserProperties;
+
     private Rigidbody2D rb;
+    private Collider2D hitCollider;
     private bool hasHit;
     private int groundLayer;
 
@@ -19,7 +31,22 @@ public class Bullet : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        hitCollider = GetComponent<Collider2D>();
         groundLayer = LayerMask.NameToLayer("Ground");
+
+        if (laserVisual != null)
+        {
+            Vector3 muzzle = transform.position;
+            Vector3 forward = transform.right;
+            laserProperties ??= new MaterialPropertyBlock();
+            laserVisual.GetPropertyBlock(laserProperties);
+            laserProperties.SetVector(LaserLaunch, new Vector4(muzzle.x, muzzle.y, forward.x, forward.y));
+            laserVisual.SetPropertyBlock(laserProperties);
+        }
+
+        // Both the player and the replay spawn this bullet at their gun's muzzle.
+        if (sparkMaterial != null)
+            ProjectileSparks.PlayMuzzle(transform.position, transform.right, sparkMaterial, sparkColor, sparkAccent);
     }
 
     void Start()
@@ -82,9 +109,8 @@ public class Bullet : MonoBehaviour
 
         if (emitter != null)
         {
-            hasHit = true;
+            FinishImpact(other);
             emitter.Hit(isGhostBullet);
-            Destroy(gameObject);
             return;
         }
 
@@ -94,17 +120,39 @@ public class Bullet : MonoBehaviour
 
         if (enemy != null)
         {
-            hasHit = true;
+            FinishImpact(other);
             enemy.TakeDamage(damage);
-            Destroy(gameObject);
             return;
         }
 
         // Hit ground
         if (other.gameObject.layer == groundLayer)
+            FinishImpact(other);
+    }
+
+    private void FinishImpact(Collider2D target)
+    {
+        hasHit = true;
+        if (sparkMaterial != null)
         {
-            hasHit = true;
-            Destroy(gameObject);
+            Vector2 travel = transform.right;
+            Vector2 point = target.ClosestPoint(transform.position);
+            Vector2 normal = -travel;
+            if (hitCollider != null)
+            {
+                ColliderDistance2D distance = hitCollider.Distance(target);
+                if (distance.isValid)
+                {
+                    point = distance.pointB;
+                    normal = distance.normal;
+                    if (Vector2.Dot(normal, travel) > 0f)
+                        normal = -normal;
+                }
+            }
+
+            ProjectileSparks.PlayImpact(new Vector3(point.x, point.y, transform.position.z),
+                                        normal, sparkMaterial, sparkColor, sparkAccent);
         }
+        Destroy(gameObject);
     }
 }
