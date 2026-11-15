@@ -69,6 +69,9 @@ public class PlayerRecorder : MonoBehaviour
 
     void Update()
     {
+        if (!SkillUnlockState.EchoUnlocked)
+            return;
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (!isRecording && !hasRecording)
