@@ -13,24 +13,28 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Patrol")]
     public float patrolRange = 2f;
-    public float patrolSpeed = 1f;
-    public float returnSpeed = 2f;
+    public float patrolSpeed = 1.2f;
+    public float returnSpeed = 2.5f;
 
-    [Header("Chase")]
-    public float detectionRange = 10f;
-    public float leashRange = 12f;
-    public float chaseSpeed = 3f;
-    public float chaseVerticalTolerance = 6f;
-    public float losePlayerDelay = 1.5f;
+    [Header("Detection")]
+    public float detectionRange = 8f;
+    public float leashRange = 10f;
+    public float chaseSpeed = 3.2f;
+    public float chaseVerticalTolerance = 2.5f;
+    public float losePlayerDelay = 1.2f;
 
     [Header("Attack")]
-    public float attackRange = 1.4f;
-    public float attackVerticalTolerance = 2f;
+    public float attackRange = 1.25f;
+    public float attackVerticalTolerance = 1.5f;
     public float attackWindup = 0.3f;
-    public float attackCooldown = 1.6f;
+    public float attackRecover = 0.22f;
+    public float attackCooldown = 1.4f;
+    public float attackLungeDistance = 0.45f;
+    public float attackLungeDuration = 0.18f;
+    public Sprite attackEffectSprite;
 
     [Header("Ground")]
-    public float edgeCheckDistance = 0.7f;
+    public float edgeCheckDistance = 0.6f;
     public LayerMask groundLayer = 1 << 3;
 
     private EnemyHealth health;
@@ -47,8 +51,10 @@ public class EnemyAI : MonoBehaviour
     private int patrolDirection = 1;
     private float nextAttackTime;
     private bool isAttacking;
+    private bool isStaggered;
     private float lastSeenTime;
     private Vector3 lastKnownPlayerPosition;
+    private Color baseColor = Color.white;
 
     void Awake()
     {
@@ -58,6 +64,9 @@ public class EnemyAI : MonoBehaviour
 
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        if (spriteRenderer != null)
+            baseColor = spriteRenderer.color;
 
         spawnX = transform.position.x;
         patrolLeft = spawnX - patrolRange;
@@ -76,7 +85,7 @@ public class EnemyAI : MonoBehaviour
         if (health != null && health.IsDead)
             return;
 
-        if (isAttacking)
+        if (isAttacking || isStaggered)
             return;
 
         if (player == null)
@@ -97,10 +106,13 @@ public class EnemyAI : MonoBehaviour
         Vector3 playerPosition = player.transform.position;
         float dx = playerPosition.x - transform.position.x;
         float dy = Mathf.Abs(playerPosition.y - transform.position.y);
+        float distance = Vector2.Distance(
+            transform.position,
+            playerPosition);
 
         bool playerVisible =
-            Mathf.Abs(dx) <= detectionRange &&
-            Mathf.Abs(dy) <= chaseVerticalTolerance &&
+            distance <= detectionRange &&
+            dy <= chaseVerticalTolerance &&
             playerPosition.x >= leashLeft &&
             playerPosition.x <= leashRight;
 
@@ -112,15 +124,13 @@ public class EnemyAI : MonoBehaviour
 
             Face(dx);
 
-            if (Mathf.Abs(dx) <= attackRange)
+            if (Mathf.Abs(dx) <= attackRange &&
+                dy <= attackVerticalTolerance)
             {
                 StopMoving();
 
-                if (dy <= attackVerticalTolerance &&
-                    Time.time >= nextAttackTime)
-                {
+                if (Time.time >= nextAttackTime)
                     StartCoroutine(AttackRoutine());
-                }
 
                 return;
             }
@@ -181,8 +191,11 @@ public class EnemyAI : MonoBehaviour
             leashLeft,
             leashRight);
 
-        if (Mathf.Abs(transform.position.x - lastKnownPlayerPosition.x) < 0.1f)
+        if (Mathf.Abs(
+                transform.position.x - lastKnownPlayerPosition.x) < 0.1f)
+        {
             StopMoving();
+        }
     }
 
     void ReturnToPatrol()
@@ -258,6 +271,9 @@ public class EnemyAI : MonoBehaviour
 
         if (spriteRenderer != null)
             spriteRenderer.flipX = faceLeft;
+
+        if (animator != null)
+            animator.SetFacing(faceLeft);
     }
 
     bool HasGroundAhead(int direction)
@@ -285,35 +301,95 @@ public class EnemyAI : MonoBehaviour
 
         StopMoving();
 
+        if (player != null)
+            Face(player.transform.position.x - transform.position.x);
+
         if (animator != null)
             animator.PlayAttack();
+
+        if (spriteRenderer != null)
+            spriteRenderer.color = new Color(1f, 0.78f, 0.45f, 1f);
 
         yield return new WaitForSeconds(attackWindup);
 
         if (health != null && health.IsDead)
         {
             isAttacking = false;
+            ResetColor();
             yield break;
         }
+
+        float lungeDirection = 1f;
+
+        if (player != null)
+            lungeDirection = player.transform.position.x >=
+                transform.position.x ? 1f : -1f;
+
+        Vector3 startPosition = transform.position;
+        float elapsed = 0f;
+
+        while (elapsed < attackLungeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float progress = Mathf.Clamp01(
+                elapsed / attackLungeDuration);
+            float curve = Mathf.Sin(progress * Mathf.PI);
+            transform.position = startPosition +
+                Vector3.right * lungeDirection *
+                attackLungeDistance * curve;
+            yield return null;
+        }
+
+        transform.position = startPosition;
 
         if (player != null && IsPlayerInAttackRange())
         {
             player.TakeDamage();
-            UnityEngine.Debug.Log(name + " attacked the player.");
+            StartCoroutine(AttackEffect(
+                transform.position +
+                Vector3.right * lungeDirection * 0.7f +
+                Vector3.up * 1.1f));
         }
 
-        float remaining = 0f;
-
-        if (animator != null)
-            remaining = animator.AttackDuration - attackWindup;
-
-        if (remaining > 0f)
-            yield return new WaitForSeconds(remaining);
+        yield return new WaitForSeconds(attackRecover);
 
         if (animator != null)
             animator.PlayIdle();
 
+        ResetColor();
         isAttacking = false;
+    }
+
+    IEnumerator AttackEffect(Vector3 position)
+    {
+        if (attackEffectSprite == null)
+            yield break;
+
+        GameObject effect = new GameObject("EnemyAttackEffect");
+        effect.transform.position = position;
+        effect.transform.localScale = Vector3.one * 0.5f;
+
+        SpriteRenderer renderer = effect.AddComponent<SpriteRenderer>();
+        renderer.sprite = attackEffectSprite;
+        renderer.sortingOrder = 12;
+        renderer.color = new Color(1f, 0.45f, 0.2f, 0.9f);
+
+        float elapsed = 0f;
+        float duration = 0.22f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float progress = Mathf.Clamp01(elapsed / duration);
+            effect.transform.localScale =
+                Vector3.one * Mathf.Lerp(0.5f, 1.4f, progress);
+            Color color = renderer.color;
+            color.a = Mathf.Lerp(0.9f, 0f, progress);
+            renderer.color = color;
+            yield return null;
+        }
+
+        Destroy(effect);
     }
 
     bool IsPlayerInAttackRange()
@@ -327,8 +403,43 @@ public class EnemyAI : MonoBehaviour
         float dy = Mathf.Abs(
             player.transform.position.y - transform.position.y);
 
-        return dx <= attackRange + 0.3f &&
+        return dx <= attackRange + 0.35f &&
                dy <= attackVerticalTolerance;
+    }
+
+    public void OnHit()
+    {
+        if (health != null && health.IsDead)
+            return;
+
+        if (isAttacking)
+        {
+            StopAllCoroutines();
+            isAttacking = false;
+
+            if (animator != null)
+                animator.PlayIdle();
+
+            ResetColor();
+        }
+
+        StartCoroutine(Stagger());
+    }
+
+    IEnumerator Stagger()
+    {
+        if (isStaggered)
+            yield break;
+
+        isStaggered = true;
+        yield return new WaitForSeconds(0.18f);
+        isStaggered = false;
+    }
+
+    void ResetColor()
+    {
+        if (spriteRenderer != null)
+            spriteRenderer.color = baseColor;
     }
 
     void FindPlayer()
@@ -340,11 +451,15 @@ public class EnemyAI : MonoBehaviour
     {
         StopAllCoroutines();
         isAttacking = false;
+        isStaggered = false;
+        ResetColor();
     }
 
     void OnDrawGizmosSelected()
     {
-        float centerX = Application.isPlaying ? spawnX : transform.position.x;
+        float centerX = Application.isPlaying
+            ? spawnX
+            : transform.position.x;
         float y = transform.position.y;
 
         Gizmos.color = Color.green;
