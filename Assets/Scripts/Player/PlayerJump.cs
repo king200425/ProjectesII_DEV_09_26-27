@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
@@ -89,8 +89,8 @@ public class PlayerJump : MonoBehaviour
 
     bool IsOnMovingPlatform()
     {
-        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        return hit != null && hit.GetComponentInParent<MovingPlatform>() != null;
+        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.8f, groundLayer);
+        return hit.collider != null && hit.collider.GetComponentInParent<MovingPlatform>() != null;
     }
 
     void FixedUpdate()
@@ -101,3 +101,4 @@ public class PlayerJump : MonoBehaviour
             rb.gravityScale = normalGravity;
     }
 }
+

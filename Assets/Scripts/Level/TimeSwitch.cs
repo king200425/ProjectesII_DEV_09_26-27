@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TimeSwitch : MonoBehaviour
 {
@@ -73,6 +73,9 @@ public class TimeSwitch : MonoBehaviour
         if (other.GetComponent<Bullet>() == null)
             return;
 
+        if (!TimeSlowPrototype.IsSlowed)
+            return;
+
         Destroy(other.gameObject);
         Activate();
     }
@@ -142,3 +145,4 @@ public class TimeSwitch : MonoBehaviour
             ring.enabled = false;
     }
 }
+
