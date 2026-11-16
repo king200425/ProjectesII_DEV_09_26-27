@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
@@ -15,6 +16,18 @@ public class LevelExit : MonoBehaviour
 
         completed = true;
         UnityEngine.Debug.Log("Nivel 1 completado");
+    }
+
+    void Update()
+    {
+        if (!completed)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     void OnGUI()
@@ -49,6 +62,11 @@ public class LevelExit : MonoBehaviour
         GUI.Label(
             new Rect(0f, Screen.height / 2f + 10f, Screen.width, 35f),
             "La Torre del Olvido · Siguiente: El Corredor de los Ecos",
+            bodyStyle);
+
+        GUI.Label(
+            new Rect(0f, Screen.height / 2f + 60f, Screen.width, 30f),
+            "R: reiniciar   ·   Esc: salir",
             bodyStyle);
     }
 }
