@@ -16,6 +16,9 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         groundLayer = LayerMask.NameToLayer("Ground");
+
+        if (rb != null)
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     void Start()
@@ -52,6 +55,22 @@ public class Bullet : MonoBehaviour
             TimeSlowPrototype.WorldScale * Time.fixedDeltaTime;
 
         if (IsOutsideView(nextPosition))
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        float distance = speed *
+            TimeSlowPrototype.WorldScale * Time.fixedDeltaTime + 0.1f;
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            transform.right,
+            distance);
+
+        if (hit.collider != null &&
+            !hit.collider.isTrigger &&
+            hit.collider.GetComponentInParent<PlayerHealth>() == null &&
+            hit.collider.GetComponentInParent<EnemyHealth>() == null)
         {
             Destroy(gameObject);
             return;
