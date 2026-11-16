@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 1.5
+  activeWindow: 0.7
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 1.5
+  activeWindow: 0.7
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
