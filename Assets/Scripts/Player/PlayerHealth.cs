@@ -66,6 +66,9 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         // Press H to test damage
         if (Input.GetKeyDown(KeyCode.H))
         {

@@ -105,6 +105,9 @@ public class PlayerRecorder : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         // Update recording HUD
         if (recordingHUD != null)
         {
@@ -158,7 +161,7 @@ public class PlayerRecorder : MonoBehaviour
 
     void LateUpdate()
     {
-        if (isRecording)
+        if (isRecording && Time.timeScale > 0f)
         {
             SaveFrame(Time.time - recordStartTime);
         }

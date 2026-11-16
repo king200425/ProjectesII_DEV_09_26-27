@@ -87,6 +87,13 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0f)
+        {
+            jumpPressed = false;
+            jumpReleased = false;
+            return;
+        }
+
         jumpPressed |= Input.GetKeyDown(KeyCode.Space);
         jumpReleased |= Input.GetKeyUp(KeyCode.Space);
     }

@@ -20,6 +20,9 @@ public class PlayerAim : MonoBehaviour
 
     void LateUpdate()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         // Get mouse position in world space
         Vector3 mousePosition =
             mainCamera.ScreenToWorldPoint(Input.mousePosition);

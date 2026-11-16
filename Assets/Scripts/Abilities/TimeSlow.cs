@@ -24,6 +24,9 @@ public class TimeSlow : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Q) &&
             !IsTimeSlowed &&
             !IsCooldown)

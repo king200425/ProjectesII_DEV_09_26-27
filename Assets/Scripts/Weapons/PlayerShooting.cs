@@ -27,6 +27,9 @@ public class PlayerShooting : MonoBehaviour
 
     void LateUpdate()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         // Hold left mouse button to shoot continuously
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
         {
