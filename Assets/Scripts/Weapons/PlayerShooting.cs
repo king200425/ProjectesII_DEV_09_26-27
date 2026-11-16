@@ -28,7 +28,7 @@ public class PlayerShooting : MonoBehaviour
     void LateUpdate()
     {
         if (fireCooldown > 0f)
-            fireCooldown -= Time.deltaTime * TimeSlowPrototype.WorldScale;
+            fireCooldown -= Time.deltaTime;
 
         if (Input.GetMouseButton(0) && fireCooldown <= 0f)
         {
@@ -62,4 +62,5 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 }
+
 
