@@ -3902,8 +3902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {x: 136, y: 0.25, z: 0}
-  pointB: {x: 138, y: 0.25, z: 0}
-  speed: 3.5
+  pointB: {x: 140, y: 0.25, z: 0}
+  speed: 4
 --- !u!61 &1189689402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7227,8 +7227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {x: 146, y: 0.25, z: 0}
-  pointB: {x: 149, y: 0.25, z: 0}
-  speed: 3.5
+  pointB: {x: 146, y: 5, z: 0}
+  speed: 5
 --- !u!61 &2039811552
 BoxCollider2D:
   m_ObjectHideFlags: 0
