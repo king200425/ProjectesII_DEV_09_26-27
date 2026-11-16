@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 1.5
+  activeWindow: 0.7
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
@@ -611,7 +611,7 @@ Transform:
   m_GameObject: {fileID: 288061855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 156, y: 4.8, z: 0}
+  m_LocalPosition: {x: 163, y: 4.6, z: 0}
   m_LocalScale: {x: 0.55, y: 0.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
