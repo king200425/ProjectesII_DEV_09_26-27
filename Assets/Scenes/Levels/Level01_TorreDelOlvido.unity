@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 0.7
+  activeWindow: 1.8
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 0.7
+  activeWindow: 1.8
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e811ce1429aa6449bf51e9c40e9d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
-  activeWindow: 0.7
+  activeWindow: 1.8
   activeColor: {r: 0, g: 1, b: 1, a: 1}
   ringColor: {r: 1, g: 0, b: 0, a: 1}
   ringRadius: 1.15
@@ -7478,7 +7478,7 @@ MonoBehaviour:
   - {fileID: 496414038}
   door: {fileID: 2066899964}
   openOffset: {x: 0, y: 4, z: 0}
-  moveSpeed: 4
+  moveSpeed: 6
 --- !u!61 &2066899966
 BoxCollider2D:
   m_ObjectHideFlags: 0
