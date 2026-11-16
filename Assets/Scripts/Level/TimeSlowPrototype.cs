@@ -5,7 +5,7 @@ public class TimeSlowPrototype : MonoBehaviour
     public static float WorldScale { get; private set; } = 1f;
     public static bool IsSlowed { get; private set; }
 
-    public float slowScale = 0f;
+    public float slowScale = 0.15f;
     public float maxDuration = 8f;
     public float cooldown = 1.5f;
 
@@ -72,4 +72,5 @@ public class TimeSlowPrototype : MonoBehaviour
         GUI.color = Color.white;
     }
 }
+
 

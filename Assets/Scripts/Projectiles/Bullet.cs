@@ -38,7 +38,7 @@ public class Bullet : MonoBehaviour
         if (rb == null)
         {
             transform.position +=
-                transform.right * speed * Time.deltaTime;
+                transform.right * speed * TimeSlowPrototype.WorldScale * Time.deltaTime;
         }
     }
 
@@ -51,7 +51,7 @@ public class Bullet : MonoBehaviour
         }
 
         Vector3 nextPosition = transform.position +
-            transform.right * speed * Time.fixedDeltaTime;
+            transform.right * speed * TimeSlowPrototype.WorldScale * Time.fixedDeltaTime;
 
         if (IsOutsideView(nextPosition))
         {
@@ -59,7 +59,7 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        float distance = speed * Time.fixedDeltaTime + 0.1f;
+        float distance = speed * TimeSlowPrototype.WorldScale * Time.fixedDeltaTime + 0.1f;
         RaycastHit2D hit = Physics2D.Raycast(
             transform.position,
             transform.right,
@@ -75,7 +75,7 @@ public class Bullet : MonoBehaviour
         }
 
         if (rb != null)
-            rb.linearVelocity = transform.right * speed;
+            rb.linearVelocity = transform.right * speed * TimeSlowPrototype.WorldScale;
     }
 
     bool IsOutsideView(Vector3 position)
@@ -113,6 +113,7 @@ public class Bullet : MonoBehaviour
         }
     }
 }
+
 
 
 
