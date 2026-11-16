@@ -58,10 +58,7 @@ public class PlayerJump : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0)
         {
-            if (IsOnMovingPlatform() && !TimeSlowPrototype.IsSlowed)
-                return;
-
-            float currentJumpForce = jumpForce;
+                        float currentJumpForce = jumpForce;
 
             if (jumpsRemaining < maxJumps)
                 currentJumpForce *= secondJumpMultiplier;
@@ -87,12 +84,6 @@ public class PlayerJump : MonoBehaviour
         animator.SetFloat("verticalSpeed", rb.linearVelocity.y);
     }
 
-    bool IsOnMovingPlatform()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.8f, groundLayer);
-        return hit.collider != null && hit.collider.GetComponentInParent<MovingPlatform>() != null;
-    }
-
     void FixedUpdate()
     {
         if (rb.linearVelocity.y < 0)
@@ -101,4 +92,5 @@ public class PlayerJump : MonoBehaviour
             rb.gravityScale = normalGravity;
     }
 }
+
 
