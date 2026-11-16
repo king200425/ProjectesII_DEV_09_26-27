@@ -10,6 +10,7 @@ public class PlayerShooting : MonoBehaviour
 
     // Time between shots
     public float fireRate = 0.1f;
+    public float slowFireScale = 0.15f;
 
     // Gun recoil component
     public GunRecoil gunRecoil;
@@ -28,7 +29,8 @@ public class PlayerShooting : MonoBehaviour
     void LateUpdate()
     {
         if (fireCooldown > 0f)
-            fireCooldown -= Time.deltaTime;
+            fireCooldown -= Time.deltaTime *
+                (TimeSlowPrototype.IsSlowed ? slowFireScale : 1f);
 
         if (Input.GetMouseButton(0) && fireCooldown <= 0f)
         {
@@ -62,5 +64,6 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 }
+
 
 
