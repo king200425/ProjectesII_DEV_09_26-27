@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyHealth))]
@@ -82,6 +82,9 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (TimeSlowPrototype.IsSlowed)
+            return;
+
         if (health != null && health.IsDead)
             return;
 
@@ -409,6 +412,9 @@ public class EnemyAI : MonoBehaviour
 
     public void OnHit()
     {
+        if (TimeSlowPrototype.IsSlowed)
+            return;
+
         if (health != null && health.IsDead)
             return;
 
@@ -479,3 +485,4 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
+
