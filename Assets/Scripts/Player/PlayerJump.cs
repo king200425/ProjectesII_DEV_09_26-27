@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
@@ -58,9 +58,6 @@ public class PlayerJump : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0)
         {
-            if (IsOnMovingPlatform() && !TimeSlowPrototype.IsSlowed)
-                return;
-
             float currentJumpForce = jumpForce;
 
             if (jumpsRemaining < maxJumps)
@@ -85,12 +82,6 @@ public class PlayerJump : MonoBehaviour
 
         animator.SetBool("isGrounded", isGrounded);
         animator.SetFloat("verticalSpeed", rb.linearVelocity.y);
-    }
-
-    bool IsOnMovingPlatform()
-    {
-        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        return hit != null && hit.GetComponentInParent<MovingPlatform>() != null;
     }
 
     void FixedUpdate()

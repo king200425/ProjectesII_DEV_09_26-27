@@ -757,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 388609026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: 1.5, z: 0}
+  m_LocalPosition: {x: 199, y: 1.5, z: 0}
   m_LocalScale: {x: 0.4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1994,7 +1994,7 @@ Transform:
   m_GameObject: {fileID: 612929653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 190, y: 0.9, z: 0}
+  m_LocalPosition: {x: 194, y: 0.9, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2242,7 +2242,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 20, y: 2}
+  m_Size: {x: 24, y: 2}
   m_EdgeRadius: 0
 --- !u!4 &715419241
 Transform:
@@ -2253,7 +2253,7 @@ Transform:
   m_GameObject: {fileID: 715419238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 142, y: -3, z: 0}
+  m_LocalPosition: {x: 144, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2734,7 +2734,7 @@ Transform:
   m_GameObject: {fileID: 899039721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 165, y: -0.25, z: 0}
+  m_LocalPosition: {x: 169, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {x: 136, y: 0.25, z: 0}
-  pointB: {x: 142, y: 0.25, z: 0}
+  pointB: {x: 138, y: 0.25, z: 0}
   speed: 3.5
 --- !u!61 &1189689402
 BoxCollider2D:
@@ -4376,7 +4376,7 @@ Transform:
   m_GameObject: {fileID: 1326292997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: 1.5, z: 0}
+  m_LocalPosition: {x: 199, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6791,7 +6791,7 @@ Transform:
   m_GameObject: {fileID: 1939254174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: 1.6, z: 0}
+  m_LocalPosition: {x: 199, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7226,8 +7226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e1b3b3b0d838f449d71b90bb587933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
-  pointA: {x: 148, y: 0.25, z: 0}
-  pointB: {x: 142, y: 0.25, z: 0}
+  pointA: {x: 146, y: 0.25, z: 0}
+  pointB: {x: 149, y: 0.25, z: 0}
   speed: 3.5
 --- !u!61 &2039811552
 BoxCollider2D:
@@ -7807,7 +7807,7 @@ Transform:
   m_GameObject: {fileID: 2125785062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 200, y: -0.25, z: 0}
+  m_LocalPosition: {x: 204, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
