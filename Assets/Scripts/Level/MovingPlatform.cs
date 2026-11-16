@@ -16,6 +16,9 @@ public class MovingPlatform : MonoBehaviour
 
     void Update()
     {
+        if (TimeSlowPrototype.IsSlowed)
+            return;
+
         float distance = Vector3.Distance(pointA, pointB);
 
         if (distance < 0.01f)
