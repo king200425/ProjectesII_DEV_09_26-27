@@ -73,10 +73,7 @@ public class TimeSwitch : MonoBehaviour
         if (other.GetComponent<Bullet>() == null)
             return;
 
-        if (!TimeSlowPrototype.IsSlowed)
-            return;
-
-        Destroy(other.gameObject);
+                Destroy(other.gameObject);
         Activate();
     }
 
@@ -145,4 +142,5 @@ public class TimeSwitch : MonoBehaviour
             ring.enabled = false;
     }
 }
+
 

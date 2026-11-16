@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class PlayerShooting : MonoBehaviour
     // Gun aiming pivot
     public Transform gunPivot;
 
-    private float nextFireTime;
+    private float fireCooldown;
     private PlayerRecorder playerRecorder;
 
     void Start()
@@ -27,11 +27,13 @@ public class PlayerShooting : MonoBehaviour
 
     void LateUpdate()
     {
-        // Hold left mouse button to shoot continuously
-        if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
+        if (fireCooldown > 0f)
+            fireCooldown -= Time.deltaTime * TimeSlowPrototype.WorldScale;
+
+        if (Input.GetMouseButton(0) && fireCooldown <= 0f)
         {
             Shoot();
-            nextFireTime = Time.time + fireRate;
+            fireCooldown = fireRate;
         }
     }
 
@@ -60,3 +62,4 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 }
+
