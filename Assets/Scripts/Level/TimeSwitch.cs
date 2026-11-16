@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class TimeSwitch : MonoBehaviour
 {
@@ -73,7 +73,11 @@ public class TimeSwitch : MonoBehaviour
         if (other.GetComponent<Bullet>() == null)
             return;
 
-                Destroy(other.gameObject);
+        Destroy(other.gameObject);
+
+        if (IsActive)
+            return;
+
         Activate();
     }
 
