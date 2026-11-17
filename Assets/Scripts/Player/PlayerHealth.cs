@@ -30,6 +30,20 @@ public class PlayerHealth : MonoBehaviour
     private HealthState currentState = HealthState.Normal;
     private Color originalColor;
 
+    public int HealthStage
+    {
+        get
+        {
+            switch (currentState)
+            {
+                case HealthState.Normal: return 3;
+                case HealthState.Invincible: return 2;
+                case HealthState.Weak: return 1;
+                default: return 0;
+            }
+        }
+    }
+
     // Checkpoint
     private Vector3 checkpointPosition;
 
