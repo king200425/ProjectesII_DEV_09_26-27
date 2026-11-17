@@ -64,18 +64,6 @@ public class PlayerHealth : MonoBehaviour
             lightningObject.SetActive(false);
     }
 
-    void Update()
-    {
-        if (Time.timeScale == 0f)
-            return;
-
-        // Press H to test damage
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TakeDamage();
-        }
-    }
-
     public void SetCheckpoint(Vector3 position)
     {
         checkpointPosition = position;

@@ -43,6 +43,7 @@ public class PlayerRecorder : MonoBehaviour
 {
     [Header("Recording Settings")]
     public float recordDuration = 4f;
+    [SerializeField] private bool requireEchoUnlock;
 
     [Header("Ghost")]
     public GameObject ghostPrefab;
@@ -105,7 +106,7 @@ public class PlayerRecorder : MonoBehaviour
 
     void Update()
     {
-        if (Time.timeScale == 0f)
+        if (Time.timeScale == 0f || (requireEchoUnlock && !SkillUnlockState.EchoUnlocked))
             return;
 
         // Update recording HUD

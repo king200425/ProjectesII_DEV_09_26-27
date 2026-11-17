@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: c3dc98119d204474ea199bf7de7eb8ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3024745669637756204
+    second: Gothic_Column_0
+  - first:
+      213: 3416888241324529566
+    second: Gothic_Column_1
+  - first:
+      213: -6748452500192649586
+    second: Gothic_Column_2
+  - first:
+      213: 5425480099335301332
+    second: Gothic_Column_3
+  - first:
+      213: -1033579233113918738
+    second: Gothic_Column_4
+  - first:
+      213: 1517811221251172924
+    second: Gothic_Column_5
+  - first:
+      213: 3902192763689087817
+    second: Gothic_Column_6
+  - first:
+      213: -4272105983340950265
+    second: Gothic_Column_7
+  - first:
+      213: 5312715752721945152
+    second: Gothic_Column_8
+  - first:
+      213: -7294562157855067842
+    second: Gothic_Column_9
+  - first:
+      213: 4015744093756979676
+    second: Gothic_Column_10
+  - first:
+      213: 1911774197900766258
+    second: Gothic_Column_11
+  - first:
+      213: -1063827469553258610
+    second: Gothic_Column_12
+  - first:
+      213: -2332185162120625055
+    second: Gothic_Column_13
+  - first:
+      213: 1394498437760336903
+    second: Gothic_Column_14
+  - first:
+      213: 3074825361869682407
+    second: Gothic_Column_15
+  - first:
+      213: -1010779627449803594
+    second: Gothic_Column_16
+  - first:
+      213: -7077756572473691796
+    second: Gothic_Column_17
+  - first:
+      213: 2158766515771861451
+    second: Gothic_Column_18
+  - first:
+      213: 421703651460593608
+    second: Gothic_Column_19
+  - first:
+      213: -1275558827805039769
+    second: Gothic_Column_20
+  - first:
+      213: 5117618325693385366
+    second: Gothic_Column_21
+  - first:
+      213: -2045362234057019235
+    second: Gothic_Column_22
+  - first:
+      213: -5606046642936784093
+    second: Gothic_Column_23
+  - first:
+      213: -1556230976420268965
+    second: Gothic_Column_24
+  - first:
+      213: 6255770945048540326
+    second: Gothic_Column_25
+  - first:
+      213: 328784452919672760
+    second: Gothic_Column_26
+  - first:
+      213: -7532904580308537895
+    second: Gothic_Column_27
+  - first:
+      213: -7728358600130648107
+    second: Gothic_Column_28
+  - first:
+      213: -2985965120318160593
+    second: Gothic_Column_29
+  - first:
+      213: 5046772976564512783
+    second: Gothic_Column_30
+  - first:
+      213: 7551477344019428044
+    second: Gothic_Column_31
+  - first:
+      213: -8952669555925970215
+    second: Gothic_Column_32
+  - first:
+      213: 2726989126810793664
+    second: Gothic_Column_33
+  - first:
+      213: -7810046196648998446
+    second: Gothic_Column_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gothic_Column_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 163
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25d8a6292e0af920800000000000000
+      internalID: 3024745669637756204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 167
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e979b5580c93b6f20800000000000000
+      internalID: 3416888241324529566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 151
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e9b66b43ea852a0800000000000000
+      internalID: -6748452500192649586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 165
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8e4d8a76d2b4b40800000000000000
+      internalID: 5425480099335301332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 132
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee23603e92df7a1f0800000000000000
+      internalID: -1033579233113918738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 121
+        width: 15
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a27c69349501510800000000000000
+      internalID: 1517811221251172924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 153
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943b9c4d4af572630800000000000000
+      internalID: 3902192763689087817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 137
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d44242e3e66b4c0800000000000000
+      internalID: -4272105983340950265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 152
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0421d9144de8ab940800000000000000
+      internalID: 5312715752721945152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 127
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31ba0d9d5284ca90800000000000000
+      internalID: -7294562157855067842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 123
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9f1491af9cab730800000000000000
+      internalID: 4015744093756979676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 131
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ce1a4018cf78a10800000000000000
+      internalID: 1911774197900766258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 123
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fa9f68d868c31f0800000000000000
+      internalID: -1063827469553258610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 99
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1640d5593f962afd0800000000000000
+      internalID: -2332185162120625055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 121
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704ca86d0f04a5310800000000000000
+      internalID: 1394498437760336903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 93
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6ba902069fbaa20800000000000000
+      internalID: 3074825361869682407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 99
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc17afb84df8f1f0800000000000000
+      internalID: -1010779627449803594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 76
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61f40b95e1c6cd90800000000000000
+      internalID: -7077756572473691796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 57
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9e69d55ba75fd10800000000000000
+      internalID: 2158766515771861451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_19
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 71
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c73bc99c313ad500800000000000000
+      internalID: 421703651460593608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_20
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 69
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763219a110e4c4ee0800000000000000
+      internalID: -1275558827805039769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 77
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69acbfeb0ce650740800000000000000
+      internalID: 5117618325693385366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 57
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90380a82e96d93e0800000000000000
+      internalID: -2045362234057019235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_23
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 59
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b5b75c7425332b0800000000000000
+      internalID: -5606046642936784093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 71
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54b2061c28276ae0800000000000000
+      internalID: -1556230976420268965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_25
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 45
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4f3dfa786f0d650800000000000000
+      internalID: 6255770945048540326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 44
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfb2fbc7b3109400800000000000000
+      internalID: 328784452919672760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 57
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddebcbf13fb57790800000000000000
+      internalID: -7532904580308537895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7a06ebcca5fb490800000000000000
+      internalID: -7728358600130648107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_29
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 16
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21cabb1b88bf86d0800000000000000
+      internalID: -2985965120318160593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_30
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 15
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f082b22884db90640800000000000000
+      internalID: 5046772976564512783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_31
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 14
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc230bb82ac3cc860800000000000000
+      internalID: 7551477344019428044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_32
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d2149fd87ab1c380800000000000000
+      internalID: -8952669555925970215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_33
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6f8e1a92638d520800000000000000
+      internalID: 2726989126810793664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gothic_Column_34
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 8
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d988511d542d9390800000000000000
+      internalID: -7810046196648998446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gothic_Column_0: 3024745669637756204
+      Gothic_Column_1: 3416888241324529566
+      Gothic_Column_10: 4015744093756979676
+      Gothic_Column_11: 1911774197900766258
+      Gothic_Column_12: -1063827469553258610
+      Gothic_Column_13: -2332185162120625055
+      Gothic_Column_14: 1394498437760336903
+      Gothic_Column_15: 3074825361869682407
+      Gothic_Column_16: -1010779627449803594
+      Gothic_Column_17: -7077756572473691796
+      Gothic_Column_18: 2158766515771861451
+      Gothic_Column_19: 421703651460593608
+      Gothic_Column_2: -6748452500192649586
+      Gothic_Column_20: -1275558827805039769
+      Gothic_Column_21: 5117618325693385366
+      Gothic_Column_22: -2045362234057019235
+      Gothic_Column_23: -5606046642936784093
+      Gothic_Column_24: -1556230976420268965
+      Gothic_Column_25: 6255770945048540326
+      Gothic_Column_26: 328784452919672760
+      Gothic_Column_27: -7532904580308537895
+      Gothic_Column_28: -7728358600130648107
+      Gothic_Column_29: -2985965120318160593
+      Gothic_Column_3: 5425480099335301332
+      Gothic_Column_30: 5046772976564512783
+      Gothic_Column_31: 7551477344019428044
+      Gothic_Column_32: -8952669555925970215
+      Gothic_Column_33: 2726989126810793664
+      Gothic_Column_34: -7810046196648998446
+      Gothic_Column_4: -1033579233113918738
+      Gothic_Column_5: 1517811221251172924
+      Gothic_Column_6: 3902192763689087817
+      Gothic_Column_7: -4272105983340950265
+      Gothic_Column_8: 5312715752721945152
+      Gothic_Column_9: -7294562157855067842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

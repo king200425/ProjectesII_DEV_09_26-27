@@ -67,7 +67,7 @@ public class MainMenuManager : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("TrapTesting");
+        SceneManager.LoadScene("Level01_TorreDelOlvido");
     }
 
     public void OpenSettings()

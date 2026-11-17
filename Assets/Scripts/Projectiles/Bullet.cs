@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public float speed = 35f;
     public float lifetime = 3f;
     public int damage = 1;
+    [SerializeField, Min(0f)] private float offScreenPadding = 0.08f;
 
     [Header("Bullet Type")]
     public bool isGhostBullet = false;
@@ -26,6 +27,8 @@ public class Bullet : MonoBehaviour
     private int groundLayer;
 
     private TimeSlow timeSlow;
+    private Camera levelCamera;
+    private readonly RaycastHit2D[] solidHits = new RaycastHit2D[8];
     private float lifeRemaining;
 
     void Awake()
@@ -52,22 +55,25 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         timeSlow = FindFirstObjectByType<TimeSlow>();
+        if (TimeSlowPrototype.IsPresent)
+            levelCamera = Camera.main;
         lifeRemaining = lifetime;
     }
 
+    private float SlowMultiplier => timeSlow != null && timeSlow.IsTimeSlowed
+        ? timeSlow.slowMultiplier
+        : 1f;
+
     void Update()
     {
-        float multiplier = 1f;
-
-        if (timeSlow != null && timeSlow.IsTimeSlowed)
-        {
-            multiplier = timeSlow.slowMultiplier;
-        }
+        if (hasHit || Time.timeScale == 0f)
+            return;
 
         // Slow down bullet lifetime too
+        float multiplier = SlowMultiplier;
         lifeRemaining -= Time.deltaTime * multiplier;
 
-        if (lifeRemaining <= 0f)
+        if (lifeRemaining <= 0f || IsOutsideLevelView())
         {
             Destroy(gameObject);
             return;
@@ -77,41 +83,63 @@ public class Bullet : MonoBehaviour
         if (rb == null)
         {
             transform.position +=
-                transform.right * speed * multiplier * Time.deltaTime;
+                transform.right * speed * multiplier * TimeSlowPrototype.WorldScale * Time.deltaTime;
         }
     }
 
     void FixedUpdate()
     {
-        float multiplier = 1f;
+        if (rb == null || hasHit)
+            return;
 
-        if (timeSlow != null && timeSlow.IsTimeSlowed)
+        Vector2 direction = transform.right;
+        float currentSpeed = speed * SlowMultiplier * TimeSlowPrototype.WorldScale;
+        if (TimeSlowPrototype.IsPresent && hitCollider != null)
         {
-            multiplier = timeSlow.slowMultiplier;
+            var filter = new ContactFilter2D { useTriggers = false };
+            int count = hitCollider.Cast(direction, filter, solidHits, currentSpeed * Time.fixedDeltaTime);
+            for (int i = 0; i < count; i++)
+            {
+                RaycastHit2D hit = solidHits[i];
+                if (hit.collider.GetComponentInParent<PlayerHealth>() != null)
+                    continue;
+
+                if (TryImpact(hit.collider, hit))
+                    return;
+            }
         }
 
         // Movement with Rigidbody2D
-        if (rb != null)
-        {
-            rb.linearVelocity =
-                transform.right * speed * multiplier;
-        }
+        rb.linearVelocity = direction * currentSpeed;
+    }
+
+    private bool IsOutsideLevelView()
+    {
+        if (levelCamera == null)
+            return false;
+
+        Vector3 position = levelCamera.WorldToViewportPoint(transform.position);
+        return position.x < -offScreenPadding || position.x > 1f + offScreenPadding ||
+               position.y < -offScreenPadding || position.y > 1f + offScreenPadding;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit)
-            return;
+        if (!hasHit)
+            TryImpact(other);
+    }
 
+    private bool TryImpact(Collider2D other, RaycastHit2D hit = default)
+    {
         // Hit laser emitter
         LaserEmitter emitter =
             other.GetComponentInParent<LaserEmitter>();
 
         if (emitter != null)
         {
-            FinishImpact(other);
+            FinishImpact(other, hit);
             emitter.Hit(isGhostBullet);
-            return;
+            return true;
         }
 
         // Hit enemy
@@ -120,17 +148,29 @@ public class Bullet : MonoBehaviour
 
         if (enemy != null)
         {
-            FinishImpact(other);
+            FinishImpact(other, hit);
             enemy.TakeDamage(damage);
-            return;
+            return true;
         }
 
-        // Hit ground
-        if (other.gameObject.layer == groundLayer)
-            FinishImpact(other);
+        ShootSwitch shootSwitch = other.GetComponentInParent<ShootSwitch>();
+        if (shootSwitch != null)
+        {
+            FinishImpact(other, hit);
+            shootSwitch.Activate();
+            return true;
+        }
+
+        // Level doors can block shots on layers other than Ground.
+        if (other.gameObject.layer != groundLayer &&
+            (!TimeSlowPrototype.IsPresent || other.isTrigger || other.GetComponentInParent<PlayerHealth>() != null))
+            return false;
+
+        FinishImpact(other, hit);
+        return true;
     }
 
-    private void FinishImpact(Collider2D target)
+    private void FinishImpact(Collider2D target, RaycastHit2D hit)
     {
         hasHit = true;
         if (sparkMaterial != null)
@@ -138,7 +178,12 @@ public class Bullet : MonoBehaviour
             Vector2 travel = transform.right;
             Vector2 point = target.ClosestPoint(transform.position);
             Vector2 normal = -travel;
-            if (hitCollider != null)
+            if (hit.collider != null)
+            {
+                point = hit.point;
+                normal = hit.normal;
+            }
+            else if (hitCollider != null)
             {
                 ColliderDistance2D distance = hitCollider.Distance(target);
                 if (distance.isValid)

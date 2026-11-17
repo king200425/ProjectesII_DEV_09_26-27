@@ -10,6 +10,7 @@ public class PlayerShooting : MonoBehaviour
 
     // Time between shots
     public float fireRate = 0.1f;
+    [SerializeField, Range(0.01f, 1f)] private float slowFireScale = 0.15f;
 
     // Gun recoil component
     public GunRecoil gunRecoil;
@@ -17,7 +18,7 @@ public class PlayerShooting : MonoBehaviour
     // Gun aiming pivot
     public Transform gunPivot;
 
-    private float nextFireTime;
+    private float fireCooldown;
     private PlayerRecorder playerRecorder;
 
     void Start()
@@ -30,11 +31,14 @@ public class PlayerShooting : MonoBehaviour
         if (Time.timeScale == 0f)
             return;
 
+        if (fireCooldown > 0f)
+            fireCooldown -= Time.deltaTime * (TimeSlowPrototype.IsSlowed ? slowFireScale : 1f);
+
         // Hold left mouse button to shoot continuously
-        if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
+        if (Input.GetMouseButton(0) && fireCooldown <= 0f)
         {
             Shoot();
-            nextFireTime = Time.time + fireRate;
+            fireCooldown = fireRate;
         }
     }
 

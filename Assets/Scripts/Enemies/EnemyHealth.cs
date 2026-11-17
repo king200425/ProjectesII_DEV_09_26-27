@@ -4,16 +4,15 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [Header("Health")]
-    public int maxHealth = 3;
+    public int maxHealth = 4;
     public float hitFlashDuration = 0.12f;
-    public float deathDelay = 0.6f;
-    public float fadeDuration = 0.25f;
+    public float deathDelay = 0.8f;
+    public float fadeDuration = 0.35f;
 
     public bool IsDead { get; private set; }
     public int CurrentHealth { get; private set; }
 
     private SpriteRenderer spriteRenderer;
-    private Collider2D bodyCollider;
     private EnemyAI enemyAI;
     private EnemyAnimator enemyAnimator;
     private Color originalColor = Color.white;
@@ -28,7 +27,6 @@ public class EnemyHealth : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
-        bodyCollider = GetComponent<Collider2D>();
         enemyAI = GetComponent<EnemyAI>();
         enemyAnimator = GetComponent<EnemyAnimator>();
 
@@ -51,6 +49,9 @@ public class EnemyHealth : MonoBehaviour
             Die();
             return;
         }
+
+        if (enemyAI != null)
+            enemyAI.OnHit();
 
         if (flashRoutine != null)
             StopCoroutine(flashRoutine);
@@ -83,8 +84,11 @@ public class EnemyHealth : MonoBehaviour
             flashRoutine = null;
         }
 
-        if (bodyCollider != null)
-            bodyCollider.enabled = false;
+        foreach (Collider2D collider in
+                 GetComponentsInChildren<Collider2D>(true))
+        {
+            collider.enabled = false;
+        }
 
         if (enemyAI != null)
             enemyAI.enabled = false;
@@ -111,13 +115,19 @@ public class EnemyHealth : MonoBehaviour
         }
 
         Color color = spriteRenderer.color;
+        Vector3 startPosition = transform.position;
         float elapsed = 0f;
 
         while (elapsed < fadeDuration)
         {
             elapsed += Time.deltaTime;
-            color.a = Mathf.Lerp(1f, 0f, elapsed / fadeDuration);
+            float progress = Mathf.Clamp01(elapsed / fadeDuration);
+            color.a = Mathf.Lerp(1f, 0f, progress);
             spriteRenderer.color = color;
+            transform.position = startPosition +
+                Vector3.down * (progress * 0.15f);
+            transform.rotation = Quaternion.Euler(
+                0f, 0f, Mathf.Lerp(0f, -12f, progress));
             yield return null;
         }
 
