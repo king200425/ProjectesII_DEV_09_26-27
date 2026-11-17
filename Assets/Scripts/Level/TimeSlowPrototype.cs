@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TimeSlowPrototype : MonoBehaviour
 {
@@ -11,16 +11,6 @@ public class TimeSlowPrototype : MonoBehaviour
 
     private float remaining;
     private float cooldownRemaining;
-
-    public float RemainingRatio
-    {
-        get { return maxDuration > 0f ? Mathf.Clamp01(remaining / maxDuration) : 0f; }
-    }
-
-    public float CooldownRatio
-    {
-        get { return cooldown > 0f ? 1f - Mathf.Clamp01(cooldownRemaining / cooldown) : 1f; }
-    }
 
     void Awake()
     {

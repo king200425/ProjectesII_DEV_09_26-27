@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    public GameObject completePanel;
-
     private bool completed;
     private GUIStyle titleStyle;
     private GUIStyle bodyStyle;
@@ -17,24 +15,12 @@ public class LevelExit : MonoBehaviour
             return;
 
         completed = true;
-        Time.timeScale = 1f;
-
-        if (completePanel != null)
-        {
-            completePanel.SetActive(true);
-            Cursor.visible = true;
-        }
-
-        PauseMenuController pause = FindObjectOfType<PauseMenuController>();
-        if (pause != null)
-            pause.enabled = false;
-
         UnityEngine.Debug.Log("Nivel 1 completado");
     }
 
     void Update()
     {
-        if (!completed || completePanel != null)
+        if (!completed)
             return;
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -46,7 +32,7 @@ public class LevelExit : MonoBehaviour
 
     void OnGUI()
     {
-        if (!completed || completePanel != null)
+        if (!completed)
             return;
 
         if (titleStyle == null)

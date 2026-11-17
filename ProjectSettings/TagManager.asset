@@ -41,27 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background_Far
-    uniqueID: 0
-    locked: 0
-  - name: Background_Mid
-    uniqueID: 0
-    locked: 0
-  - name: Platforms
-    uniqueID: 0
-    locked: 0
-  - name: Hazards_Traps
-    uniqueID: 342464348
-    locked: 0
-  - name: Collectibles
-    uniqueID: 1287209979
-    locked: 0
-  - name: Player
-    uniqueID: 1875862075
-    locked: 0
-  - name: Foreground_Overlay
-    uniqueID: 815297996
-    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
