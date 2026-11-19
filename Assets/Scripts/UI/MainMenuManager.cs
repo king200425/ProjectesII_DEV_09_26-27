@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -5,107 +6,159 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
-    private const string VolumeKey = "MasterVolume";
-    private const string FullscreenKey = "Fullscreen";
-
-    [SerializeField] private GameObject mainButtons;
-    [SerializeField] private GameObject settingsPanel;
     [SerializeField] private Button startButton;
-    [SerializeField] private Button settingsButton;
-    [SerializeField] private Slider masterVolume;
-    [SerializeField] private Text volumeLabel;
-    [SerializeField] private Toggle fullscreen;
-    [SerializeField] private CanvasGroup leftCrystal;
-    [SerializeField] private CanvasGroup rightCrystal;
+    [SerializeField] private CanvasGroup mainButtons;
+    [SerializeField] private RectTransform outerDial;
+    [SerializeField] private RectTransform innerDial;
+    [SerializeField] private RectTransform sweepHand;
+    [SerializeField] private RectTransform hourHand;
+    [SerializeField] private RectTransform clockCore;
+    [SerializeField] private RawImage pinkGhost;
+    [SerializeField] private RawImage effects;
+    [SerializeField] private Text frameCounter;
+    [SerializeField] private Text frameDetails;
+    [SerializeField] private Text actionStatus;
+    [SerializeField] private Text timelineStatus;
+    [SerializeField] private Text phaseStatus;
+    [SerializeField] private Text cyanTitleEcho;
+    [SerializeField] private Text pinkTitleEcho;
+    [SerializeField, Min(.5f)] private float ignitionDuration = 2.2f;
 
-    private void Start()
+    private Material effectsMaterial;
+    private Material ghostMaterial;
+    private readonly System.Random glitchTiming = new(177);
+    private Vector2 ghostPosition;
+    private Vector2 cyanEchoPosition;
+    private Vector2 pinkEchoPosition;
+    private float nextGlitch;
+    private float glitchEnd;
+    private float ignition;
+    private float elapsedIgnition;
+    private float elapsedFrames;
+    private float feedbackUntil;
+    private int frames;
+    private bool starting;
+    private AsyncOperation sceneLoad;
+
+    private void Awake()
     {
-        if (masterVolume != null && volumeLabel != null)
-        {
-            float volume = Mathf.Clamp01(PlayerPrefs.GetFloat(VolumeKey, 1f));
-            AudioListener.volume = volume;
-            masterVolume.SetValueWithoutNotify(volume);
-            UpdateVolumeLabel(volume);
-        }
-
-        if (fullscreen != null)
-        {
-            if (PlayerPrefs.HasKey(FullscreenKey))
-                Screen.fullScreen = PlayerPrefs.GetInt(FullscreenKey) != 0;
-            fullscreen.SetIsOnWithoutNotify(Screen.fullScreen);
-        }
-
-        startButton?.Select();
+        effectsMaterial = new Material(effects.material);
+        effects.material = effectsMaterial;
+        ghostMaterial = new Material(pinkGhost.material);
+        pinkGhost.material = ghostMaterial;
+        ghostPosition = pinkGhost.rectTransform.anchoredPosition;
+        cyanEchoPosition = cyanTitleEcho.rectTransform.anchoredPosition;
+        pinkEchoPosition = pinkTitleEcho.rectTransform.anchoredPosition;
+        nextGlitch = Time.unscaledTime + 1.4f;
+        startButton.Select();
     }
 
     private void Update()
     {
+        float delta = Time.unscaledDeltaTime;
         float time = Time.unscaledTime;
-        if (leftCrystal != null)
-            leftCrystal.alpha = Pulse(time, 4f, .55f, .85f);
-        if (rightCrystal != null)
-            rightCrystal.alpha = Pulse(time, 3.5f, .60f, .90f);
-
-        if (Input.GetKeyDown(KeyCode.Escape) && settingsPanel != null && settingsPanel.activeSelf)
-            CloseSettings();
-
-        EventSystem events = EventSystem.current;
-        if (events != null && events.currentSelectedGameObject == null)
+        if (starting)
         {
-            if (settingsPanel != null && settingsPanel.activeSelf)
-                masterVolume.Select();
-            else
-                startButton?.Select();
+            elapsedIgnition += delta;
+            ignition = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(elapsedIgnition / 1.15f));
         }
-    }
 
-    private static float Pulse(float time, float period, float low, float high)
-    {
-        return Mathf.Lerp(low, high, .5f + .5f * Mathf.Cos(time * (2f * Mathf.PI / period)));
+        outerDial.Rotate(0f, 0f, -Mathf.Lerp(9f, 800f, ignition) * delta);
+        innerDial.Rotate(0f, 0f, Mathf.Lerp(14.4f, 1300f, ignition) * delta);
+        sweepHand.Rotate(0f, 0f, -Mathf.Lerp(45f, 2200f, ignition) * delta);
+        hourHand.Rotate(0f, 0f, -Mathf.Lerp(5f, 780f, ignition) * delta);
+        clockCore.localScale = Vector3.one * (1f + Mathf.Sin(time * (4f + 12f * ignition)) * (.025f + .09f * ignition));
+        effectsMaterial.SetFloat("_Ignition", ignition);
+
+        float titlePulse = Mathf.Pow(Mathf.Max(0f, Mathf.Sin(time * 1.65f)), 12f);
+        float titleSplit = Mathf.Round(titlePulse * 9f + ignition * 3f);
+        cyanTitleEcho.rectTransform.anchoredPosition = cyanEchoPosition + new Vector2(titleSplit, 0f);
+        pinkTitleEcho.rectTransform.anchoredPosition = pinkEchoPosition - new Vector2(Mathf.Round(titleSplit * 1.35f), 0f);
+        cyanTitleEcho.color = new Color(0f, .94f, 1f, .35f + titlePulse * .24f);
+        pinkTitleEcho.color = new Color(.79f, .39f, 1f, .36f + titlePulse * .2f);
+
+        if (time >= nextGlitch)
+        {
+            glitchEnd = time + .12f + (float)glitchTiming.NextDouble() * .09f;
+            nextGlitch = time + 2.5f + (float)glitchTiming.NextDouble() * 2.3f;
+        }
+        bool flickering = time < glitchEnd;
+        float shift = flickering ? Mathf.Round(Mathf.Sin(time * 113f) * 9f) : 0f;
+        pinkGhost.rectTransform.anchoredPosition = ghostPosition + new Vector2(shift, 0f);
+        ghostMaterial.SetFloat("_Glitch", flickering ? .85f : .025f);
+        pinkGhost.color = new Color(1f, 1f, 1f, flickering ? .4f + .6f * Mathf.Abs(Mathf.Sin(time * 91f)) : .84f);
+
+        elapsedFrames += delta;
+        frames++;
+        if (elapsedFrames >= .5f)
+        {
+            float average = elapsedFrames / frames;
+            frameCounter.text = Mathf.RoundToInt(1f / average) + " FPS";
+            frameDetails.text = (average * 1000f).ToString("F1") + " MS  //  " + Screen.width + " x " + Screen.height;
+            frames = 0;
+            elapsedFrames = 0f;
+        }
+
+        if (!starting && feedbackUntil > 0f && time >= feedbackUntil)
+        {
+            actionStatus.text = "SELECT A TIMELINE";
+            feedbackUntil = 0f;
+        }
+        if (!starting && EventSystem.current != null && EventSystem.current.currentSelectedGameObject == null)
+            startButton.Select();
     }
 
     public void StartGame()
     {
+        if (starting)
+            return;
+
+        if (!Application.CanStreamedLevelBeLoaded("Level01_TorreDelOlvido"))
+        {
+            actionStatus.text = "LEVEL01 UNAVAILABLE";
+            return;
+        }
+
+        starting = true;
+        mainButtons.interactable = false;
+        mainButtons.blocksRaycasts = false;
+        actionStatus.text = "INITIALIZING TEMPORAL RUN...";
+        timelineStatus.text = "TIMELINE // WARP ACTIVE";
+        phaseStatus.text = "CHRONO CORE // OVERCLOCKED";
+        StartCoroutine(EnterLevel());
+    }
+
+    private IEnumerator EnterLevel()
+    {
+        // Let the first acceleration frame render before Unity starts loading the level.
+        yield return null;
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Level01_TorreDelOlvido");
+        sceneLoad = SceneManager.LoadSceneAsync("Level01_TorreDelOlvido");
+        sceneLoad.allowSceneActivation = false;
+        while (elapsedIgnition < ignitionDuration || sceneLoad.progress < .9f)
+            yield return null;
+        sceneLoad.allowSceneActivation = true;
     }
 
     public void OpenSettings()
     {
-        settingsPanel.SetActive(true);
-        mainButtons.SetActive(false);
-        masterVolume.Select();
-    }
+        if (starting)
+            return;
 
-    public void CloseSettings()
-    {
-        mainButtons.SetActive(true);
-        settingsPanel.SetActive(false);
-        settingsButton.Select();
-    }
-
-    public void SetMasterVolume(float volume)
-    {
-        AudioListener.volume = volume;
-        UpdateVolumeLabel(volume);
-        PlayerPrefs.SetFloat(VolumeKey, volume);
-        PlayerPrefs.Save();
-    }
-
-    private void UpdateVolumeLabel(float volume)
-    {
-        volumeLabel.text = Mathf.RoundToInt(volume * 100f) + "%";
-    }
-
-    public void SetFullscreen(bool enabled)
-    {
-        Screen.fullScreen = enabled;
-        PlayerPrefs.SetInt(FullscreenKey, enabled ? 1 : 0);
-        PlayerPrefs.Save();
+        actionStatus.text = "SETTINGS // COMING SOON";
+        feedbackUntil = Time.unscaledTime + 1.6f;
     }
 
     public void QuitGame()
     {
+        if (starting)
+            return;
         Application.Quit();
+    }
+
+    private void OnDestroy()
+    {
+        Destroy(effectsMaterial);
+        Destroy(ghostMaterial);
     }
 }
