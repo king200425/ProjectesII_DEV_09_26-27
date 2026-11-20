@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CanvasRenderer))]
+// 光速转场粒子。运动只改变离中心的距离，方向固定，所以不会旋转成漩涡。
 public sealed class ChronoTunnelParticles : MaskableGraphic
 {
-    private struct Chronon
+    private struct Particle
     {
         public float phase;
         public float angle;
@@ -19,7 +20,7 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
         new(-1, 1), new(1, 1), new(0, 0), new(-1, -1), new(1, -1),
         new(-2, -2), new(-1, -2), new(0, -2), new(1, -2), new(2, -2),
     };
-    private Chronon[] chronons;
+    private Particle[] particles;
     private float cover;
     private bool revealing;
     private float travel;
@@ -38,22 +39,28 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
     protected override void OnPopulateMesh(VertexHelper mesh)
     {
         mesh.Clear();
+        // 淡入淡出控制整体亮度，不改变每个粒子的运动方向。
         float envelope = Mathf.SmoothStep(0f, 1f, cover / .26f);
         if (envelope < .001f)
             return;
         Initialize();
         Rect rect = rectTransform.rect;
         float pixelScale = rect.height / 1080f;
-        Vector2 focusUV = revealing ? new Vector2(.5f, .5f) : Vector2.Lerp(departureUV, new Vector2(.5f, .5f), Mathf.SmoothStep(0f, 1f, cover));
+        Vector2 focusUV = new Vector2(0.5f, 0.5f);
+        if (!revealing)
+            focusUV = Vector2.Lerp(departureUV, focusUV, Mathf.SmoothStep(0f, 1f, cover));
         Vector2 focus = rect.min + Vector2.Scale(focusUV, rect.size);
         if (revealing)
             envelope *= cover * cover;
 
-        for (int index = 0; index < chronons.Length; index++)
+        for (int index = 0; index < particles.Length; index++)
         {
-            Chronon mote = chronons[index];
+            Particle mote = particles[index];
             float depth = Mathf.Repeat(mote.phase + travel * mote.speed, 1f);
-            float opacity = envelope * Mathf.SmoothStep(0f, 1f, depth / .12f) * (1f - Mathf.SmoothStep(0f, 1f, (depth - .88f) / .12f));
+            // depth 循环从 0 到 1，表示从远处接近镜头的过程。
+            float fadeIn = Mathf.SmoothStep(0f, 1f, depth / 0.12f);
+            float fadeOut = 1f - Mathf.SmoothStep(0f, 1f, (depth - 0.88f) / 0.12f);
+            float opacity = envelope * fadeIn * fadeOut;
             if (opacity < .008f)
                 continue;
             Color tint = mote.tint;
@@ -72,9 +79,9 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
                     Vector2 next = Point(mote, trailDepth, focus, rect.height);
                     Color trailTint = tint;
                     trailTint.a *= segment / 3f * .52f;
-                    Line(mesh, previous, next, pixelScale * (1f + depth * 1.5f), trailTint);
+                    UiParticleDrawing.Line(mesh, previous, next, pixelScale * (1f + depth * 1.5f), trailTint);
                     trailTint.a *= .1f;
-                    Line(mesh, previous, next, pixelScale * (7f + depth * 8f), trailTint);
+                    UiParticleDrawing.Line(mesh, previous, next, pixelScale * (7f + depth * 8f), trailTint);
                     previous = next;
                 }
                 GlowPixel(mesh, position, size, tint);
@@ -95,17 +102,21 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
                 float dot = Mathf.Max(pixelScale, Mathf.Round((1.2f + depth * 1.2f) * pixelScale));
                 Color halo = tint;
                 halo.a *= .08f;
-                Square(mesh, position, dot * 11f, halo);
+                UiParticleDrawing.Square(mesh, position, dot * 11f, halo);
                 foreach (Vector2 pixel in HourglassPixels)
-                    Square(mesh, position + pixel * dot, dot, tint);
+                    UiParticleDrawing.Square(mesh, position + pixel * dot, dot, tint);
             }
         }
 
     }
 
-    private static float Radius(float depth) => .018f * Mathf.Exp(depth * 4.6f);
+    private static float Radius(float depth)
+    {
+        // 距离增长越来越快，产生接近镜头时突然掠过的感觉。
+        return 0.018f * Mathf.Exp(depth * 4.6f);
+    }
 
-    private static Vector2 Point(Chronon mote, float depth, Vector2 focus, float height)
+    private static Vector2 Point(Particle mote, float depth, Vector2 focus, float height)
     {
         float radius = Radius(depth);
         float angle = mote.angle;
@@ -114,19 +125,25 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
 
     private void Initialize()
     {
-        if (chronons != null)
+        if (particles != null)
             return;
         var random = new System.Random(11731);
-        chronons = new Chronon[192];
-        for (int index = 0; index < chronons.Length; index++)
+        particles = new Particle[192];
+        for (int index = 0; index < particles.Length; index++)
         {
-            chronons[index] = new Chronon
+            Color tint = new Color(0.05f, 0.91f, 1f);
+            if (index % 4 == 0)
+                tint = new Color(0.72f, 0.38f, 1f);
+            else if (index % 7 == 0)
+                tint = new Color(0.76f, 0.95f, 1f);
+
+            particles[index] = new Particle
             {
                 phase = (float)random.NextDouble(),
                 angle = (float)random.NextDouble() * Mathf.PI * 2f,
                 speed = .35f + (float)random.NextDouble() * .3f,
                 size = random.Next(2, 5),
-                tint = index % 4 == 0 ? new Color(.72f, .38f, 1f) : index % 7 == 0 ? new Color(.76f, .95f, 1f) : new Color(.05f, .91f, 1f),
+                tint = tint,
             };
         }
     }
@@ -135,34 +152,10 @@ public sealed class ChronoTunnelParticles : MaskableGraphic
     {
         Color halo = tint;
         halo.a *= .065f;
-        Square(mesh, position, size * 3f, halo);
-        Square(mesh, position, size, tint);
+        UiParticleDrawing.Square(mesh, position, size * 3f, halo);
+        UiParticleDrawing.Square(mesh, position, size, tint);
         if (size >= 4f)
-            Square(mesh, position, Mathf.Max(1f, size * .4f), new Color(.82f, 1f, 1f, tint.a * .85f));
+            UiParticleDrawing.Square(mesh, position, Mathf.Max(1f, size * .4f), new Color(.82f, 1f, 1f, tint.a * .85f));
     }
 
-    private static void Square(VertexHelper mesh, Vector2 center, float size, Color tint)
-    {
-        center = new Vector2(Mathf.Round(center.x), Mathf.Round(center.y));
-        Vector2 half = Vector2.one * (size * .5f);
-        Quad(mesh, center - half, center + new Vector2(-half.x, half.y), center + half, center + new Vector2(half.x, -half.y), tint);
-    }
-
-    private static void Line(VertexHelper mesh, Vector2 a, Vector2 b, float width, Color tint)
-    {
-        Vector2 direction = (b - a).normalized;
-        Vector2 side = new(-direction.y * width * .5f, direction.x * width * .5f);
-        Quad(mesh, a - side, a + side, b + side, b - side, tint);
-    }
-
-    private static void Quad(VertexHelper mesh, Vector2 a, Vector2 b, Vector2 c, Vector2 d, Color32 tint)
-    {
-        int first = mesh.currentVertCount;
-        mesh.AddVert(a, tint, Vector2.zero);
-        mesh.AddVert(b, tint, Vector2.zero);
-        mesh.AddVert(c, tint, Vector2.zero);
-        mesh.AddVert(d, tint, Vector2.zero);
-        mesh.AddTriangle(first, first + 1, first + 2);
-        mesh.AddTriangle(first, first + 2, first + 3);
-    }
 }

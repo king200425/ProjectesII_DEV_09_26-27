@@ -63,15 +63,6 @@ public sealed class SaveSelectManager : MonoBehaviour
         }
     }
 
-    public void Configure(SaveSlotView[] views, Button back, Text message, Material transition)
-    {
-        slots = views;
-        backButton = back;
-        feedback = message;
-        transitionMaterial = transition;
-        RefreshPresentation();
-    }
-
     public void RefreshPresentation()
     {
         if (!Ready())
@@ -127,18 +118,8 @@ public sealed class SaveSelectManager : MonoBehaviour
         Time.timeScale = 1f;
         var loading = SceneManager.LoadSceneAsync(firstLevel);
         loading.allowSceneActivation = false;
-        while (loading.progress < .9f)
-            yield return null;
-        yield return new WaitForEndOfFrame();
-        Texture2D departure = ScreenCapture.CaptureScreenshotAsTexture();
-        var card = (RectTransform)slots[index].transform;
-        var focusObject = new GameObject("Archive Entry Focus", typeof(RectTransform));
-        var focus = (RectTransform)focusObject.transform;
-        focus.position = card.TransformPoint(card.rect.center);
-        var transition = ChronoSceneTransition.Create(transitionMaterial, departure, focus);
-        Destroy(focusObject);
-        yield return transition.Cover();
-        transition.Activate(loading);
+        // 和主菜单共用转场，直接传入卡片，不再创建临时定位对象。
+        yield return ChronoSceneTransition.Play(loading, transitionMaterial, (RectTransform)slots[index].transform);
     }
 
     public void Back()
