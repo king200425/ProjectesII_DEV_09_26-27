@@ -3,7 +3,9 @@ Shader "UI/Chrono Echo"
     Properties
     {
         [PerRendererData] _MainTex ("Graphic Texture", 2D) = "white" {}
-        _Mode ("0 Screen, 1 Echo", Float) = 0
+        _Mode ("0 Screen, 1 Echo, 2 Tunnel, 3 Particles", Float) = 0
+        [HideInInspector] _SrcBlend ("Source Blend", Float) = 5
+        [HideInInspector] _DstBlend ("Destination Blend", Float) = 10
         _Ignition ("Clock Ignition", Range(0,1)) = 0
         _Glitch ("Echo Interference", Range(0,1)) = 0
         _Cover ("Transition Coverage", Range(0,1)) = 0
@@ -21,7 +23,7 @@ Shader "UI/Chrono Echo"
         Lighting Off
         ZWrite Off
         ZTest [unity_GUIZTestMode]
-        Blend SrcAlpha OneMinusSrcAlpha
+        Blend [_SrcBlend] [_DstBlend]
         Pass
         {
             CGPROGRAM
@@ -61,9 +63,17 @@ Shader "UI/Chrono Echo"
             float4 Frag(Varyings input) : SV_Target
             {
                 float time = _Time.y;
+                if (_Mode > 2.5)
+                {
+                    float3 temporalTint = input.color.rgb;
+                    #ifndef UNITY_COLORSPACE_GAMMA
+                        temporalTint = GammaToLinearSpace(temporalTint);
+                    #endif
+                    return float4(temporalTint, input.color.a);
+                }
                 if (_Mode > 1.5)
                 {
-                    // Perspective rings and continuous light trails pass the viewer.
+                    // Straight perspective lanes stream past a fixed vanishing point.
                     float2 uv = floor(input.uv * float2(640.0, 360.0)) / float2(640.0, 360.0);
                     float entry = smoothstep(0.0, 1.0, _Cover);
                     float2 focus = lerp(_ClockUV.xy, float2(.5, .5), lerp(entry, 1.0, _Reveal));
@@ -71,72 +81,57 @@ Shader "UI/Chrono Echo"
                     float radius = length(offset);
                     float angle = atan2(offset.y, offset.x);
                     float turn = angle / 6.2831853 + .5;
-                    float3 cyan = float3(.02, .84, 1.0);
-                    float3 violet = float3(.65, .29, .98);
-                    float3 tint = float3(.004, .008, .026);
-                    float envelope = smoothstep(0.0, .26, _Cover);
+                    float3 cyan = float3(.10, .70, 1.0);
+                    float3 violet = float3(.68, .39, 1.0);
+                    float3 tint = float3(.008, .018, .055);
+                    float envelope = smoothstep(0.0, .22, _Cover);
 
-                    [unroll]
-                    for (int i = 0; i < 9; i++)
-                    {
-                        float depth = frac(i / 9.0 + _Travel * .37);
-                        float ringRadius = .025 * pow(60.0, depth);
-                        float thickness = .0015 + ringRadius * .004;
-                        float ring = Ring(radius, ringRadius, thickness);
-                        float dialTurn = turn + _Travel * (.018 + i * .002) * (1.0 - 2.0 * fmod(i, 2.0));
-                        float ticks = 1.0 - smoothstep(.025, .07, abs(frac(dialTurn * 60.0) - .5));
-                        float major = 1.0 - smoothstep(.03, .09, abs(frac(dialTurn * 12.0) - .5));
-                        float tickBand = step(ringRadius, radius) * step(radius, ringRadius * (1.04 + major * .06));
-                        float arcs = step(.19, frac(dialTurn * 6.0 + i * .17));
-                        float brightness = smoothstep(0.0, .14, depth) * (1.0 - smoothstep(.90, 1.0, depth));
-                        float marks = (ring * arcs * .68 + tickBand * (ticks * .65 + major * .4)) * brightness;
-                        tint += lerp(cyan, violet, fmod(i, 3.0) * .35) * marks;
-                        tint += cyan * Ring(radius, ringRadius, thickness * 5.0) * .07 * brightness;
-                    }
-
-                    // Each light has its own depth and speed, with no polygon borders.
-                    float sector = floor(turn * 220.0);
+                    // Soft longitudinal streams establish depth without rotating the view.
+                    float sector = floor(turn * 100.0);
                     float seed = Hash(sector * 19.7);
-                    float lane = abs(frac(turn * 220.0) - .5);
-                    float lightDepth = frac(seed + _Travel * (.5 + Hash(sector + 37.0) * .35));
-                    float lightRadius = .022 * pow(70.0, lightDepth);
-                    float head = Ring(radius, lightRadius, .002 + lightRadius * .008);
-                    float trail = smoothstep(lightRadius * .56, lightRadius, radius) * step(radius, lightRadius);
-                    float streak = (1.0 - smoothstep(.035, .13, lane)) * (head + trail * .62);
-                    streak *= step(.36, seed) * smoothstep(.015, .08, radius);
-                    tint += lerp(cyan, violet, step(.67, seed)) * streak * 1.25;
+                    float lane = abs(frac(turn * 100.0) - .5);
+                    float lightDepth = frac(seed + _Travel * (.43 + Hash(sector + 37.0) * .21));
+                    float lightRadius = .018 * exp(lightDepth * 4.6);
+                    float trail = smoothstep(lightRadius * .22, lightRadius, radius) * step(radius, lightRadius);
+                    float head = Ring(radius, lightRadius, .002 + lightRadius * .003);
+                    float beam = (1.0 - smoothstep(.025, .11, lane)) * (trail * .65 + head);
+                    beam *= step(.22, seed) * smoothstep(.025, .12, radius);
+                    float haze = pow(saturate(1.0 - lane * 2.0), 4.0) * trail * .065;
+                    tint += lerp(cyan, violet, step(.72, seed)) * (beam + haze);
 
-                    float spiral = .5 + .5 * sin(angle * 3.0 - log(max(radius, .012)) * 5.0 + _Travel * 4.0);
-                    tint += lerp(cyan, violet, spiral) * .025 * exp(-radius * 1.9);
-                    tint += cyan * exp(-radius * 36.0) * .16;
-                    float scan = .93 + .07 * step(1.0, fmod(input.uv.y * 1080.0, 3.0));
+                    float broadLane = .5 + .5 * sin(angle * 9.0 + Hash(floor(turn * 9.0)) * 3.0);
+                    float streamPulse = .65 + .35 * sin(radius * 5.0 - _Travel * 5.0 + seed * 6.0);
+                    float3 streamTint = lerp(cyan, violet, smoothstep(-.25, .45, offset.x));
+                    tint += streamTint * pow(broadLane, 12.0) * streamPulse * .11 * smoothstep(.035, .25, radius);
+                    tint += cyan * exp(-radius * 5.0) * .13;
+                    tint += float3(.76, .94, 1.0) * exp(-radius * 38.0) * .9;
+                    float scan = .96 + .04 * step(1.0, fmod(input.uv.y * 1080.0, 3.0));
                     tint *= scan;
                     #ifndef UNITY_COLORSPACE_GAMMA
                         tint = GammaToLinearSpace(tint);
                     #endif
 
-                    // The actual menu stretches into its clock, leaving temporal echoes.
-                    float zoom = 1.0 + pow(entry, 1.5) * 5.0;
+                    // Departure stretches towards the light and leaves brief color echoes.
+                    float zoom = 1.0 + pow(entry, 1.7) * 8.0;
                     float2 sceneUV = _ClockUV.xy + (input.uv - focus) / zoom;
-                    float split = entry * .009;
+                    float split = entry * .007;
                     float3 scene = tex2D(_MainTex, sceneUV).rgb;
                     scene.r = tex2D(_MainTex, sceneUV + float2(split, 0.0)).r;
                     scene.b = tex2D(_MainTex, sceneUV - float2(split, 0.0)).b;
-                    float2 echoUV = _ClockUV.xy + (input.uv - focus) / (zoom * 1.1);
-                    scene += tex2D(_MainTex, echoUV).rgb * float3(.02, .14, .19) * sin(entry * 3.14159265);
+                    float2 echoUV = _ClockUV.xy + (input.uv - focus) / (zoom * 1.15);
+                    scene += tex2D(_MainTex, echoUV).rgb * float3(.03, .12, .2) * sin(entry * 3.14159265);
                     #ifndef UNITY_COLORSPACE_GAMMA
                         // ScreenCapture contains the display's gamma-encoded colors.
                         scene = GammaToLinearSpace(scene);
                     #endif
-                    float sceneFade = (1.0 - smoothstep(.12, .76, entry)) * (1.0 - _Reveal);
+                    float sceneFade = (1.0 - smoothstep(.03, .55, entry)) * (1.0 - _Reveal);
                     float3 color = scene * sceneFade + tint * envelope;
 
-                    // Arrival opens a circular aperture at the far end of the tunnel.
+                    // Arrival passes through the front light into the new scene.
                     float exit = 1.0 - _Cover;
-                    float aperture = pow(exit, .9) * 1.55 - .04;
-                    float edge = Ring(radius, max(0.0, aperture), .008 + exit * .008) * sin(exit * 3.14159265);
-                    color += cyan * edge * _Reveal;
-                    float opacity = lerp(smoothstep(0.0, .055, _Cover), smoothstep(aperture - .018, aperture + .018, radius), _Reveal);
+                    float daylight = exp(-radius / (.025 + exit * 3.0)) * sin(exit * 3.14159265) * _Reveal;
+                    color += float3(.68, .9, 1.0) * daylight * .9;
+                    float opacity = lerp(smoothstep(0.0, .055, _Cover), 1.0 - smoothstep(.12, .94, exit), _Reveal);
                     opacity = lerp(opacity, 0.0, step(.999, exit) * _Reveal);
                     return float4(color, opacity);
                 }

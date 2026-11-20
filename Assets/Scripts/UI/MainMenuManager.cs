@@ -23,7 +23,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Text cyanTitleEcho;
     [SerializeField] private Text pinkTitleEcho;
     [SerializeField] private ChronoMenuParticles timeParticles;
-    [SerializeField] private string destinationScene = "Level01_TorreDelOlvido";
+    [SerializeField] private string destinationScene = "SaveSelect";
     [SerializeField, Min(.5f)] private float ignitionDuration = 2.2f;
 
     private Material effectsMaterial;

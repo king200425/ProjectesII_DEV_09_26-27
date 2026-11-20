@@ -2063,7 +2063,7 @@ MonoBehaviour:
   cyanTitleEcho: {fileID: 787478870}
   pinkTitleEcho: {fileID: 1762603779}
   timeParticles: {fileID: 61686753}
-  destinationScene: Level01_TorreDelOlvido
+  destinationScene: SaveSelect
   ignitionDuration: 2.2
 --- !u!4 &1130364154
 Transform:
