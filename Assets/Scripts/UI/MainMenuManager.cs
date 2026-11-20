@@ -22,6 +22,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Text phaseStatus;
     [SerializeField] private Text cyanTitleEcho;
     [SerializeField] private Text pinkTitleEcho;
+    [SerializeField] private ChronoMenuParticles timeParticles;
+    [SerializeField] private string destinationScene = "Level01_TorreDelOlvido";
     [SerializeField, Min(.5f)] private float ignitionDuration = 2.2f;
 
     private Material effectsMaterial;
@@ -39,6 +41,7 @@ public class MainMenuManager : MonoBehaviour
     private int frames;
     private bool starting;
     private AsyncOperation sceneLoad;
+    private float burstStarted = -1f;
 
     private void Awake()
     {
@@ -57,6 +60,8 @@ public class MainMenuManager : MonoBehaviour
     {
         float delta = Time.unscaledDeltaTime;
         float time = Time.unscaledTime;
+        float charge = starting ? Mathf.Clamp01(elapsedIgnition / ignitionDuration) : 0f;
+        float burst = burstStarted < 0f ? 0f : Mathf.Clamp01((time - burstStarted) / .75f);
         if (starting)
         {
             elapsedIgnition += delta;
@@ -67,8 +72,12 @@ public class MainMenuManager : MonoBehaviour
         innerDial.Rotate(0f, 0f, Mathf.Lerp(14.4f, 1300f, ignition) * delta);
         sweepHand.Rotate(0f, 0f, -Mathf.Lerp(45f, 2200f, ignition) * delta);
         hourHand.Rotate(0f, 0f, -Mathf.Lerp(5f, 780f, ignition) * delta);
-        clockCore.localScale = Vector3.one * (1f + Mathf.Sin(time * (4f + 12f * ignition)) * (.025f + .09f * ignition));
+        float coreSize = Mathf.Lerp(1f, .72f, charge) + Mathf.Sin(Mathf.Min(1f, burst * 4f) * Mathf.PI) * .45f;
+        clockCore.localScale = Vector3.one * coreSize * (1f + Mathf.Sin(time * (4f + 12f * ignition)) * (.025f + .09f * ignition));
         effectsMaterial.SetFloat("_Ignition", ignition);
+        effectsMaterial.SetFloat("_Charge", charge);
+        effectsMaterial.SetFloat("_Burst", burst);
+        timeParticles.SetIgnition(ignition);
 
         float titlePulse = Mathf.Pow(Mathf.Max(0f, Mathf.Sin(time * 1.65f)), 12f);
         float titleSplit = Mathf.Round(titlePulse * 9f + ignition * 3f);
@@ -113,9 +122,9 @@ public class MainMenuManager : MonoBehaviour
         if (starting)
             return;
 
-        if (!Application.CanStreamedLevelBeLoaded("Level01_TorreDelOlvido"))
+        if (!Application.CanStreamedLevelBeLoaded(destinationScene))
         {
-            actionStatus.text = "LEVEL01 UNAVAILABLE";
+            actionStatus.text = "DESTINATION UNAVAILABLE";
             return;
         }
 
@@ -125,6 +134,7 @@ public class MainMenuManager : MonoBehaviour
         actionStatus.text = "INITIALIZING TEMPORAL RUN...";
         timelineStatus.text = "TIMELINE // WARP ACTIVE";
         phaseStatus.text = "CHRONO CORE // OVERCLOCKED";
+        timeParticles.BeginIgnition();
         StartCoroutine(EnterLevel());
     }
 
@@ -133,11 +143,18 @@ public class MainMenuManager : MonoBehaviour
         // Let the first acceleration frame render before Unity starts loading the level.
         yield return null;
         Time.timeScale = 1f;
-        sceneLoad = SceneManager.LoadSceneAsync("Level01_TorreDelOlvido");
+        sceneLoad = SceneManager.LoadSceneAsync(destinationScene);
         sceneLoad.allowSceneActivation = false;
         while (elapsedIgnition < ignitionDuration || sceneLoad.progress < .9f)
             yield return null;
-        sceneLoad.allowSceneActivation = true;
+        burstStarted = Time.unscaledTime;
+        timeParticles.BeginBurst();
+        phaseStatus.text = "CHRONO CORE // TIMELINE ENTRY";
+        yield return new WaitForEndOfFrame();
+        Texture2D departure = ScreenCapture.CaptureScreenshotAsTexture();
+        var transition = ChronoSceneTransition.Create(effectsMaterial, departure, clockCore);
+        yield return transition.Cover();
+        transition.Activate(sceneLoad);
     }
 
     public void OpenSettings()
