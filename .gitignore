@@ -107,3 +107,25 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+# Local temporary build and agent diagnostics
+/.buildtemp/
+/BuildTemp/
+/AclReports/
+/UpgradeLog.htm
+
+# Temporary editor scripts
+/Assets/Editor/
+
+# Test / overview scenes
+/Assets/Scenes/Levels/Level01_ABCOverview.unity*
+/Assets/Scenes/Levels/Level01_ABOverview.unity*
+/Assets/Scenes/Levels/Level01_ABlockout.unity*
+/Assets/Scenes/Levels/Level01_AOnly.unity*
+/Assets/Scenes/Levels/Level01_AOnlyClean.unity*
+/Assets/Scenes/Levels/Level01_ATest.unity*
+/Assets/Scenes/Levels/Level01_CBlockout.unity*
+/Assets/Scenes/Levels/Level01_COverview.unity*
+/Assets/Scenes/Levels/Level01_D_Overview.unity*
+/Assets/Scenes/Levels/Level01_E_Overview.unity*
+/Assets/Scenes/Levels/Level01_F_Overview.unity*
+/Assets/Scenes/Levels/Level01_InteriorTest.unity*
