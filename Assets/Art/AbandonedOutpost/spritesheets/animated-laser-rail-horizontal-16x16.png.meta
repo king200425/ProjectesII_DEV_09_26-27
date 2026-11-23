@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 7f44be89dad54887955c7808b8b0872b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5162097201826331195
+    second: 'animated-laser-rail-horizontal-16x16_r00_c00'
+  - first:
+      213: 4974937016145871765
+    second: 'animated-laser-rail-horizontal-16x16_r00_c01'
+  - first:
+      213: 5417413192587966443
+    second: 'animated-laser-rail-horizontal-16x16_r00_c02'
+  - first:
+      213: 5425987354808614167
+    second: 'animated-laser-rail-horizontal-16x16_r00_c03'
+  - first:
+      213: 4626492280183581969
+    second: 'animated-laser-rail-horizontal-16x16_r00_c04'
+  - first:
+      213: 5129766580656037221
+    second: 'animated-laser-rail-horizontal-16x16_r00_c05'
+  - first:
+      213: 5284825665279512564
+    second: 'animated-laser-rail-horizontal-16x16_r00_c06'
+  - first:
+      213: 5460447205737464449
+    second: 'animated-laser-rail-horizontal-16x16_r00_c07'
+  - first:
+      213: 5259936962921782494
+    second: 'animated-laser-rail-horizontal-16x16_r00_c08'
+  - first:
+      213: 5463128763107061320
+    second: 'animated-laser-rail-horizontal-16x16_r00_c09'
+  - first:
+      213: 4777169268752074128
+    second: 'animated-laser-rail-horizontal-16x16_r00_c10'
+  - first:
+      213: 5568446783710312430
+    second: 'animated-laser-rail-horizontal-16x16_r00_c11'
+  - first:
+      213: 5399991541893288483
+    second: 'animated-laser-rail-horizontal-16x16_r01_c00'
+  - first:
+      213: 5201302649292632616
+    second: 'animated-laser-rail-horizontal-16x16_r01_c01'
+  - first:
+      213: 5712268930084944383
+    second: 'animated-laser-rail-horizontal-16x16_r01_c02'
+  - first:
+      213: 5401973567489227241
+    second: 'animated-laser-rail-horizontal-16x16_r01_c03'
+  - first:
+      213: 4992034368552454531
+    second: 'animated-laser-rail-horizontal-16x16_r01_c04'
+  - first:
+      213: 5475462228767572023
+    second: 'animated-laser-rail-horizontal-16x16_r01_c05'
+  - first:
+      213: 5182763675538734639
+    second: 'animated-laser-rail-horizontal-16x16_r01_c06'
+  - first:
+      213: 5541124204909059514
+    second: 'animated-laser-rail-horizontal-16x16_r01_c07'
+  - first:
+      213: 4667809037677581278
+    second: 'animated-laser-rail-horizontal-16x16_r01_c08'
+  - first:
+      213: 5110731736673132878
+    second: 'animated-laser-rail-horizontal-16x16_r01_c09'
+  - first:
+      213: 5475290257617573776
+    second: 'animated-laser-rail-horizontal-16x16_r01_c10'
+  - first:
+      213: 5720563044176656074
+    second: 'animated-laser-rail-horizontal-16x16_r01_c11'
+  - first:
+      213: 4629313256075194212
+    second: 'animated-laser-rail-horizontal-16x16_r01_c12'
+  - first:
+      213: 4689892554441549575
+    second: 'animated-laser-rail-horizontal-16x16_r01_c14'
+  - first:
+      213: 5027527340051041305
+    second: 'animated-laser-rail-horizontal-16x16_r02_c00'
+  - first:
+      213: 5624251516953384329
+    second: 'animated-laser-rail-horizontal-16x16_r02_c02'
+  - first:
+      213: 4819287241358900619
+    second: 'animated-laser-rail-horizontal-16x16_r02_c03'
+  - first:
+      213: 5681128917880354359
+    second: 'animated-laser-rail-horizontal-16x16_r02_c04'
+  - first:
+      213: 5295766500740824568
+    second: 'animated-laser-rail-horizontal-16x16_r02_c05'
+  - first:
+      213: 5002578280979578457
+    second: 'animated-laser-rail-horizontal-16x16_r02_c06'
+  - first:
+      213: 4719080913300174858
+    second: 'animated-laser-rail-horizontal-16x16_r02_c07'
+  - first:
+      213: 4800253501293210237
+    second: 'animated-laser-rail-horizontal-16x16_r02_c08'
+  - first:
+      213: 5595938113296714881
+    second: 'animated-laser-rail-horizontal-16x16_r02_c09'
+  - first:
+      213: 4961852180309358461
+    second: 'animated-laser-rail-horizontal-16x16_r02_c10'
+  - first:
+      213: 4988846833346143545
+    second: 'animated-laser-rail-horizontal-16x16_r02_c11'
+  - first:
+      213: 5382287452962399374
+    second: 'animated-laser-rail-horizontal-16x16_r02_c12'
+  - first:
+      213: 4717615649385731248
+    second: 'animated-laser-rail-horizontal-16x16_r02_c13'
+  - first:
+      213: 5737544283011974819
+    second: 'animated-laser-rail-horizontal-16x16_r02_c14'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae57a3b740e47a38fa8e336a43ee369
+      internalID: 5162097201826331195
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b51039586db450a9e2e6828fd632211
+      internalID: 4974937016145871765
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b877eb84984b2e806957abfd82ad10
+      internalID: 5417413192587966443
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4720fd17fac04b4c954c6c7a3cd3cbc5
+      internalID: 5425987354808614167
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746ded119a374034a780dd25c24f46f1
+      internalID: 4626492280183581969
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ac5d6597864730b8acf809c74051d3
+      internalID: 5129766580656037221
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eda4ff478f149579c9187c1b401fb80
+      internalID: 5284825665279512564
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc1828167cd4bc7890998995115d25b
+      internalID: 5460447205737464449
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e65cde0ccc48ff974d44967b46234c
+      internalID: 5259936962921782494
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47372e48eeaa4bd08964dd501d261d26
+      internalID: 5463128763107061320
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c10'
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe14590ea23424b8df452e26f6e85a3
+      internalID: 4777169268752074128
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r00_c11'
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb837ee18d84d47bd9d487c1ae17373
+      internalID: 5568446783710312430
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca9d2239fb24af0b117d5a70167b0a9
+      internalID: 5399991541893288483
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac62b228bd33482ea55e05d7947ada0a
+      internalID: 5201302649292632616
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b736b9ff0e534f46959411c989d3f9b7
+      internalID: 5712268930084944383
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83eb9e9aa564af79a2f05050070268e
+      internalID: 5401973567489227241
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1c498344cf4547a0ca425f2ccd6dda
+      internalID: 4992034368552454531
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c28037bfe34bfc9f991dedb7081ab7
+      internalID: 5475462228767572023
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b48be2fe01a47ec92b2d4ad4aae2fd5
+      internalID: 5182763675538734639
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ec5dba071b4ce68b20023b002a244e
+      internalID: 5541124204909059514
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22153de639640c7a1eba840231d466f
+      internalID: 4667809037677581278
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab7a14ef76f46ec9b8aec10000b3ce1
+      internalID: 5110731736673132878
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c10'
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df73d790237a4bfc9a674fac2b9c3230
+      internalID: 5475290257617573776
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c11'
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36076ca85c74f63a77adac5fca22d64
+      internalID: 5720563044176656074
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c12'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165e6f649fe1403ea39732e8b0d27138
+      internalID: 4629313256075194212
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r01_c14'
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3ce707d86e4115a60e5323abefb216
+      internalID: 4689892554441549575
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924e8c195d7a45c5bffc31b33c95c8b0
+      internalID: 5027527340051041305
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37555895af44e0d8e24232e568619b1
+      internalID: 5624251516953384329
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc4fd8b8c3642e19fb07fba60286e45
+      internalID: 4819287241358900619
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17536376ca64ed7a0214dd14c71d5d7
+      internalID: 5681128917880354359
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0211fdf85793497eadb2d842f92df616
+      internalID: 5295766500740824568
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16df3e59ba71456cb53af2d60bd27a9c
+      internalID: 5002578280979578457
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f95380a8b16417daa57ca27bac584b0
+      internalID: 4719080913300174858
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68682a7ded20429d88a3b7c8f6081a89
+      internalID: 4800253501293210237
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41ecc81c4104da8aaa0519d4b84657e
+      internalID: 5595938113296714881
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c10'
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db56377d0a4444dca872da43f86b6779
+      internalID: 4961852180309358461
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c11'
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6de539f1c3453bb62f9f5e193debd6
+      internalID: 4988846833346143545
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c12'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dda48eb9ec4ab19fe8703303f16e01
+      internalID: 5382287452962399374
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c13'
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2875d4b056704178bb47080aa8e18ad5
+      internalID: 4717615649385731248
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-rail-horizontal-16x16_r02_c14'
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680086a3da204f9f94ef21a65d99b437
+      internalID: 5737544283011974819
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 69b3b6de80334312acf1e33386fbc78e
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'animated-laser-rail-horizontal-16x16_r00_c00': 5162097201826331195
+      'animated-laser-rail-horizontal-16x16_r00_c01': 4974937016145871765
+      'animated-laser-rail-horizontal-16x16_r00_c02': 5417413192587966443
+      'animated-laser-rail-horizontal-16x16_r00_c03': 5425987354808614167
+      'animated-laser-rail-horizontal-16x16_r00_c04': 4626492280183581969
+      'animated-laser-rail-horizontal-16x16_r00_c05': 5129766580656037221
+      'animated-laser-rail-horizontal-16x16_r00_c06': 5284825665279512564
+      'animated-laser-rail-horizontal-16x16_r00_c07': 5460447205737464449
+      'animated-laser-rail-horizontal-16x16_r00_c08': 5259936962921782494
+      'animated-laser-rail-horizontal-16x16_r00_c09': 5463128763107061320
+      'animated-laser-rail-horizontal-16x16_r00_c10': 4777169268752074128
+      'animated-laser-rail-horizontal-16x16_r00_c11': 5568446783710312430
+      'animated-laser-rail-horizontal-16x16_r01_c00': 5399991541893288483
+      'animated-laser-rail-horizontal-16x16_r01_c01': 5201302649292632616
+      'animated-laser-rail-horizontal-16x16_r01_c02': 5712268930084944383
+      'animated-laser-rail-horizontal-16x16_r01_c03': 5401973567489227241
+      'animated-laser-rail-horizontal-16x16_r01_c04': 4992034368552454531
+      'animated-laser-rail-horizontal-16x16_r01_c05': 5475462228767572023
+      'animated-laser-rail-horizontal-16x16_r01_c06': 5182763675538734639
+      'animated-laser-rail-horizontal-16x16_r01_c07': 5541124204909059514
+      'animated-laser-rail-horizontal-16x16_r01_c08': 4667809037677581278
+      'animated-laser-rail-horizontal-16x16_r01_c09': 5110731736673132878
+      'animated-laser-rail-horizontal-16x16_r01_c10': 5475290257617573776
+      'animated-laser-rail-horizontal-16x16_r01_c11': 5720563044176656074
+      'animated-laser-rail-horizontal-16x16_r01_c12': 4629313256075194212
+      'animated-laser-rail-horizontal-16x16_r01_c14': 4689892554441549575
+      'animated-laser-rail-horizontal-16x16_r02_c00': 5027527340051041305
+      'animated-laser-rail-horizontal-16x16_r02_c02': 5624251516953384329
+      'animated-laser-rail-horizontal-16x16_r02_c03': 4819287241358900619
+      'animated-laser-rail-horizontal-16x16_r02_c04': 5681128917880354359
+      'animated-laser-rail-horizontal-16x16_r02_c05': 5295766500740824568
+      'animated-laser-rail-horizontal-16x16_r02_c06': 5002578280979578457
+      'animated-laser-rail-horizontal-16x16_r02_c07': 4719080913300174858
+      'animated-laser-rail-horizontal-16x16_r02_c08': 4800253501293210237
+      'animated-laser-rail-horizontal-16x16_r02_c09': 5595938113296714881
+      'animated-laser-rail-horizontal-16x16_r02_c10': 4961852180309358461
+      'animated-laser-rail-horizontal-16x16_r02_c11': 4988846833346143545
+      'animated-laser-rail-horizontal-16x16_r02_c12': 5382287452962399374
+      'animated-laser-rail-horizontal-16x16_r02_c13': 4717615649385731248
+      'animated-laser-rail-horizontal-16x16_r02_c14': 5737544283011974819
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

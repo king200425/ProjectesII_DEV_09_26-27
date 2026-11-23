@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: a4e9d6bae012442d958f96616de526e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5736837332321595408
+    second: 'tiles-props-16x16_r00_c00'
+  - first:
+      213: 5151982104413875389
+    second: 'tiles-props-16x16_r00_c01'
+  - first:
+      213: 5019756571284784764
+    second: 'tiles-props-16x16_r00_c02'
+  - first:
+      213: 4636508793695497482
+    second: 'tiles-props-16x16_r00_c03'
+  - first:
+      213: 4863381120645314870
+    second: 'tiles-props-16x16_r01_c00'
+  - first:
+      213: 5443174556415311365
+    second: 'tiles-props-16x16_r01_c01'
+  - first:
+      213: 5653214827043740653
+    second: 'tiles-props-16x16_r01_c02'
+  - first:
+      213: 5053742768338121008
+    second: 'tiles-props-16x16_r01_c03'
+  - first:
+      213: 5575130553891954438
+    second: 'tiles-props-16x16_r02_c00'
+  - first:
+      213: 5127821147363285002
+    second: 'tiles-props-16x16_r02_c01'
+  - first:
+      213: 4692902188027394758
+    second: 'tiles-props-16x16_r02_c02'
+  - first:
+      213: 4664892887727755801
+    second: 'tiles-props-16x16_r02_c03'
+  - first:
+      213: 5103362659752906591
+    second: 'tiles-props-16x16_r03_c00'
+  - first:
+      213: 4624871959681308156
+    second: 'tiles-props-16x16_r03_c01'
+  - first:
+      213: 4641278468609498986
+    second: 'tiles-props-16x16_r03_c02'
+  - first:
+      213: 5546483007390883517
+    second: 'tiles-props-16x16_r03_c03'
+  - first:
+      213: 5129015480657456332
+    second: 'tiles-props-16x16_r04_c00'
+  - first:
+      213: 5258679706720041752
+    second: 'tiles-props-16x16_r04_c01'
+  - first:
+      213: 4923444520037596884
+    second: 'tiles-props-16x16_r04_c02'
+  - first:
+      213: 4630457520900287669
+    second: 'tiles-props-16x16_r04_c03'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3a701057284f9d86a9a022c3a4ed4d
+      internalID: 5736837332321595408
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c22cbd846d477f85790586af0bdd40
+      internalID: 5151982104413875389
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5cc67cc20145a9acd976a1e02bf2ef
+      internalID: 5019756571284784764
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be31ed0a302e405882de36e4a44c91b9
+      internalID: 4636508793695497482
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a767b936335c437e8b85fcbc12a30b1d
+      internalID: 4863381120645314870
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d943e050a6b4b8a89c04a17151ecc4c
+      internalID: 5443174556415311365
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e9dbed40ee4e74975db4b2948cfd43
+      internalID: 5653214827043740653
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfe313080454622996c331e9755e445
+      internalID: 5053742768338121008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51281f06d7b34d5ebb532460b0d394cc
+      internalID: 5575130553891954438
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4853180aae2a4729945d11b1ab1e702f
+      internalID: 5127821147363285002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b06bac689ad4120baca33e76eac9b24
+      internalID: 4692902188027394758
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0425219075d40bdb21e5855f4d603f5
+      internalID: 4664892887727755801
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de908f5fc94c46d283ee968ceada46fe
+      internalID: 5103362659752906591
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307815fcd88b402e99dc4a878e606b40
+      internalID: 4624871959681308156
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39235f6a222d4069871f0ac73facbf08
+      internalID: 4641278468609498986
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0461ebd10e84cf9b71aac0d011d24b3
+      internalID: 5546483007390883517
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac112cccec67472d8c86650985ac2783
+      internalID: 5129015480657456332
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29a7b18955448fa9a10aed41cdc7929
+      internalID: 5258679706720041752
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982f3ed496b4445399684d05f681c1a3
+      internalID: 4923444520037596884
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-props-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cc2cb5b09540428ab463effa0e297f
+      internalID: 4630457520900287669
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 0ef22311585243eeb8bf6ca47e40bcec
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'tiles-props-16x16_r00_c00': 5736837332321595408
+      'tiles-props-16x16_r00_c01': 5151982104413875389
+      'tiles-props-16x16_r00_c02': 5019756571284784764
+      'tiles-props-16x16_r00_c03': 4636508793695497482
+      'tiles-props-16x16_r01_c00': 4863381120645314870
+      'tiles-props-16x16_r01_c01': 5443174556415311365
+      'tiles-props-16x16_r01_c02': 5653214827043740653
+      'tiles-props-16x16_r01_c03': 5053742768338121008
+      'tiles-props-16x16_r02_c00': 5575130553891954438
+      'tiles-props-16x16_r02_c01': 5127821147363285002
+      'tiles-props-16x16_r02_c02': 4692902188027394758
+      'tiles-props-16x16_r02_c03': 4664892887727755801
+      'tiles-props-16x16_r03_c00': 5103362659752906591
+      'tiles-props-16x16_r03_c01': 4624871959681308156
+      'tiles-props-16x16_r03_c02': 4641278468609498986
+      'tiles-props-16x16_r03_c03': 5546483007390883517
+      'tiles-props-16x16_r04_c00': 5129015480657456332
+      'tiles-props-16x16_r04_c01': 5258679706720041752
+      'tiles-props-16x16_r04_c02': 4923444520037596884
+      'tiles-props-16x16_r04_c03': 4630457520900287669
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

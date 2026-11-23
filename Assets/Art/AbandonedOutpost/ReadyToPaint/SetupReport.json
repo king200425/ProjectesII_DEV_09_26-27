@@ -1,0 +1,19 @@
+{
+    "scene": "Assets/Art/AbandonedOutpost/ReadyToPaint/Maps/Mapx11_PaintReady.unity",
+    "gridPrefab": "Assets/Art/AbandonedOutpost/ReadyToPaint/Prefabs/Outpost_MapGrid.prefab",
+    "palettes": [
+        "AO_01_Terrain",
+        "AO_02_Backgrounds",
+        "AO_03_Structures",
+        "AO_04_Props"
+    ],
+    "tileCounts": [
+        301,
+        1198,
+        226,
+        22
+    ],
+    "paintTarget": "01_Terrain",
+    "groundLayer": 3,
+    "terrainHasCollider": true
+}

@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: bf8a563592154907bc4faf1432f8635a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5301630366198324014
+    second: 'character-armed-64x64_r00_c00'
+  - first:
+      213: 5431815862368203449
+    second: 'character-armed-64x64_r00_c01'
+  - first:
+      213: 4826419447325692220
+    second: 'character-armed-64x64_r00_c02'
+  - first:
+      213: 5625105145332801773
+    second: 'character-armed-64x64_r00_c03'
+  - first:
+      213: 5084088003220252836
+    second: 'character-armed-64x64_r00_c04'
+  - first:
+      213: 5011769041714395849
+    second: 'character-armed-64x64_r00_c05'
+  - first:
+      213: 4899392672802113424
+    second: 'character-armed-64x64_r01_c00'
+  - first:
+      213: 5644035067225482748
+    second: 'character-armed-64x64_r01_c01'
+  - first:
+      213: 5692367886632688183
+    second: 'character-armed-64x64_r01_c02'
+  - first:
+      213: 4634485750603954275
+    second: 'character-armed-64x64_r01_c03'
+  - first:
+      213: 4998757346467034339
+    second: 'character-armed-64x64_r01_c04'
+  - first:
+      213: 5553548313519351979
+    second: 'character-armed-64x64_r01_c05'
+  - first:
+      213: 4907091395170232228
+    second: 'character-armed-64x64_r01_c06'
+  - first:
+      213: 5358196180582987175
+    second: 'character-armed-64x64_r01_c07'
+  - first:
+      213: 5676906013998643321
+    second: 'character-armed-64x64_r02_c00'
+  - first:
+      213: 5001376082907922929
+    second: 'character-armed-64x64_r02_c01'
+  - first:
+      213: 4790542966254400931
+    second: 'character-armed-64x64_r02_c02'
+  - first:
+      213: 4725995315654737507
+    second: 'character-armed-64x64_r02_c03'
+  - first:
+      213: 5353921481819660435
+    second: 'character-armed-64x64_r02_c04'
+  - first:
+      213: 4660560530693839271
+    second: 'character-armed-64x64_r02_c05'
+  - first:
+      213: 5626075259372024999
+    second: 'character-armed-64x64_r02_c06'
+  - first:
+      213: 5085746757707069420
+    second: 'character-armed-64x64_r02_c07'
+  - first:
+      213: 5684933795599124911
+    second: 'character-armed-64x64_r03_c00'
+  - first:
+      213: 5201299398111681345
+    second: 'character-armed-64x64_r03_c01'
+  - first:
+      213: 5325273371228800581
+    second: 'character-armed-64x64_r03_c02'
+  - first:
+      213: 5669192058728057979
+    second: 'character-armed-64x64_r03_c03'
+  - first:
+      213: 4696567293092410320
+    second: 'character-armed-64x64_r03_c04'
+  - first:
+      213: 4795963586020302250
+    second: 'character-armed-64x64_r04_c00'
+  - first:
+      213: 4985068773127573426
+    second: 'character-armed-64x64_r04_c01'
+  - first:
+      213: 5285149128158128727
+    second: 'character-armed-64x64_r04_c02'
+  - first:
+      213: 5668651132950743784
+    second: 'character-armed-64x64_r04_c03'
+  - first:
+      213: 4990860241429443084
+    second: 'character-armed-64x64_r04_c04'
+  - first:
+      213: 5294272520196963633
+    second: 'character-armed-64x64_r04_c05'
+  - first:
+      213: 4642047075116655676
+    second: 'character-armed-64x64_r05_c00'
+  - first:
+      213: 5445079210066104498
+    second: 'character-armed-64x64_r05_c01'
+  - first:
+      213: 5729378215671850870
+    second: 'character-armed-64x64_r06_c00'
+  - first:
+      213: 5315976979464084606
+    second: 'character-armed-64x64_r06_c01'
+  - first:
+      213: 4942714176070969809
+    second: 'character-armed-64x64_r06_c02'
+  - first:
+      213: 5445636307990368648
+    second: 'character-armed-64x64_r06_c03'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93acdb2e2cba499395e1f17c10eab36b
+      internalID: 5301630366198324014
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c9f2b9afbf4b619dd100f2b901c595
+      internalID: 5431815862368203449
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e2913ce2ea42faa8ddc65a4920c9ef
+      internalID: 4826419447325692220
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc8a0ed63534e108def2c6233a5f5b7
+      internalID: 5625105145332801773
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c04'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec4a8a44f1a468e92d826033431bdf6
+      internalID: 5084088003220252836
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r00_c05'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3afbac96163458da4151cc0304e7926
+      internalID: 5011769041714395849
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8585879023ad43fead335de1dd3c9a45
+      internalID: 4899392672802113424
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d2a5fca3fd4e538d566083bfd50a97
+      internalID: 5644035067225482748
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5951a375a6e4effb101a6e98f5abb86
+      internalID: 5692367886632688183
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515bb863003c40518ecfe2239d54a915
+      internalID: 4634485750603954275
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c04'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728ab4e32752455fa23ee772b465ebe9
+      internalID: 4998757346467034339
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c05'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664a68ab2ac44d12b8db092575de830b
+      internalID: 5553548313519351979
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c06'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017f67a47da04419a00153cf8eedfa5b
+      internalID: 4907091395170232228
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r01_c07'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c80f5a723094a5c8f1c82889d7eecb5
+      internalID: 5358196180582987175
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33aaf8796bf14ec89fa22248a1a8a993
+      internalID: 5676906013998643321
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dc81f1750c4568a061e622f549441c
+      internalID: 5001376082907922929
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d6f5a36d72427ba193ba16e6b0ce44
+      internalID: 4790542966254400931
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc2be631bb341968511d8b01c303ef3
+      internalID: 4725995315654737507
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af31a093f3384a4cafe87b786df9daac
+      internalID: 5353921481819660435
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c05'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263659a7a31c40ada2ac1bcdf8a645d4
+      internalID: 4660560530693839271
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c06'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27bb4a7d5a34e13b74758f1522a83b7
+      internalID: 5626075259372024999
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r02_c07'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb977ec33bb4694a383313d9057ab17
+      internalID: 5085746757707069420
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24c89aff12a4ee4b3bf4bc204b1fc51
+      internalID: 5684933795599124911
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e65b41ba3e482ea7a4966bafe0e1f4
+      internalID: 5201299398111681345
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f086452bea49e7a74c8153847cd699
+      internalID: 5325273371228800581
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f38c7b04244ead879128d2722cca25
+      internalID: 5669192058728057979
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r03_c04'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07db3d08f11412da505a0b64a172f1c
+      internalID: 4696567293092410320
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac72ddaaaf78428eb7a2ff1944f16227
+      internalID: 4795963586020302250
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b294fb285a3452eb2eb504262265f81
+      internalID: 4985068773127573426
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d4aa579f214958947e3c95e3c27def
+      internalID: 5285149128158128727
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef250ae8182b4eab82750021a1003ab1
+      internalID: 5668651132950743784
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c04'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6605b20c18f24543a63856e043cfbbf8
+      internalID: 4990860241429443084
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r04_c05'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e73bd3108ce49798f66790a9a8660df
+      internalID: 5294272520196963633
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef8243cdd38406b8365a3adf69772c2
+      internalID: 4642047075116655676
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dad0b2ceb14b90a014326267748ef4
+      internalID: 5445079210066104498
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r06_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fb6776d7214f82893da18354341bb2
+      internalID: 5729378215671850870
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71c5c7e24e549c6a3b77eda9701197d
+      internalID: 5315976979464084606
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ff69d10c5b44989f9e0911967add20
+      internalID: 4942714176070969809
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'character-armed-64x64_r06_c03'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bc5188c95e4b928d7cbab5b53cfced
+      internalID: 5445636307990368648
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 83dc0a8a050c4560ac7f6cadad4a238f
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'character-armed-64x64_r00_c00': 5301630366198324014
+      'character-armed-64x64_r00_c01': 5431815862368203449
+      'character-armed-64x64_r00_c02': 4826419447325692220
+      'character-armed-64x64_r00_c03': 5625105145332801773
+      'character-armed-64x64_r00_c04': 5084088003220252836
+      'character-armed-64x64_r00_c05': 5011769041714395849
+      'character-armed-64x64_r01_c00': 4899392672802113424
+      'character-armed-64x64_r01_c01': 5644035067225482748
+      'character-armed-64x64_r01_c02': 5692367886632688183
+      'character-armed-64x64_r01_c03': 4634485750603954275
+      'character-armed-64x64_r01_c04': 4998757346467034339
+      'character-armed-64x64_r01_c05': 5553548313519351979
+      'character-armed-64x64_r01_c06': 4907091395170232228
+      'character-armed-64x64_r01_c07': 5358196180582987175
+      'character-armed-64x64_r02_c00': 5676906013998643321
+      'character-armed-64x64_r02_c01': 5001376082907922929
+      'character-armed-64x64_r02_c02': 4790542966254400931
+      'character-armed-64x64_r02_c03': 4725995315654737507
+      'character-armed-64x64_r02_c04': 5353921481819660435
+      'character-armed-64x64_r02_c05': 4660560530693839271
+      'character-armed-64x64_r02_c06': 5626075259372024999
+      'character-armed-64x64_r02_c07': 5085746757707069420
+      'character-armed-64x64_r03_c00': 5684933795599124911
+      'character-armed-64x64_r03_c01': 5201299398111681345
+      'character-armed-64x64_r03_c02': 5325273371228800581
+      'character-armed-64x64_r03_c03': 5669192058728057979
+      'character-armed-64x64_r03_c04': 4696567293092410320
+      'character-armed-64x64_r04_c00': 4795963586020302250
+      'character-armed-64x64_r04_c01': 4985068773127573426
+      'character-armed-64x64_r04_c02': 5285149128158128727
+      'character-armed-64x64_r04_c03': 5668651132950743784
+      'character-armed-64x64_r04_c04': 4990860241429443084
+      'character-armed-64x64_r04_c05': 5294272520196963633
+      'character-armed-64x64_r05_c00': 4642047075116655676
+      'character-armed-64x64_r05_c01': 5445079210066104498
+      'character-armed-64x64_r06_c00': 5729378215671850870
+      'character-armed-64x64_r06_c01': 5315976979464084606
+      'character-armed-64x64_r06_c02': 4942714176070969809
+      'character-armed-64x64_r06_c03': 5445636307990368648
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

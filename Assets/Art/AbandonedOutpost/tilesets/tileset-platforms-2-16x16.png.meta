@@ -1,0 +1,2509 @@
+fileFormatVersion: 2
+guid: fcb77406bf96470480dab43c28b220e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5096504095936712593
+    second: 'tileset-platforms-2-16x16_r00_c00'
+  - first:
+      213: 5730010850551249601
+    second: 'tileset-platforms-2-16x16_r00_c01'
+  - first:
+      213: 5682721957723801983
+    second: 'tileset-platforms-2-16x16_r00_c02'
+  - first:
+      213: 4707391953351928476
+    second: 'tileset-platforms-2-16x16_r00_c03'
+  - first:
+      213: 5352775736771878207
+    second: 'tileset-platforms-2-16x16_r00_c04'
+  - first:
+      213: 5297708023183925617
+    second: 'tileset-platforms-2-16x16_r00_c05'
+  - first:
+      213: 4746356069224123704
+    second: 'tileset-platforms-2-16x16_r00_c06'
+  - first:
+      213: 5654732344970187209
+    second: 'tileset-platforms-2-16x16_r00_c07'
+  - first:
+      213: 4731964941368802357
+    second: 'tileset-platforms-2-16x16_r00_c08'
+  - first:
+      213: 5230168022973817617
+    second: 'tileset-platforms-2-16x16_r00_c09'
+  - first:
+      213: 5702479644846875842
+    second: 'tileset-platforms-2-16x16_r01_c00'
+  - first:
+      213: 5272623106542811117
+    second: 'tileset-platforms-2-16x16_r01_c01'
+  - first:
+      213: 5140242984991174705
+    second: 'tileset-platforms-2-16x16_r01_c02'
+  - first:
+      213: 5521673816204399027
+    second: 'tileset-platforms-2-16x16_r01_c03'
+  - first:
+      213: 5669090117905671648
+    second: 'tileset-platforms-2-16x16_r01_c04'
+  - first:
+      213: 5182258114362415890
+    second: 'tileset-platforms-2-16x16_r01_c05'
+  - first:
+      213: 5679032491696043340
+    second: 'tileset-platforms-2-16x16_r01_c06'
+  - first:
+      213: 5519933560360036381
+    second: 'tileset-platforms-2-16x16_r01_c07'
+  - first:
+      213: 5336387955944522544
+    second: 'tileset-platforms-2-16x16_r01_c08'
+  - first:
+      213: 5674151438081676695
+    second: 'tileset-platforms-2-16x16_r01_c09'
+  - first:
+      213: 4889143156514477884
+    second: 'tileset-platforms-2-16x16_r02_c00'
+  - first:
+      213: 5018207789923134727
+    second: 'tileset-platforms-2-16x16_r02_c01'
+  - first:
+      213: 5488373254716261654
+    second: 'tileset-platforms-2-16x16_r02_c02'
+  - first:
+      213: 5179034878755627829
+    second: 'tileset-platforms-2-16x16_r02_c03'
+  - first:
+      213: 5373031296822861914
+    second: 'tileset-platforms-2-16x16_r02_c04'
+  - first:
+      213: 4638832026628832922
+    second: 'tileset-platforms-2-16x16_r02_c05'
+  - first:
+      213: 4902517279177020017
+    second: 'tileset-platforms-2-16x16_r02_c06'
+  - first:
+      213: 4855564809935631817
+    second: 'tileset-platforms-2-16x16_r02_c07'
+  - first:
+      213: 5303712955421935906
+    second: 'tileset-platforms-2-16x16_r02_c08'
+  - first:
+      213: 5030542815554625693
+    second: 'tileset-platforms-2-16x16_r03_c00'
+  - first:
+      213: 4639806244017335276
+    second: 'tileset-platforms-2-16x16_r03_c01'
+  - first:
+      213: 4852108788409337407
+    second: 'tileset-platforms-2-16x16_r03_c02'
+  - first:
+      213: 5529426443401800864
+    second: 'tileset-platforms-2-16x16_r03_c03'
+  - first:
+      213: 5671290733214565654
+    second: 'tileset-platforms-2-16x16_r03_c04'
+  - first:
+      213: 4868702412345593921
+    second: 'tileset-platforms-2-16x16_r03_c05'
+  - first:
+      213: 5750335739356418038
+    second: 'tileset-platforms-2-16x16_r03_c06'
+  - first:
+      213: 5316044318822471598
+    second: 'tileset-platforms-2-16x16_r03_c07'
+  - first:
+      213: 5503239436322508045
+    second: 'tileset-platforms-2-16x16_r03_c08'
+  - first:
+      213: 5547028716158227961
+    second: 'tileset-platforms-2-16x16_r04_c00'
+  - first:
+      213: 4800217569971096370
+    second: 'tileset-platforms-2-16x16_r04_c01'
+  - first:
+      213: 5234109303453447103
+    second: 'tileset-platforms-2-16x16_r04_c02'
+  - first:
+      213: 5352630278395312624
+    second: 'tileset-platforms-2-16x16_r04_c03'
+  - first:
+      213: 5032749948344577763
+    second: 'tileset-platforms-2-16x16_r04_c04'
+  - first:
+      213: 4743597517826734767
+    second: 'tileset-platforms-2-16x16_r04_c05'
+  - first:
+      213: 5101611426554226933
+    second: 'tileset-platforms-2-16x16_r04_c06'
+  - first:
+      213: 5249728288669618326
+    second: 'tileset-platforms-2-16x16_r04_c08'
+  - first:
+      213: 4763871079331005103
+    second: 'tileset-platforms-2-16x16_r05_c00'
+  - first:
+      213: 5252793776946949868
+    second: 'tileset-platforms-2-16x16_r05_c01'
+  - first:
+      213: 5522000078252519044
+    second: 'tileset-platforms-2-16x16_r05_c02'
+  - first:
+      213: 4683504649240535063
+    second: 'tileset-platforms-2-16x16_r05_c03'
+  - first:
+      213: 5650701538814108134
+    second: 'tileset-platforms-2-16x16_r05_c04'
+  - first:
+      213: 5617568294842553934
+    second: 'tileset-platforms-2-16x16_r05_c05'
+  - first:
+      213: 4687694252609318490
+    second: 'tileset-platforms-2-16x16_r05_c06'
+  - first:
+      213: 5649155663538617523
+    second: 'tileset-platforms-2-16x16_r05_c07'
+  - first:
+      213: 5462568507664200112
+    second: 'tileset-platforms-2-16x16_r05_c08'
+  - first:
+      213: 5129628602595600291
+    second: 'tileset-platforms-2-16x16_r05_c09'
+  - first:
+      213: 4651382337212305397
+    second: 'tileset-platforms-2-16x16_r06_c00'
+  - first:
+      213: 4713777573904130830
+    second: 'tileset-platforms-2-16x16_r06_c01'
+  - first:
+      213: 5635553278860182477
+    second: 'tileset-platforms-2-16x16_r06_c02'
+  - first:
+      213: 4914892825649533567
+    second: 'tileset-platforms-2-16x16_r06_c03'
+  - first:
+      213: 5580093207849527132
+    second: 'tileset-platforms-2-16x16_r06_c04'
+  - first:
+      213: 5453785801714867252
+    second: 'tileset-platforms-2-16x16_r06_c05'
+  - first:
+      213: 5409243174181569989
+    second: 'tileset-platforms-2-16x16_r06_c06'
+  - first:
+      213: 4727957897701213854
+    second: 'tileset-platforms-2-16x16_r06_c07'
+  - first:
+      213: 4774614763156088059
+    second: 'tileset-platforms-2-16x16_r06_c08'
+  - first:
+      213: 5024825159056424174
+    second: 'tileset-platforms-2-16x16_r06_c09'
+  - first:
+      213: 5256910858669105257
+    second: 'tileset-platforms-2-16x16_r07_c00'
+  - first:
+      213: 5328341624551907864
+    second: 'tileset-platforms-2-16x16_r07_c01'
+  - first:
+      213: 4715306961402024220
+    second: 'tileset-platforms-2-16x16_r07_c02'
+  - first:
+      213: 4640473737724297181
+    second: 'tileset-platforms-2-16x16_r07_c03'
+  - first:
+      213: 4667455981591275832
+    second: 'tileset-platforms-2-16x16_r07_c04'
+  - first:
+      213: 5270213128333899111
+    second: 'tileset-platforms-2-16x16_r07_c05'
+  - first:
+      213: 5216918757373990221
+    second: 'tileset-platforms-2-16x16_r07_c06'
+  - first:
+      213: 5400318568795500499
+    second: 'tileset-platforms-2-16x16_r07_c07'
+  - first:
+      213: 4972671710684791100
+    second: 'tileset-platforms-2-16x16_r07_c08'
+  - first:
+      213: 5746984095153576701
+    second: 'tileset-platforms-2-16x16_r08_c00'
+  - first:
+      213: 5370640490293244031
+    second: 'tileset-platforms-2-16x16_r08_c01'
+  - first:
+      213: 4839386054638582957
+    second: 'tileset-platforms-2-16x16_r08_c02'
+  - first:
+      213: 5466654735027943365
+    second: 'tileset-platforms-2-16x16_r08_c03'
+  - first:
+      213: 5376443688394971389
+    second: 'tileset-platforms-2-16x16_r08_c04'
+  - first:
+      213: 5507331407141991485
+    second: 'tileset-platforms-2-16x16_r08_c05'
+  - first:
+      213: 5293649599438900396
+    second: 'tileset-platforms-2-16x16_r08_c06'
+  - first:
+      213: 5256221412318493434
+    second: 'tileset-platforms-2-16x16_r08_c07'
+  - first:
+      213: 4827253620317720769
+    second: 'tileset-platforms-2-16x16_r08_c08'
+  - first:
+      213: 4933167511203595294
+    second: 'tileset-platforms-2-16x16_r09_c00'
+  - first:
+      213: 4740701113148032033
+    second: 'tileset-platforms-2-16x16_r09_c01'
+  - first:
+      213: 5176608242798815773
+    second: 'tileset-platforms-2-16x16_r09_c02'
+  - first:
+      213: 5094686014446136003
+    second: 'tileset-platforms-2-16x16_r09_c03'
+  - first:
+      213: 4647595283603251102
+    second: 'tileset-platforms-2-16x16_r09_c04'
+  - first:
+      213: 4721832743673394925
+    second: 'tileset-platforms-2-16x16_r09_c05'
+  - first:
+      213: 5351201451379973218
+    second: 'tileset-platforms-2-16x16_r09_c06'
+  - first:
+      213: 4941639291649327339
+    second: 'tileset-platforms-2-16x16_r09_c08'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa18f916b7946baa25b44d755f59862
+      internalID: 5096504095936712593
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3dbac116824f85a187cfb1af4b40ab
+      internalID: 5730010850551249601
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f70897f15834edd8fbf001c969667c1
+      internalID: 5682721957723801983
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e12ea9c040a415484bad384754b9819
+      internalID: 4707391953351928476
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209e1d3fe12c4a48a4541445e023fe43
+      internalID: 5352775736771878207
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9d61713d604985a437f6969a02e2ff
+      internalID: 5297708023183925617
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9f8d3871b241debecec350eb7c36b4
+      internalID: 4746356069224123704
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dc11c9a51b4e79991953a8c6244d7a
+      internalID: 5654732344970187209
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be3bc35510b41ab95a71172d9f0ac64
+      internalID: 4731964941368802357
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r00_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f623114a1b4895a9e3ceb3bdcfcac9
+      internalID: 5230168022973817617
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fe64c247064f23b6aa7d0875a5bb0e
+      internalID: 5702479644846875842
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40037ed1ec7492c947e655c7edebfb6
+      internalID: 5272623106542811117
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb97b031cfc24755b8d9be15b50207d1
+      internalID: 5140242984991174705
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7051b3ed144ca0b059b87e314c04c6
+      internalID: 5521673816204399027
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1571e5e0a76d4eaca54330f94ace08ff
+      internalID: 5669090117905671648
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f51b12144c47eb9802257e13514e23
+      internalID: 5182258114362415890
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f71b54cf9f64ecf9b66dff43a69eeb3
+      internalID: 5679032491696043340
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c904681dbe534c9aa194aaeab83dd94f
+      internalID: 5519933560360036381
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bf0330a8924a0ea715f24986b0d446
+      internalID: 5336387955944522544
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r01_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a15597a2ab4ebea8a203f0e76ee728
+      internalID: 5674151438081676695
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c13d73cb9cc43d99fb53f7ad68d3fce
+      internalID: 4889143156514477884
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7776d07416545a4b7dafcc4c5140f9a
+      internalID: 5018207789923134727
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821e05169e654c2a96cfe9790c46d2b2
+      internalID: 5488373254716261654
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53966335a0c847dfa5d45cefbf9c545c
+      internalID: 5179034878755627829
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362ee05ad77f4a9098dde1e74506062d
+      internalID: 5373031296822861914
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8feabe9a71264060bf7ea0589303bbea
+      internalID: 4638832026628832922
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28f92713d7d44099ca7be19926dd9e3
+      internalID: 4902517279177020017
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0019b5c96e78436291aa5bcfd9bcf6d1
+      internalID: 4855564809935631817
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r02_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8fc92292d5499a89208f7da7dd9d2f
+      internalID: 5303712955421935906
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac86e09d140945d09f782067a9c01dff
+      internalID: 5030542815554625693
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394aebece7324063aad2d12f247e6135
+      internalID: 4639806244017335276
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b0863f273c435680b1d26c9df052a5
+      internalID: 4852108788409337407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9daca0780d4cbcaf8fab7d6b3e17e7
+      internalID: 5529426443401800864
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c338051678df4eb49ed7488ba4a2a1d8
+      internalID: 5671290733214565654
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf250411b0c4391ad64f79acf45d204
+      internalID: 4868702412345593921
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b928ff64be34fcda67291f6d4487e42
+      internalID: 5750335739356418038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a597ae622449c6859f7f00e13e03e7
+      internalID: 5316044318822471598
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r03_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ec8d0d6f1c4c5f9cf2a4962409773e
+      internalID: 5503239436322508045
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598095f9013a4cfb84cfdce18481a6e3
+      internalID: 5547028716158227961
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb74b32cc72429da0f23c2bb3bcccaf
+      internalID: 4800217569971096370
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e8f3bf4aae48a3b0a823f2e1c5e093
+      internalID: 5234109303453447103
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c0b9f05ce04a48b1bf3c142cd02dcb
+      internalID: 5352630278395312624
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d271aee3eb6945d78fbf15ff8c78a778
+      internalID: 5032749948344577763
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7cbaafa4cf41d48efc93cf876b556d
+      internalID: 4743597517826734767
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd6a8f5909046ccae29a5348672df62
+      internalID: 5101611426554226933
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r04_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7578d096c81048dabd7579bf31ada595
+      internalID: 5249728288669618326
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4802afab81421cb38cd09c18d963da
+      internalID: 4763871079331005103
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114e2eecac1c48e5a8d7a074992e3b75
+      internalID: 5252793776946949868
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ebae8415d04ca288515afe6ea9a116
+      internalID: 5522000078252519044
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09df601726aa40ffbd30712efda3bff0
+      internalID: 4683504649240535063
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c4a1e6531c4e6ba21270783a18da34
+      internalID: 5650701538814108134
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db96564e9c994df590f25bcd2e2d8297
+      internalID: 5617568294842553934
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166b2e5a0916410e96b9f99f2db42e3d
+      internalID: 4687694252609318490
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1afcb3d5254e65a6e1afbcf9198e97
+      internalID: 5649155663538617523
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48f71b0f11d4bceb6cbf9a06f4a1156
+      internalID: 5462568507664200112
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r05_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f64e7a31a09473084fa3145f6b69a7b
+      internalID: 5129628602595600291
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7410cff50797408d95355560cf52a70e
+      internalID: 4651382337212305397
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c2230eb3ba416aaa2b49869fb69f83
+      internalID: 4713777573904130830
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433fc3cd81d94e3588b36805bc17fd7a
+      internalID: 5635553278860182477
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f4d27f34fc4435b178d3bb792f05e9
+      internalID: 4914892825649533567
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b70e75c79354d7092e13256714fa285
+      internalID: 5580093207849527132
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90489c34bd4a4baf8fa4d0224e4af349
+      internalID: 5453785801714867252
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccc85c57e014b11bab3ee2451ec9d65
+      internalID: 5409243174181569989
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7bc69e14a8419db77c0f8a997d9c41
+      internalID: 4727957897701213854
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814124fbd6d442428cc0a51c171a2e1f
+      internalID: 4774614763156088059
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r06_c09'
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0800fceec3dc45bbbdf05853c14ce2a3
+      internalID: 5024825159056424174
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadda0694c9248f4aa283bea2b69906f
+      internalID: 5256910858669105257
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d582218127a49f2af1ad249261ff936
+      internalID: 5328341624551907864
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94b511c22b24170b18f375699e151c1
+      internalID: 4715306961402024220
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3695ffdd46474066b4d178005cb260c0
+      internalID: 4640473737724297181
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b852938227c40c6acf4be9ec1d9fe6c
+      internalID: 4667455981591275832
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf135678eea49238e0c460763867fd3
+      internalID: 5270213128333899111
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b59554d37f8486692810c71f905cf40
+      internalID: 5216918757373990221
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f006fd3c9204af18623614dd6db3bfc
+      internalID: 5400318568795500499
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r07_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1400413c7a9345029678b99c70ff205b
+      internalID: 4972671710684791100
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f172dafd63954fc1b86cc592f2bac10e
+      internalID: 5746984095153576701
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3042307f59124a8884b4a2e43d91cfb4
+      internalID: 5370640490293244031
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb63cadf3f94328b6156ba81f19bcd8
+      internalID: 4839386054638582957
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970c37c575844bdd8c755066adb5c7fc
+      internalID: 5466654735027943365
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ac58fdf70c4a9ca6333b8a5e1db0fe
+      internalID: 5376443688394971389
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570cf43df8bc4c6db71f7e1510b3d7e9
+      internalID: 5507331407141991485
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f1ccacd2434976a07be4e87f3cfe68
+      internalID: 5293649599438900396
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c07'
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0bbafad98648f1bd3f43ca9ecf0e7d
+      internalID: 5256221412318493434
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r08_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc190c1d99742fd8ae8a9ba98301c77
+      internalID: 4827253620317720769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c9c41e21b64476b2032ab788489f33
+      internalID: 4933167511203595294
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7cc4215a8b41caa53d8b89851136b4
+      internalID: 4740701113148032033
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d61ea1d01c547d7b74002e843b64e5f
+      internalID: 5176608242798815773
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5366ac3f5ef46b380ba947ef9553ba0
+      internalID: 5094686014446136003
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f3df9e9349407f99a327c09dc0e2af
+      internalID: 4647595283603251102
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef75f6ed51dc4187a556893d7550902a
+      internalID: 4721832743673394925
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0edc62495e4a43977065445da5a940
+      internalID: 5351201451379973218
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-platforms-2-16x16_r09_c08'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadf00eb3ac044949ade425f40b83ecf
+      internalID: 4941639291649327339
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 216f046cc1a54b09b912d7d80f1e7b41
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'tileset-platforms-2-16x16_r00_c00': 5096504095936712593
+      'tileset-platforms-2-16x16_r00_c01': 5730010850551249601
+      'tileset-platforms-2-16x16_r00_c02': 5682721957723801983
+      'tileset-platforms-2-16x16_r00_c03': 4707391953351928476
+      'tileset-platforms-2-16x16_r00_c04': 5352775736771878207
+      'tileset-platforms-2-16x16_r00_c05': 5297708023183925617
+      'tileset-platforms-2-16x16_r00_c06': 4746356069224123704
+      'tileset-platforms-2-16x16_r00_c07': 5654732344970187209
+      'tileset-platforms-2-16x16_r00_c08': 4731964941368802357
+      'tileset-platforms-2-16x16_r00_c09': 5230168022973817617
+      'tileset-platforms-2-16x16_r01_c00': 5702479644846875842
+      'tileset-platforms-2-16x16_r01_c01': 5272623106542811117
+      'tileset-platforms-2-16x16_r01_c02': 5140242984991174705
+      'tileset-platforms-2-16x16_r01_c03': 5521673816204399027
+      'tileset-platforms-2-16x16_r01_c04': 5669090117905671648
+      'tileset-platforms-2-16x16_r01_c05': 5182258114362415890
+      'tileset-platforms-2-16x16_r01_c06': 5679032491696043340
+      'tileset-platforms-2-16x16_r01_c07': 5519933560360036381
+      'tileset-platforms-2-16x16_r01_c08': 5336387955944522544
+      'tileset-platforms-2-16x16_r01_c09': 5674151438081676695
+      'tileset-platforms-2-16x16_r02_c00': 4889143156514477884
+      'tileset-platforms-2-16x16_r02_c01': 5018207789923134727
+      'tileset-platforms-2-16x16_r02_c02': 5488373254716261654
+      'tileset-platforms-2-16x16_r02_c03': 5179034878755627829
+      'tileset-platforms-2-16x16_r02_c04': 5373031296822861914
+      'tileset-platforms-2-16x16_r02_c05': 4638832026628832922
+      'tileset-platforms-2-16x16_r02_c06': 4902517279177020017
+      'tileset-platforms-2-16x16_r02_c07': 4855564809935631817
+      'tileset-platforms-2-16x16_r02_c08': 5303712955421935906
+      'tileset-platforms-2-16x16_r03_c00': 5030542815554625693
+      'tileset-platforms-2-16x16_r03_c01': 4639806244017335276
+      'tileset-platforms-2-16x16_r03_c02': 4852108788409337407
+      'tileset-platforms-2-16x16_r03_c03': 5529426443401800864
+      'tileset-platforms-2-16x16_r03_c04': 5671290733214565654
+      'tileset-platforms-2-16x16_r03_c05': 4868702412345593921
+      'tileset-platforms-2-16x16_r03_c06': 5750335739356418038
+      'tileset-platforms-2-16x16_r03_c07': 5316044318822471598
+      'tileset-platforms-2-16x16_r03_c08': 5503239436322508045
+      'tileset-platforms-2-16x16_r04_c00': 5547028716158227961
+      'tileset-platforms-2-16x16_r04_c01': 4800217569971096370
+      'tileset-platforms-2-16x16_r04_c02': 5234109303453447103
+      'tileset-platforms-2-16x16_r04_c03': 5352630278395312624
+      'tileset-platforms-2-16x16_r04_c04': 5032749948344577763
+      'tileset-platforms-2-16x16_r04_c05': 4743597517826734767
+      'tileset-platforms-2-16x16_r04_c06': 5101611426554226933
+      'tileset-platforms-2-16x16_r04_c08': 5249728288669618326
+      'tileset-platforms-2-16x16_r05_c00': 4763871079331005103
+      'tileset-platforms-2-16x16_r05_c01': 5252793776946949868
+      'tileset-platforms-2-16x16_r05_c02': 5522000078252519044
+      'tileset-platforms-2-16x16_r05_c03': 4683504649240535063
+      'tileset-platforms-2-16x16_r05_c04': 5650701538814108134
+      'tileset-platforms-2-16x16_r05_c05': 5617568294842553934
+      'tileset-platforms-2-16x16_r05_c06': 4687694252609318490
+      'tileset-platforms-2-16x16_r05_c07': 5649155663538617523
+      'tileset-platforms-2-16x16_r05_c08': 5462568507664200112
+      'tileset-platforms-2-16x16_r05_c09': 5129628602595600291
+      'tileset-platforms-2-16x16_r06_c00': 4651382337212305397
+      'tileset-platforms-2-16x16_r06_c01': 4713777573904130830
+      'tileset-platforms-2-16x16_r06_c02': 5635553278860182477
+      'tileset-platforms-2-16x16_r06_c03': 4914892825649533567
+      'tileset-platforms-2-16x16_r06_c04': 5580093207849527132
+      'tileset-platforms-2-16x16_r06_c05': 5453785801714867252
+      'tileset-platforms-2-16x16_r06_c06': 5409243174181569989
+      'tileset-platforms-2-16x16_r06_c07': 4727957897701213854
+      'tileset-platforms-2-16x16_r06_c08': 4774614763156088059
+      'tileset-platforms-2-16x16_r06_c09': 5024825159056424174
+      'tileset-platforms-2-16x16_r07_c00': 5256910858669105257
+      'tileset-platforms-2-16x16_r07_c01': 5328341624551907864
+      'tileset-platforms-2-16x16_r07_c02': 4715306961402024220
+      'tileset-platforms-2-16x16_r07_c03': 4640473737724297181
+      'tileset-platforms-2-16x16_r07_c04': 4667455981591275832
+      'tileset-platforms-2-16x16_r07_c05': 5270213128333899111
+      'tileset-platforms-2-16x16_r07_c06': 5216918757373990221
+      'tileset-platforms-2-16x16_r07_c07': 5400318568795500499
+      'tileset-platforms-2-16x16_r07_c08': 4972671710684791100
+      'tileset-platforms-2-16x16_r08_c00': 5746984095153576701
+      'tileset-platforms-2-16x16_r08_c01': 5370640490293244031
+      'tileset-platforms-2-16x16_r08_c02': 4839386054638582957
+      'tileset-platforms-2-16x16_r08_c03': 5466654735027943365
+      'tileset-platforms-2-16x16_r08_c04': 5376443688394971389
+      'tileset-platforms-2-16x16_r08_c05': 5507331407141991485
+      'tileset-platforms-2-16x16_r08_c06': 5293649599438900396
+      'tileset-platforms-2-16x16_r08_c07': 5256221412318493434
+      'tileset-platforms-2-16x16_r08_c08': 4827253620317720769
+      'tileset-platforms-2-16x16_r09_c00': 4933167511203595294
+      'tileset-platforms-2-16x16_r09_c01': 4740701113148032033
+      'tileset-platforms-2-16x16_r09_c02': 5176608242798815773
+      'tileset-platforms-2-16x16_r09_c03': 5094686014446136003
+      'tileset-platforms-2-16x16_r09_c04': 4647595283603251102
+      'tileset-platforms-2-16x16_r09_c05': 4721832743673394925
+      'tileset-platforms-2-16x16_r09_c06': 5351201451379973218
+      'tileset-platforms-2-16x16_r09_c08': 4941639291649327339
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

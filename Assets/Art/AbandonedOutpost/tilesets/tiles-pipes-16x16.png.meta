@@ -1,0 +1,2041 @@
+fileFormatVersion: 2
+guid: 20faf1f584e0405c98d20126a5ef943a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4847845762586130505
+    second: 'tiles-pipes-16x16_r00_c01'
+  - first:
+      213: 4688333982671337553
+    second: 'tiles-pipes-16x16_r00_c02'
+  - first:
+      213: 5211192056532863072
+    second: 'tiles-pipes-16x16_r00_c03'
+  - first:
+      213: 5300186542417693662
+    second: 'tiles-pipes-16x16_r00_c04'
+  - first:
+      213: 4946934166716048655
+    second: 'tiles-pipes-16x16_r00_c05'
+  - first:
+      213: 4764811430592056241
+    second: 'tiles-pipes-16x16_r00_c06'
+  - first:
+      213: 5527943787441317312
+    second: 'tiles-pipes-16x16_r01_c00'
+  - first:
+      213: 5400173409816429810
+    second: 'tiles-pipes-16x16_r01_c01'
+  - first:
+      213: 5068995789551762424
+    second: 'tiles-pipes-16x16_r01_c02'
+  - first:
+      213: 4968929262889141335
+    second: 'tiles-pipes-16x16_r01_c03'
+  - first:
+      213: 5565270479227466645
+    second: 'tiles-pipes-16x16_r01_c04'
+  - first:
+      213: 5692279273995782221
+    second: 'tiles-pipes-16x16_r01_c05'
+  - first:
+      213: 4975471443108522996
+    second: 'tiles-pipes-16x16_r01_c06'
+  - first:
+      213: 5334570630084818979
+    second: 'tiles-pipes-16x16_r02_c00'
+  - first:
+      213: 4933487429097109865
+    second: 'tiles-pipes-16x16_r02_c01'
+  - first:
+      213: 5697965414526789700
+    second: 'tiles-pipes-16x16_r02_c02'
+  - first:
+      213: 4889603140508047897
+    second: 'tiles-pipes-16x16_r02_c03'
+  - first:
+      213: 5218800171779684437
+    second: 'tiles-pipes-16x16_r02_c04'
+  - first:
+      213: 4743172899895881842
+    second: 'tiles-pipes-16x16_r02_c05'
+  - first:
+      213: 5170218382108917518
+    second: 'tiles-pipes-16x16_r02_c06'
+  - first:
+      213: 5414721573432945605
+    second: 'tiles-pipes-16x16_r03_c00'
+  - first:
+      213: 5155468689862541488
+    second: 'tiles-pipes-16x16_r03_c01'
+  - first:
+      213: 5497528987265388321
+    second: 'tiles-pipes-16x16_r03_c02'
+  - first:
+      213: 5114247176895968814
+    second: 'tiles-pipes-16x16_r03_c03'
+  - first:
+      213: 5161748226864105385
+    second: 'tiles-pipes-16x16_r03_c04'
+  - first:
+      213: 4789372536378760139
+    second: 'tiles-pipes-16x16_r03_c05'
+  - first:
+      213: 5406524975708805273
+    second: 'tiles-pipes-16x16_r03_c06'
+  - first:
+      213: 4844336847924838208
+    second: 'tiles-pipes-16x16_r04_c01'
+  - first:
+      213: 5588403036415989650
+    second: 'tiles-pipes-16x16_r04_c02'
+  - first:
+      213: 5306096742703131117
+    second: 'tiles-pipes-16x16_r04_c03'
+  - first:
+      213: 5616074696596847728
+    second: 'tiles-pipes-16x16_r04_c04'
+  - first:
+      213: 5110223928606184251
+    second: 'tiles-pipes-16x16_r04_c05'
+  - first:
+      213: 4810135525131976996
+    second: 'tiles-pipes-16x16_r04_c06'
+  - first:
+      213: 5385671736143483600
+    second: 'tiles-pipes-16x16_r05_c00'
+  - first:
+      213: 5141730166159839956
+    second: 'tiles-pipes-16x16_r05_c01'
+  - first:
+      213: 4681445474848964402
+    second: 'tiles-pipes-16x16_r05_c02'
+  - first:
+      213: 5287782512356464982
+    second: 'tiles-pipes-16x16_r05_c03'
+  - first:
+      213: 5324983838121454082
+    second: 'tiles-pipes-16x16_r05_c04'
+  - first:
+      213: 5459598529515408963
+    second: 'tiles-pipes-16x16_r05_c05'
+  - first:
+      213: 5207599253297955501
+    second: 'tiles-pipes-16x16_r05_c06'
+  - first:
+      213: 4649574751823116852
+    second: 'tiles-pipes-16x16_r06_c00'
+  - first:
+      213: 5415788497188469950
+    second: 'tiles-pipes-16x16_r06_c01'
+  - first:
+      213: 5440818703072565890
+    second: 'tiles-pipes-16x16_r06_c02'
+  - first:
+      213: 5122317101989170740
+    second: 'tiles-pipes-16x16_r06_c03'
+  - first:
+      213: 4886925163695546839
+    second: 'tiles-pipes-16x16_r06_c04'
+  - first:
+      213: 5086770805122776100
+    second: 'tiles-pipes-16x16_r06_c05'
+  - first:
+      213: 4966009763365378723
+    second: 'tiles-pipes-16x16_r06_c06'
+  - first:
+      213: 5288829827600276506
+    second: 'tiles-pipes-16x16_r07_c00'
+  - first:
+      213: 5604519008021996858
+    second: 'tiles-pipes-16x16_r07_c01'
+  - first:
+      213: 4751989439494220707
+    second: 'tiles-pipes-16x16_r07_c02'
+  - first:
+      213: 5671004954149639031
+    second: 'tiles-pipes-16x16_r07_c03'
+  - first:
+      213: 4672104168047077906
+    second: 'tiles-pipes-16x16_r07_c04'
+  - first:
+      213: 4979509303289953089
+    second: 'tiles-pipes-16x16_r07_c05'
+  - first:
+      213: 5612864588410547002
+    second: 'tiles-pipes-16x16_r07_c06'
+  - first:
+      213: 5343022906096496005
+    second: 'tiles-pipes-16x16_r08_c02'
+  - first:
+      213: 5206303820240121696
+    second: 'tiles-pipes-16x16_r08_c03'
+  - first:
+      213: 5088070320704964950
+    second: 'tiles-pipes-16x16_r08_c04'
+  - first:
+      213: 4898259788039736411
+    second: 'tiles-pipes-16x16_r08_c05'
+  - first:
+      213: 4734935704329970470
+    second: 'tiles-pipes-16x16_r08_c06'
+  - first:
+      213: 4848908271170669637
+    second: 'tiles-pipes-16x16_r09_c02'
+  - first:
+      213: 5360237573518157741
+    second: 'tiles-pipes-16x16_r09_c03'
+  - first:
+      213: 4926943526138936008
+    second: 'tiles-pipes-16x16_r09_c04'
+  - first:
+      213: 5591447494031087814
+    second: 'tiles-pipes-16x16_r09_c05'
+  - first:
+      213: 4721184394553153948
+    second: 'tiles-pipes-16x16_r09_c06'
+  - first:
+      213: 5421266306326152573
+    second: 'tiles-pipes-16x16_r10_c02'
+  - first:
+      213: 4862476878285219364
+    second: 'tiles-pipes-16x16_r10_c03'
+  - first:
+      213: 4676935080456345831
+    second: 'tiles-pipes-16x16_r10_c04'
+  - first:
+      213: 5020279452676518708
+    second: 'tiles-pipes-16x16_r10_c05'
+  - first:
+      213: 4665391777243219462
+    second: 'tiles-pipes-16x16_r10_c06'
+  - first:
+      213: 5361146679585117252
+    second: 'tiles-pipes-16x16_r11_c02'
+  - first:
+      213: 4824633267478345488
+    second: 'tiles-pipes-16x16_r11_c03'
+  - first:
+      213: 4783594396368230134
+    second: 'tiles-pipes-16x16_r11_c04'
+  - first:
+      213: 5296079126277969281
+    second: 'tiles-pipes-16x16_r11_c05'
+  - first:
+      213: 4741792475870264874
+    second: 'tiles-pipes-16x16_r11_c06'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd43849020943478409107507982b53
+      internalID: 4847845762586130505
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98478514eea4110a0867a51a7e6bd3e
+      internalID: 4688333982671337553
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fa8860df904851abd7048b24033e79
+      internalID: 5211192056532863072
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281ccbde0b94498eaf49a581a60ad065
+      internalID: 5300186542417693662
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265a650f0a6a44a799e3e6320b943e02
+      internalID: 4946934166716048655
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r00_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46290bb102c04220887d2641a5dddf83
+      internalID: 4764811430592056241
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc465c033964cb7a793bf52e319a67e
+      internalID: 5527943787441317312
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99e44f2451a4af1a570ed1c4fc1d761
+      internalID: 5400173409816429810
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2efbf8b0d04658b1e434f6b26873cb
+      internalID: 5068995789551762424
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8d04572ed644f583e13bbd0343c768
+      internalID: 4968929262889141335
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9523395d0034d3b8b9c304f5becb673
+      internalID: 5565270479227466645
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d6484d09d74eff9afab77cb96b1818
+      internalID: 5692279273995782221
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r01_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94956bf46cea450c8d80bac08c5f5f47
+      internalID: 4975471443108522996
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6ff82333b94a08bbe5faa4ecd7789e
+      internalID: 5334570630084818979
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9330396944ad44779aa78896d9cb0a68
+      internalID: 4933487429097109865
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb54a8443d5a4f139b8e3f7a88a76a41
+      internalID: 5697965414526789700
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9dda195c2643dba02b706935ab410a
+      internalID: 4889603140508047897
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18acf855e71b486cbd6581820ee24aed
+      internalID: 5218800171779684437
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8db072229f41d380132bf30722ae3a
+      internalID: 4743172899895881842
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r02_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccbff0e4e3947c0931400ab91c9fb5c
+      internalID: 5170218382108917518
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261d6bc5f4954b24aaf363ca3c0452f8
+      internalID: 5414721573432945605
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e7c0b0e775478ba70f818d4507ec9b
+      internalID: 5155468689862541488
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5dcf21257c4c4bba5aa31bd34d43c2
+      internalID: 5497528987265388321
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006db62e74b646f98a50576c6fb39af7
+      internalID: 5114247176895968814
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3cc7a936aa47a29367caeb5ed44bce
+      internalID: 5161748226864105385
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57de1bcb44f24277834c3ff77c3f20f9
+      internalID: 4789372536378760139
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r03_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06669899d5d24b07956764af5bb3ba9e
+      internalID: 5406524975708805273
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e53f408ab2433a93e3114790f2d556
+      internalID: 4844336847924838208
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74a1792fef34d8da1d5d4cf0b7644bc
+      internalID: 5588403036415989650
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ad69ed0adf49a39eddab5a2b1c7bd3
+      internalID: 5306096742703131117
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6fc704e2e4df0a236f6dec2db0306
+      internalID: 5616074696596847728
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8345d33b299646eb907f5175ae336ac6
+      internalID: 5110223928606184251
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r04_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fa812408c642c1a7e7d1a04bb7c6e6
+      internalID: 4810135525131976996
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b192d0bfe84abdbb48b97b0a28912e
+      internalID: 5385671736143483600
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14de12d41858475b8bc0f6132a60cd4d
+      internalID: 5141730166159839956
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bb7f32d5db40f797f66c72a1c0ae69
+      internalID: 4681445474848964402
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da879956fa2d4961a541098a02683cbc
+      internalID: 5287782512356464982
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ecea02249649e687e85947cf1149b0
+      internalID: 5324983838121454082
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b802ce4363ef4bc4b6d002faa01880a2
+      internalID: 5459598529515408963
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r05_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096a02ad1bee48459f65a5f11cd2b9e9
+      internalID: 5207599253297955501
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0aba349b9a40868a873cc04f4621fc
+      internalID: 4649574751823116852
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b190bcbebef14b28a473f34464df85c8
+      internalID: 5415788497188469950
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f11a82abc84b81af3a87c9531f9fb4
+      internalID: 5440818703072565890
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf90e3420434716ab67a678f1cd37a3
+      internalID: 5122317101989170740
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fda1d7d88b43d1bcb8f1e1d124db65
+      internalID: 4886925163695546839
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2bbc24d7184697a0fe526620ef21c4
+      internalID: 5086770805122776100
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r06_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9883daa3cf9144ea9221d230513b4d7f
+      internalID: 4966009763365378723
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9adc1ab2b44965a4b2a3c58ed28d7f
+      internalID: 5288829827600276506
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0213653a40584dc7844d820a924ce2b9
+      internalID: 5604519008021996858
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d575eba3753741f2aae6176d143f1a58
+      internalID: 4751989439494220707
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a391d37774f54eb3aeafa4cc3902ada9
+      internalID: 5671004954149639031
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa116a12a5fc40d68d66ec7679cc788d
+      internalID: 4672104168047077906
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a59bb41c554451a902e33195bd1d894
+      internalID: 4979509303289953089
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r07_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc946b3ae69a4de4bc7cba07f9087e1f
+      internalID: 5612864588410547002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r08_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a82d853b064a269b341474c743ba83
+      internalID: 5343022906096496005
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r08_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862bef6081bd484081bc579c42d98c08
+      internalID: 5206303820240121696
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r08_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d3c95674ff469c8c2013bd77b1d5e5
+      internalID: 5088070320704964950
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r08_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb04c5b1d5343fa877d3fa245101f0f
+      internalID: 4898259788039736411
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r08_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e6e326deef41b5afa8193c8be1f9c2
+      internalID: 4734935704329970470
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r09_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb94cc45c861434a832f7f059ed66d89
+      internalID: 4848908271170669637
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r09_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614067ad63ac4a63bcc43b3351ac0c8e
+      internalID: 5360237573518157741
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r09_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6febfac805084460b4d433373f58a879
+      internalID: 4926943526138936008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r09_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf898c6cfde4d989dc8e8326c3ded7d
+      internalID: 5591447494031087814
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r09_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6475599c04314185b1ba1804cb97f3fb
+      internalID: 4721184394553153948
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r10_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855d457d34fb4b3c8885704b73cc7b4f
+      internalID: 5421266306326152573
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r10_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bda624fcf5437a94e0bfa9f49e2613
+      internalID: 4862476878285219364
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r10_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c29d8e7cfad40e79d5cb932ee40d30e
+      internalID: 4676935080456345831
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r10_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f9f3349d9045ab92e80980519bc5c9
+      internalID: 5020279452676518708
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r10_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c4606cd1a40beba272bc184b0752a
+      internalID: 4665391777243219462
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r11_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216f94449e804a66a7ab49808df70834
+      internalID: 5361146679585117252
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r11_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9437108a6542f4b2562808dae356ca
+      internalID: 4824633267478345488
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r11_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4913d6f6bdc24262b6cb7e96e8d0b192
+      internalID: 4783594396368230134
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r11_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d028d58173e7497fb5d062a60ed14e9e
+      internalID: 5296079126277969281
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-pipes-16x16_r11_c06'
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3addfe2a3b2241ce82ce498ed071c435
+      internalID: 4741792475870264874
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: d1d29eb2f6ac40dfbb58d902856cd101
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'tiles-pipes-16x16_r00_c01': 4847845762586130505
+      'tiles-pipes-16x16_r00_c02': 4688333982671337553
+      'tiles-pipes-16x16_r00_c03': 5211192056532863072
+      'tiles-pipes-16x16_r00_c04': 5300186542417693662
+      'tiles-pipes-16x16_r00_c05': 4946934166716048655
+      'tiles-pipes-16x16_r00_c06': 4764811430592056241
+      'tiles-pipes-16x16_r01_c00': 5527943787441317312
+      'tiles-pipes-16x16_r01_c01': 5400173409816429810
+      'tiles-pipes-16x16_r01_c02': 5068995789551762424
+      'tiles-pipes-16x16_r01_c03': 4968929262889141335
+      'tiles-pipes-16x16_r01_c04': 5565270479227466645
+      'tiles-pipes-16x16_r01_c05': 5692279273995782221
+      'tiles-pipes-16x16_r01_c06': 4975471443108522996
+      'tiles-pipes-16x16_r02_c00': 5334570630084818979
+      'tiles-pipes-16x16_r02_c01': 4933487429097109865
+      'tiles-pipes-16x16_r02_c02': 5697965414526789700
+      'tiles-pipes-16x16_r02_c03': 4889603140508047897
+      'tiles-pipes-16x16_r02_c04': 5218800171779684437
+      'tiles-pipes-16x16_r02_c05': 4743172899895881842
+      'tiles-pipes-16x16_r02_c06': 5170218382108917518
+      'tiles-pipes-16x16_r03_c00': 5414721573432945605
+      'tiles-pipes-16x16_r03_c01': 5155468689862541488
+      'tiles-pipes-16x16_r03_c02': 5497528987265388321
+      'tiles-pipes-16x16_r03_c03': 5114247176895968814
+      'tiles-pipes-16x16_r03_c04': 5161748226864105385
+      'tiles-pipes-16x16_r03_c05': 4789372536378760139
+      'tiles-pipes-16x16_r03_c06': 5406524975708805273
+      'tiles-pipes-16x16_r04_c01': 4844336847924838208
+      'tiles-pipes-16x16_r04_c02': 5588403036415989650
+      'tiles-pipes-16x16_r04_c03': 5306096742703131117
+      'tiles-pipes-16x16_r04_c04': 5616074696596847728
+      'tiles-pipes-16x16_r04_c05': 5110223928606184251
+      'tiles-pipes-16x16_r04_c06': 4810135525131976996
+      'tiles-pipes-16x16_r05_c00': 5385671736143483600
+      'tiles-pipes-16x16_r05_c01': 5141730166159839956
+      'tiles-pipes-16x16_r05_c02': 4681445474848964402
+      'tiles-pipes-16x16_r05_c03': 5287782512356464982
+      'tiles-pipes-16x16_r05_c04': 5324983838121454082
+      'tiles-pipes-16x16_r05_c05': 5459598529515408963
+      'tiles-pipes-16x16_r05_c06': 5207599253297955501
+      'tiles-pipes-16x16_r06_c00': 4649574751823116852
+      'tiles-pipes-16x16_r06_c01': 5415788497188469950
+      'tiles-pipes-16x16_r06_c02': 5440818703072565890
+      'tiles-pipes-16x16_r06_c03': 5122317101989170740
+      'tiles-pipes-16x16_r06_c04': 4886925163695546839
+      'tiles-pipes-16x16_r06_c05': 5086770805122776100
+      'tiles-pipes-16x16_r06_c06': 4966009763365378723
+      'tiles-pipes-16x16_r07_c00': 5288829827600276506
+      'tiles-pipes-16x16_r07_c01': 5604519008021996858
+      'tiles-pipes-16x16_r07_c02': 4751989439494220707
+      'tiles-pipes-16x16_r07_c03': 5671004954149639031
+      'tiles-pipes-16x16_r07_c04': 4672104168047077906
+      'tiles-pipes-16x16_r07_c05': 4979509303289953089
+      'tiles-pipes-16x16_r07_c06': 5612864588410547002
+      'tiles-pipes-16x16_r08_c02': 5343022906096496005
+      'tiles-pipes-16x16_r08_c03': 5206303820240121696
+      'tiles-pipes-16x16_r08_c04': 5088070320704964950
+      'tiles-pipes-16x16_r08_c05': 4898259788039736411
+      'tiles-pipes-16x16_r08_c06': 4734935704329970470
+      'tiles-pipes-16x16_r09_c02': 4848908271170669637
+      'tiles-pipes-16x16_r09_c03': 5360237573518157741
+      'tiles-pipes-16x16_r09_c04': 4926943526138936008
+      'tiles-pipes-16x16_r09_c05': 5591447494031087814
+      'tiles-pipes-16x16_r09_c06': 4721184394553153948
+      'tiles-pipes-16x16_r10_c02': 5421266306326152573
+      'tiles-pipes-16x16_r10_c03': 4862476878285219364
+      'tiles-pipes-16x16_r10_c04': 4676935080456345831
+      'tiles-pipes-16x16_r10_c05': 5020279452676518708
+      'tiles-pipes-16x16_r10_c06': 4665391777243219462
+      'tiles-pipes-16x16_r11_c02': 5361146679585117252
+      'tiles-pipes-16x16_r11_c03': 4824633267478345488
+      'tiles-pipes-16x16_r11_c04': 4783594396368230134
+      'tiles-pipes-16x16_r11_c05': 5296079126277969281
+      'tiles-pipes-16x16_r11_c06': 4741792475870264874
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:
