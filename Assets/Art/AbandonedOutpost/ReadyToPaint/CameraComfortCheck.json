@@ -1,0 +1,18 @@
+{
+    "complete": true,
+    "rightLead": true,
+    "shortTapsKeepDirection": true,
+    "sustainedTurnChangesDirection": true,
+    "lookSpeedBounded": true,
+    "cameraSynced": true,
+    "hudStayedFixed": true,
+    "maximumLookSpeedFraction": 0.0997052937746048,
+    "allowedLookSpeedFraction": 0.10000000149011612,
+    "rightLookOffset": 1.230156660079956,
+    "leftLookOffset": -1.232239842414856,
+    "turnDelay": 0.30000001192092898,
+    "lookSmoothTime": 0.6000000238418579,
+    "sampledFrames": 4176,
+    "rapidTapFrames": 763,
+    "errors": []
+}

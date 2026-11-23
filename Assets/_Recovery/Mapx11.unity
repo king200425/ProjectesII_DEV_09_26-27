@@ -560,7 +560,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -3523,8 +3523,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285004398}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.49, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4285,7 +4285,6 @@ GameObject:
   - component: {fileID: 1864475669}
   - component: {fileID: 1864475672}
   - component: {fileID: 1864475673}
-  - component: {fileID: 1864475674}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4361,11 +4360,11 @@ Transform:
   m_GameObject: {fileID: 1864475668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2127562502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1864475672
 MonoBehaviour:
@@ -4425,18 +4424,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraShake
   shakeDuration: 0.2
   shakeStrength: 0.12
---- !u!114 &1864475674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864475668}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af8f06942c9b524dafadb5654f1df79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TimeSlowScreenFX
 --- !u!1 &1899757298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,6 +5276,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2127562500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127562502}
+  - component: {fileID: 2127562501}
+  m_Layer: 0
+  m_Name: PlayerCameraRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2127562501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127562500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba845de754f142e4487b386d7259975e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OutpostPlayerCamera
+  target: {fileID: 90202451}
+  viewCamera: {fileID: 1864475670}
+  playerViewportY: 0.4
+  movementLookFraction: 0.07
+  mouseLookFraction: {x: 0.025, y: 0.02}
+  maximumHorizontalLookFraction: 0.12
+  followSmoothTime: 0.12
+  lookSmoothTime: 0.6
+  turnDelay: 0.3
+  horizontalLookSpeedFraction: 0.1
+  verticalDeadZone: {x: 0.25, y: 0.68}
+  fallingLookAhead: 0.8
+  mouseLookEnabled: 1
+--- !u!4 &2127562502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127562500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.49, y: 3, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1864475671}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &23120747063517901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5923,7 +5968,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1864475671}
   - {fileID: 90202451}
   - {fileID: 700314346}
   - {fileID: 8603674138430109245}
@@ -5935,3 +5979,4 @@ SceneRoots:
   - {fileID: 1956284113}
   - {fileID: 2097316421}
   - {fileID: 2704103488394396970}
+  - {fileID: 2127562502}
