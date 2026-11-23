@@ -10,7 +10,7 @@ public class PlayerShooting : MonoBehaviour
 
     // Time between shots
     public float fireRate = 0.1f;
-    [SerializeField, Range(0.01f, 1f)] private float slowFireScale = 0.15f;
+    [SerializeField, Range(0.01f, 1f)] private float slowFireScale = 0.25f;
 
     // Gun recoil component
     public GunRecoil gunRecoil;
@@ -32,7 +32,7 @@ public class PlayerShooting : MonoBehaviour
             return;
 
         if (fireCooldown > 0f)
-            fireCooldown -= Time.deltaTime * (TimeSlowPrototype.IsSlowed ? slowFireScale : 1f);
+            fireCooldown -= Time.deltaTime;
 
         // Hold left mouse button to shoot continuously
         if (Input.GetMouseButton(0) && fireCooldown <= 0f)
@@ -45,11 +45,15 @@ public class PlayerShooting : MonoBehaviour
     void Shoot()
     {
         // Spawn bullet at the muzzle
-        Instantiate(
+        GameObject bullet = Instantiate(
             bulletPrefab,
             muzzlePoint.position,
             gunPivot.rotation
         );
+
+        Bullet projectile = bullet.GetComponent<Bullet>();
+        if (projectile != null)
+            projectile.isGhostBullet = false;
 
         // Record the shot during E recording
         if (playerRecorder != null)
@@ -67,3 +71,4 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 }
+

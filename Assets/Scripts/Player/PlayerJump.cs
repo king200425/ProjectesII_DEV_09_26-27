@@ -31,6 +31,9 @@ public class PlayerJump : MonoBehaviour
     private Collider2D bodyCollider;
     private Transform groundCheck;
     private Animator animator;
+
+    [HideInInspector] public bool onLadder;
+
     private int jumpsRemaining;
     private bool wasGrounded;
     private bool waitingForTakeoff;
@@ -94,12 +97,22 @@ public class PlayerJump : MonoBehaviour
             return;
         }
 
-        jumpPressed |= Input.GetKeyDown(KeyCode.Space);
-        jumpReleased |= Input.GetKeyUp(KeyCode.Space);
+        jumpPressed |= Input.GetKeyDown(KeyCode.Space)
+                    || Input.GetKeyDown(KeyCode.W)
+                    || Input.GetKeyDown(KeyCode.UpArrow);
+        jumpReleased |= Input.GetKeyUp(KeyCode.Space)
+                     || Input.GetKeyUp(KeyCode.W)
+                     || Input.GetKeyUp(KeyCode.UpArrow);
     }
 
     private void FixedUpdate()
     {
+        if (onLadder)
+        {
+            rb.gravityScale = 0f;
+            return;
+        }
+
         bool isGrounded = IsGrounded();
         bool justLanded = isGrounded && !wasGrounded && !waitingForTakeoff && rb.linearVelocity.y <= 0f;
         if (waitingForTakeoff && !isGrounded)
@@ -294,7 +307,9 @@ public class PlayerJump : MonoBehaviour
         waitingForTakeoff = isGrounded;
         hasBeenAirborne = true;
         canShortenJump = true;
-        jumpReleased = !Input.GetKey(KeyCode.Space);
+        jumpReleased = !(Input.GetKey(KeyCode.Space)
+                       || Input.GetKey(KeyCode.W)
+                       || Input.GetKey(KeyCode.UpArrow));
         animator.ResetTrigger("LandTrigger");
         animator.ResetTrigger("JumpTrigger");
         animator.SetTrigger(WallJumpTrigger);

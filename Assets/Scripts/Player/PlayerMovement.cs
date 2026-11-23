@@ -32,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
         // Get horizontal movement input
         horizontal = Input.GetAxisRaw("Horizontal");
+        if (horizontal == 0f)
+        {
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) horizontal = -1f;
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) horizontal = 1f;
+        }
 
         // Hold Shift to sprint
         isSprinting =

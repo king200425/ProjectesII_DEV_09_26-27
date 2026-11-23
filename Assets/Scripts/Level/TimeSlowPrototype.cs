@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class TimeSlowPrototype : MonoBehaviour
 {
@@ -6,7 +6,7 @@ public class TimeSlowPrototype : MonoBehaviour
     public static bool IsSlowed { get; private set; }
     public static bool IsPresent { get; private set; }
 
-    public float slowScale = 0.15f;
+    public float slowScale = 0.01f;
     public float maxDuration = 8f;
     public float cooldown = 1.5f;
 

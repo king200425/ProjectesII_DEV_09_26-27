@@ -7,14 +7,37 @@ public class CameraFollow : MonoBehaviour
     public Vector2 offset = new Vector2(0f, 1f);
     public Vector2 minBounds = new Vector2(-2f, 1f);
     public Vector2 maxBounds = new Vector2(24f, 27f);
-    public float orthographicSize = 5f;
+    public float orthographicSize = 6f;
 
     private Vector3 velocity;
+    private Camera cam;
+
+    void Start()
+    {
+        cam = GetComponent<Camera>();
+        if (cam != null)
+            cam.orthographicSize = orthographicSize;
+
+        if (target == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                target = player.transform;
+        }
+    }
 
     void LateUpdate()
     {
         if (target == null)
-            return;
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player == null)
+                return;
+            target = player.transform;
+        }
+
+        if (cam != null && !Mathf.Approximately(cam.orthographicSize, orthographicSize))
+            cam.orthographicSize = orthographicSize;
 
         float x = Mathf.Clamp(
             target.position.x + offset.x,

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -223,14 +223,19 @@ public class PlayerGhost : MonoBehaviour
             return;
 
         // Spawn bullet from the ghost's own gun
-        Instantiate(
+        GameObject bullet = Instantiate(
             bulletPrefab,
             muzzlePoint.position,
             shot.rotation
         );
+
+        Bullet projectile = bullet.GetComponent<Bullet>();
+        if (projectile != null)
+            projectile.isGhostBullet = true;
 
         // Play gun recoil
         if (gunRecoil != null)
             gunRecoil.PlayRecoil();
     }
 }
+

@@ -4,8 +4,12 @@ public class BridgeDoor : MonoBehaviour
 {
     public ShootSwitch[] switches;
     public Transform bridge;
+    public SpriteRenderer bridgeRenderer;
+    public GameObject bridgeColliderRoot;
     public Vector3 hiddenOffset = new Vector3(0f, -3f, 0f);
     public float moveSpeed = 6f;
+
+    public bool IsOpen { get; private set; }
 
     private Vector3 openPosition;
     private Vector3 hiddenPosition;
@@ -18,6 +22,7 @@ public class BridgeDoor : MonoBehaviour
         openPosition = bridge.position;
         hiddenPosition = openPosition + hiddenOffset;
         bridge.position = hiddenPosition;
+        SetVisible(false);
     }
 
     public void CheckSwitches()
@@ -34,12 +39,25 @@ public class BridgeDoor : MonoBehaviour
         if (bridge == null)
             return;
 
-        Vector3 target = AllActive() ? openPosition : hiddenPosition;
+        bool active = AllActive();
+        IsOpen = active;
+        SetVisible(active);
+
+        Vector3 target = active ? openPosition : hiddenPosition;
 
         bridge.position = Vector3.MoveTowards(
             bridge.position,
             target,
             moveSpeed * Time.deltaTime);
+    }
+
+    void SetVisible(bool visible)
+    {
+        if (bridgeRenderer != null)
+            bridgeRenderer.enabled = visible;
+
+        if (bridgeColliderRoot != null)
+            bridgeColliderRoot.SetActive(visible);
     }
 
     bool AllActive()

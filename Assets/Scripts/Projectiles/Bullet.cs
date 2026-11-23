@@ -37,6 +37,9 @@ public class Bullet : MonoBehaviour
         hitCollider = GetComponent<Collider2D>();
         groundLayer = LayerMask.NameToLayer("Ground");
 
+        if (rb != null)
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
         if (laserVisual != null)
         {
             Vector3 muzzle = transform.position;
@@ -82,8 +85,12 @@ public class Bullet : MonoBehaviour
         // Movement without Rigidbody2D
         if (rb == null)
         {
+            float step = speed * TimeSlowPrototype.WorldScale * Time.deltaTime;
+            if (TryHitTimeSwitchAlongPath(step))
+                return;
+
             transform.position +=
-                transform.right * speed * multiplier * TimeSlowPrototype.WorldScale * Time.deltaTime;
+                transform.right * step;
         }
     }
 
@@ -93,7 +100,11 @@ public class Bullet : MonoBehaviour
             return;
 
         Vector2 direction = transform.right;
-        float currentSpeed = speed * SlowMultiplier * TimeSlowPrototype.WorldScale;
+        float currentSpeed = speed * TimeSlowPrototype.WorldScale;
+
+        if (TryHitTimeSwitchAlongPath(currentSpeed * Time.fixedDeltaTime))
+            return;
+
         if (TimeSlowPrototype.IsPresent && hitCollider != null)
         {
             var filter = new ContactFilter2D { useTriggers = false };
@@ -111,6 +122,29 @@ public class Bullet : MonoBehaviour
 
         // Movement with Rigidbody2D
         rb.linearVelocity = direction * currentSpeed;
+    }
+
+    private bool TryHitTimeSwitchAlongPath(float distance)
+    {
+        if (distance <= 0f)
+            return false;
+
+        Vector2 next = (Vector2)transform.position + (Vector2)transform.right * distance;
+        Collider2D[] hits = Physics2D.OverlapCircleAll(next, 0.35f);
+
+        foreach (Collider2D hit in hits)
+        {
+            TimeSwitch timeSwitch = hit.GetComponentInParent<TimeSwitch>();
+
+            if (timeSwitch == null)
+                continue;
+
+            timeSwitch.Activate();
+            FinishImpact(hit, default);
+            return true;
+        }
+
+        return false;
     }
 
     private bool IsOutsideLevelView()
@@ -158,6 +192,14 @@ public class Bullet : MonoBehaviour
         {
             FinishImpact(other, hit);
             shootSwitch.Activate();
+            return true;
+        }
+
+        TimeSwitch timeSwitch = other.GetComponentInParent<TimeSwitch>();
+        if (timeSwitch != null)
+        {
+            FinishImpact(other, hit);
+            timeSwitch.Activate();
             return true;
         }
 

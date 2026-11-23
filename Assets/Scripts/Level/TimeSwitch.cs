@@ -15,6 +15,7 @@ public class TimeSwitch : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color startColor;
     private LineRenderer ring;
+    private Quaternion startRotation;
 
     void Awake()
     {
@@ -22,6 +23,7 @@ public class TimeSwitch : MonoBehaviour
 
         if (spriteRenderer != null)
             startColor = spriteRenderer.color;
+        startRotation = transform.rotation;
 
         activeColor = Color.red;
         ringColor = Color.red;
@@ -53,19 +55,15 @@ public class TimeSwitch : MonoBehaviour
 
     public void Activate()
     {
+        if (IsActive)
+            return;
+
         timer = activeWindow;
         IsActive = true;
-
-        if (spriteRenderer != null)
-            spriteRenderer.color = activeColor;
+        transform.rotation = startRotation;
 
         if (ring != null)
-        {
-            ring.startColor = ringColor;
-            ring.endColor = ringColor;
-            ring.enabled = true;
-            UpdateRing();
-        }
+            ring.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -81,6 +79,17 @@ public class TimeSwitch : MonoBehaviour
         Activate();
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.GetComponent<Bullet>() == null)
+            return;
+
+        Destroy(other.gameObject);
+
+        if (!IsActive)
+            Activate();
+    }
+
     void Update()
     {
         if (!IsActive)
@@ -92,17 +101,16 @@ public class TimeSwitch : MonoBehaviour
         {
             timer = 0f;
             IsActive = false;
+            transform.rotation = startRotation;
 
             if (spriteRenderer != null)
                 spriteRenderer.color = startColor;
 
-            if (ring != null)
-                ring.enabled = false;
-
             return;
         }
 
-        UpdateRing();
+        float progress = 1f - Mathf.Clamp01(timer / activeWindow);
+        transform.rotation = startRotation * Quaternion.Euler(0f, 0f, -360f * progress);
     }
 
     void UpdateRing()
@@ -138,6 +146,7 @@ public class TimeSwitch : MonoBehaviour
     void OnDisable()
     {
         IsActive = false;
+        transform.rotation = startRotation;
 
         if (spriteRenderer != null)
             spriteRenderer.color = startColor;

@@ -41,6 +41,8 @@ public class RecordedShot
 
 public class PlayerRecorder : MonoBehaviour
 {
+    public static event System.Action ReplayStarted;
+
     [Header("Recording Settings")]
     public float recordDuration = 4f;
     [SerializeField] private bool requireEchoUnlock;
@@ -148,6 +150,7 @@ public class PlayerRecorder : MonoBehaviour
                 if (ghost != null)
                 {
                     ghost.StartReplay(recordedFrames, recordedShots);
+                    if (ReplayStarted != null) ReplayStarted();
                     hasRecording = false;
 
                     // Keep the HUD in PLAY mode
