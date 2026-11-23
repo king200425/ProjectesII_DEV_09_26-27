@@ -1,0 +1,11 @@
+{
+    "scene": "Assets/_Recovery/Mapx11.unity",
+    "completed": true,
+    "paletteHas12Blocks": true,
+    "correctGroundLayer": true,
+    "compositeCollider": true,
+    "realPlayerLandedOnTiles": true,
+    "realPlayerJumped": true,
+    "realPlayerLandedAfterJump": true,
+    "error": ""
+}
