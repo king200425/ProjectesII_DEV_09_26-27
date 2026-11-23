@@ -113,7 +113,7 @@ public class MainMenuManager : MonoBehaviour
         if (starting)
             return;
 
-        if (!Application.CanStreamedLevelBeLoaded("Level01_TorreDelOlvido"))
+        if (!Application.CanStreamedLevelBeLoaded("Level01_Room"))
         {
             actionStatus.text = "LEVEL01 UNAVAILABLE";
             return;
@@ -133,7 +133,7 @@ public class MainMenuManager : MonoBehaviour
         // Let the first acceleration frame render before Unity starts loading the level.
         yield return null;
         Time.timeScale = 1f;
-        sceneLoad = SceneManager.LoadSceneAsync("Level01_TorreDelOlvido");
+        sceneLoad = SceneManager.LoadSceneAsync("Level01_Room");
         sceneLoad.allowSceneActivation = false;
         while (elapsedIgnition < ignitionDuration || sceneLoad.progress < .9f)
             yield return null;
