@@ -143,6 +143,17 @@ public class Bullet : MonoBehaviour
             return true;
         }
 
+        // Hit rotating/turret trap
+        TurretHealth turret =
+            other.GetComponentInParent<TurretHealth>();
+
+        if (turret != null)
+        {
+            FinishImpact(other, hit);
+            turret.Hit(isGhostBullet);
+            return true;
+        }
+
         // Hit enemy
         EnemyHealth enemy =
             other.GetComponentInParent<EnemyHealth>();
