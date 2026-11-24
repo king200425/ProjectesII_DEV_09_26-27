@@ -94,7 +94,8 @@ public class Bullet : MonoBehaviour
 
         Vector2 direction = transform.right;
         float currentSpeed = speed * SlowMultiplier * TimeSlowPrototype.WorldScale;
-        if (TimeSlowPrototype.IsPresent && hitCollider != null)
+        // Sweep fast shots in every level so a thin moving switch head cannot be skipped.
+        if (hitCollider != null)
         {
             var filter = new ContactFilter2D { useTriggers = false };
             int count = hitCollider.Cast(direction, filter, solidHits, currentSpeed * Time.fixedDeltaTime);
@@ -150,6 +151,14 @@ public class Bullet : MonoBehaviour
         {
             FinishImpact(other, hit);
             enemy.TakeDamage(damage);
+            return true;
+        }
+
+        ShotPressureSwitch pressureSwitch = other.GetComponentInParent<ShotPressureSwitch>();
+        if (pressureSwitch != null)
+        {
+            FinishImpact(other, hit);
+            pressureSwitch.ReceiveShot(isGhostBullet);
             return true;
         }
 

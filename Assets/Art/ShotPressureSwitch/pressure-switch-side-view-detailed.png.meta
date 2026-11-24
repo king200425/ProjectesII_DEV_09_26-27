@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: a939abe8bdd65ba4d9cecb8e2af45542
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 204160334577472039
+    second: pressure-switch-side-view-detailed_0
+  - first:
+      213: -4649115743268679551
+    second: pressure-switch-side-view-detailed_1
+  - first:
+      213: -1342044583677156759
+    second: pressure-switch-side-view-detailed_2
+  - first:
+      213: 1748205096714934827
+    second: pressure-switch-side-view-detailed_3
+  - first:
+      213: -4354171168379586375
+    second: pressure-switch-side-view-detailed_4
+  - first:
+      213: 7855232388213374749
+    second: pressure-switch-side-view-detailed_5
+  - first:
+      213: -8176972310124262930
+    second: pressure-switch-side-view-detailed_6
+  - first:
+      213: -9139064910128268799
+    second: pressure-switch-side-view-detailed_7
+  - first:
+      213: 5914078691942327385
+    second: pressure-switch-side-view-detailed_8
+  - first:
+      213: -2492928829556497610
+    second: pressure-switch-side-view-detailed_9
+  - first:
+      213: 4503014038110070884
+    second: pressure-switch-side-view-detailed_10
+  - first:
+      213: -862119287208139443
+    second: pressure-switch-side-view-detailed_11
+  - first:
+      213: -5843850042137641129
+    second: pressure-switch-side-view-detailed_12
+  - first:
+      213: -2198482303924210180
+    second: pressure-switch-side-view-detailed_13
+  - first:
+      213: -4399387105445024518
+    second: pressure-switch-side-view-detailed_14
+  - first:
+      213: -2995765288992679426
+    second: pressure-switch-side-view-detailed_15
+  - first:
+      213: -7935216864550286311
+    second: pressure-switch-side-view-detailed_16
+  - first:
+      213: -436258518845132858
+    second: pressure-switch-side-view-detailed_17
+  - first:
+      213: 8667520651346170264
+    second: pressure-switch-side-view-detailed_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SideView_Head
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1088
+        width: 720
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b64f9d4c1c623044b802a3b883f4300
+      internalID: -584059145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideView_Shaft
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 336
+        width: 192
+        height: 752
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25be9c6e8d64f0468c59b5a61e6770c
+      internalID: 152848138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideView_Base
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 108
+        width: 720
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc5bfa21b69d744bacf72df2c2983ed
+      internalID: -637818668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21b98f13b591fda4491847b3d85a669b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SideView_Base: -637818668
+      SideView_Head: -584059145
+      SideView_Shaft: 152848138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
