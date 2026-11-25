@@ -1,0 +1,33 @@
+E 分身专用倒挂机关（2026-11-25）
+
+新增预制体：Assets/Prefabs/Level/ShotPressureSwitch_GhostOnly_Ceiling.prefab
+从 Project 拖进场景即可使用，挂在天花板上，向上射击压头。
+它是原 ShotPressureSwitch_Ceiling 的预制体变体，保留倒挂方向、原比例和头部碰撞。
+现已整体换成分身同系青蓝配色，包含底座、柱身和压头；激活后指示灯仍亮绿。
+原 ShotPressureSwitch.prefab 和 ShotPressureSwitch_Ceiling.prefab 均保留，文件内容未改。
+
+新增变体在 ShotPressureSwitch 组件中勾选“仅接受 E 分身子弹”(ghostOnly)。
+本体子弹命中不增加进度、不刷新回弹计时；子弹本身仍按现有逻辑产生碰撞火花并消耗。
+只接受 E 分身回放所用、isGhostBullet=true 的子弹。
+从完全弹出状态连续命中 9 发激活；中断后 1 秒内回弹。
+激活后在本轮游戏保持绿灯，不再回弹；闪光特效和 onActivated 门联动事件只执行一次。
+只给头部保留碰撞，柱身和底座不挡子弹，压头缩进时碰撞跟着移动。
+
+代码位置：Assets/Scripts/Level/ShotPressureSwitch.cs
+新增开关 ghostOnly 默认为 false，旧机关照常接受本体射击。
+E 分身和子弹原有脚本/预制体未改，沿用已有子弹类型标记。
+编辑器创建/验证工具：Assets/Editor/ShotPressureSwitch/ShotPressureSwitchGhostOnlySetup.cs
+工具菜单：地图 > 射击机关 > 创建 E 分身限定倒挂版。
+
+运行验证通过：
+- 原倒挂机关继续接受本体及分身子弹。
+- 新版本体实弹连射 9 发，进度保持为零。
+- 分身实弹 5 发只会部分压下；停射后回到需要 9 发的状态。
+- 回弹期间本体补射不会留住分身已压下的进度。
+- 实例化真实 E 分身预制体并调用回放，用实际分身子弹连续 9 发成功激活。
+- 绿灯、成功特效和激活事件各触发一次；后续射击及等待不会解锁回弹。
+- 原倒挂方向、头部单一碰撞以及向上压缩保持正常。
+
+报告：Logs/ShotPressureSwitch/GhostOnlyReport.json
+脚本修改前备份：Logs/ShotPressureSwitch/Backups/ShotPressureSwitch_BeforeGhostFilter_20261125_150603.cs.txt
+本次没有在 TrapTesting 中永久添加机关，也没有保存/覆盖用户当前场景。

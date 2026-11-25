@@ -11,6 +11,11 @@ public sealed class ShotPressureSwitch : MonoBehaviour
     [Tooltip("容许正常连发的短间隔；计入总回弹时间。")]
     [Min(0f)] public float shotGraceSeconds = 0.18f;
     [Min(0.01f)] public float pressTravelSeconds = 0.5f;
+    [Header("可触发子弹")]
+    [InspectorName("仅接受 E 分身子弹")]
+    [Tooltip("开启后，本体子弹不会增加进度或延长回弹计时。")]
+    public bool ghostOnly;
+    [Tooltip("允许 E 技能分身回放发射的子弹。")]
     public bool acceptGhostBullets = true;
 
     [Header("柱子部件（已在预制体中配置）")]
@@ -62,7 +67,7 @@ public sealed class ShotPressureSwitch : MonoBehaviour
     // Bullet owns impact/consumption. This component never independently counts collider callbacks.
     public bool ReceiveShot(bool ghostBullet = false)
     {
-        if (!isActiveAndEnabled || latched || (ghostBullet && !acceptGhostBullets)
+        if (!isActiveAndEnabled || latched || (ghostBullet ? !acceptGhostBullets : ghostOnly)
             || Time.timeScale <= 0f) return false;
         Recover(Time.time);
         AcceptedShots++;
