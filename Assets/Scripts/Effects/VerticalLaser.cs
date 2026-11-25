@@ -65,6 +65,18 @@ public sealed class VerticalLaser : MonoBehaviour
     {
         if (needsRefresh)
             ApplySettings();
+
+        ApplyTimeScale();
+    }
+
+    private void ApplyTimeScale()
+    {
+        if (beam == null || properties == null)
+            return;
+
+        beam.GetPropertyBlock(properties);
+        properties.SetFloat(Speed, animationSpeed * TimeSlow.WorldScale);
+        beam.SetPropertyBlock(properties);
     }
 
     private void ApplySettings()

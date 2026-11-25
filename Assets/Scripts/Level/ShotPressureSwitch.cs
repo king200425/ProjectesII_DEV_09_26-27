@@ -82,6 +82,20 @@ public sealed class ShotPressureSwitch : MonoBehaviour
         return true;
     }
 
+    public void ResetSwitch()
+    {
+        latched = false;
+        IsActive = false;
+        AcceptedShots = 0;
+        progress = 0f;
+        progressAtLastShot = 0f;
+        visualProgress = 0f;
+        lastShotTime = float.NegativeInfinity;
+        fullyPressedTime = -1f;
+        renderedCapState = -1;
+        RefreshVisuals();
+    }
+
     void Recover(float now)
     {
         if (latched || progress <= 0f) return;

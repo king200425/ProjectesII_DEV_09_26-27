@@ -6,6 +6,7 @@ public class LaserCorePulse : MonoBehaviour
     public float pulseAmount = 0.06f;
 
     private Vector3 baseScale;
+    private float visualTime;
 
     void Awake()
     {
@@ -14,7 +15,8 @@ public class LaserCorePulse : MonoBehaviour
 
     void Update()
     {
-        float scale = 1f + Mathf.Sin(Time.time * pulseSpeed) * pulseAmount;
+        visualTime += Time.deltaTime * TimeSlow.WorldScale;
+        float scale = 1f + Mathf.Sin(visualTime * pulseSpeed) * pulseAmount;
         transform.localScale = baseScale * scale;
     }
 }

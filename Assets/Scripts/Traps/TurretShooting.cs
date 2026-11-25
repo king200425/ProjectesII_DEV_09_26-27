@@ -35,7 +35,7 @@ public class TurretShooting : MonoBehaviour
             aim.localScale = new Vector3(facingLeft ? -1f : 1f, 1f, 1f);
         }
 
-        nextShot -= Time.deltaTime;
+        nextShot -= Time.deltaTime * TimeSlow.WorldScale;
         if (nextShot <= 0f && toPlayer.magnitude <= range)
         {
             Fire(toPlayer.normalized);

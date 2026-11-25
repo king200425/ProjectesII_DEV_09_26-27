@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
@@ -24,7 +24,7 @@ public class MovingPlatform : MonoBehaviour
         if (distance < 0.01f)
             return;
 
-        float scale = TimeSlowPrototype.WorldScale;
+        float scale = TimeSlowPrototype.WorldScale * TimeSlow.WorldScale;
 
         progress += direction * speed * scale * Time.deltaTime / distance;
 

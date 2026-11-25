@@ -15,14 +15,14 @@ public class TurretLaserBolt : MonoBehaviour
 
     void Update()
     {
-        life -= Time.deltaTime;
+        life -= Time.deltaTime * TimeSlow.WorldScale;
         if (life <= 0f)
         {
             Destroy(gameObject);
             return;
         }
 
-        transform.position += (Vector3)(direction.normalized * speed * Time.deltaTime);
+        transform.position += (Vector3)(direction.normalized * speed * TimeSlow.WorldScale * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D other)

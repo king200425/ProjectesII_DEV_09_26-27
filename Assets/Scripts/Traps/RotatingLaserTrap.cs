@@ -13,6 +13,6 @@ public class RotatingLaserTrap : MonoBehaviour
             return;
 
         float direction = clockwise ? 1f : -1f;
-        rotator.Rotate(0f, 0f, direction * degreesPerSecond * Time.deltaTime);
+        rotator.Rotate(0f, 0f, direction * degreesPerSecond * TimeSlow.WorldScale * Time.deltaTime);
     }
 }

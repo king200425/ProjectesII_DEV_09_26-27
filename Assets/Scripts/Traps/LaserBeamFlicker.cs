@@ -12,6 +12,7 @@ public class LaserBeamFlicker : MonoBehaviour
     private SpriteRenderer sr;
     private Vector3 baseScale;
     private float phase;
+    private float visualTime;
 
     void Awake()
     {
@@ -22,7 +23,8 @@ public class LaserBeamFlicker : MonoBehaviour
 
     void Update()
     {
-        float wave = (Mathf.Sin(Time.time * pulseSpeed + phase) + 1f) * 0.5f;
+        visualTime += Time.deltaTime * TimeSlow.WorldScale;
+        float wave = (Mathf.Sin(visualTime * pulseSpeed + phase) + 1f) * 0.5f;
 
         Color c = sr.color;
         c.a = Mathf.Lerp(minAlpha, maxAlpha, wave);
@@ -30,7 +32,7 @@ public class LaserBeamFlicker : MonoBehaviour
 
         transform.localScale = new Vector3(
             baseScale.x,
-            baseScale.y * (1f + widthPulse * Mathf.Sin(Time.time * pulseSpeed * 0.7f + phase)),
+            baseScale.y * (1f + widthPulse * Mathf.Sin(visualTime * pulseSpeed * 0.7f + phase)),
             baseScale.z);
     }
 }

@@ -82,7 +82,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (TimeSlowPrototype.IsSlowed)
+        if (TimeSlowPrototype.IsSlowed || TimeSlow.WorldScale < 1f)
             return;
 
         if (health != null && health.IsDead)
@@ -412,7 +412,7 @@ public class EnemyAI : MonoBehaviour
 
     public void OnHit()
     {
-        if (TimeSlowPrototype.IsSlowed)
+        if (TimeSlowPrototype.IsSlowed || TimeSlow.WorldScale < 1f)
             return;
 
         if (health != null && health.IsDead)
