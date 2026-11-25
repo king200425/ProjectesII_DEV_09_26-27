@@ -21,6 +21,11 @@ public class OutpostPlayerCamera : MonoBehaviour
     public float fallingLookAhead = 0.8f;
     public bool mouseLookEnabled = true;
 
+    [Header("关卡左边界")]
+    public bool limitLeftEdge;
+    public Collider2D leftBoundaryWall;
+    [Min(0f)] public float visibleLeftWallWidth = 0.75f;
+
     Rigidbody2D targetBody;
     PlayerJump jumpController;
     Transform groundCheck;
@@ -63,9 +68,30 @@ public class OutpostPlayerCamera : MonoBehaviour
         facing = pendingFacing = 0;
         turnTimer = 0;
         float height = viewCamera.orthographicSize * 2f;
-        transform.position = new Vector3(target.position.x,
-            target.position.y + (0.5f - playerViewportY) * height, -10f);
+        transform.position = ClampViewPosition(new Vector3(target.position.x,
+            target.position.y + (0.5f - playerViewportY) * height, -10f));
         initialized = true;
+    }
+
+    Vector3 ClampViewPosition(Vector3 position)
+    {
+        if (!limitLeftEdge || leftBoundaryWall == null || !leftBoundaryWall.enabled
+            || !leftBoundaryWall.gameObject.activeInHierarchy || viewCamera == null
+            || !viewCamera.orthographic) return position;
+        // Keep a narrow visible wall border; account for the full viewport and child camera shake.
+        float wallWidth = Mathf.Clamp(visibleLeftWallWidth, 0f, leftBoundaryWall.bounds.size.x);
+        float leftEdge = leftBoundaryWall.bounds.max.x - wallWidth;
+        float halfWidth = viewCamera.orthographicSize * viewCamera.aspect;
+        float childOffsetX = viewCamera.transform.position.x - transform.position.x;
+        position.x = Mathf.Max(position.x, leftEdge + halfWidth - childOffsetX);
+        return position;
+    }
+
+    void SetConstrainedPosition(Vector3 position)
+    {
+        Vector3 constrained = ClampViewPosition(position);
+        if (constrained.x > position.x && followVelocity.x < 0f) followVelocity.x = 0f;
+        transform.position = constrained;
     }
 
     bool IsGrounded()
@@ -115,7 +141,8 @@ public class OutpostPlayerCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        if (target == null || viewCamera == null || Time.timeScale <= 0f) return;
+        if (target == null || viewCamera == null) return;
+        if (Time.timeScale <= 0f) { SetConstrainedPosition(transform.position); return; }
         if (!initialized || Vector3.Distance(target.position, previousTarget) > 12f) SnapToTarget();
         previousTarget = target.position;
         float dt = Mathf.Min(Time.unscaledDeltaTime, 0.05f);
@@ -151,7 +178,8 @@ public class OutpostPlayerCamera : MonoBehaviour
             if (vy < -2.5f) y -= Mathf.Clamp01((-vy - 2.5f) / 7f) * fallingLookAhead;
         }
         Vector3 destination = new Vector3(target.position.x + lookOffset.x, y + lookOffset.y, -10f);
-        transform.position = Vector3.SmoothDamp(transform.position, destination,
-            ref followVelocity, followSmoothTime, Mathf.Infinity, dt);
+        destination = ClampViewPosition(destination);
+        SetConstrainedPosition(Vector3.SmoothDamp(transform.position, destination,
+            ref followVelocity, followSmoothTime, Mathf.Infinity, dt));
     }
 }

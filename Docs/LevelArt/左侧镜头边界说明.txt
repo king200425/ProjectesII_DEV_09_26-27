@@ -1,0 +1,26 @@
+Mapx11 左侧镜头边界（2026-11-25）
+
+已保存至 Assets/_Recovery/Mapx11.unity。
+PlayerCameraRig > OutpostPlayerCamera > 关卡左边界：
+limitLeftEdge 已开启；leftBoundaryWall 绑定 GroundMap/Ground (4)。
+visibleLeftWallWidth = 0.75：画面左边保留一小条墙面。
+边界随左墙移动；当前画面的世界左边界为 -5.815866。
+计算包含镜头半宽和子相机震屏偏移，支持不同画幅。
+角色接近左墙时镜头停住，角色可以继续移动；离开边界后正常跟随。
+移动前瞻和鼠标偏移在最终画面边界内生效；原有平滑与转向参数保留。
+开局 SnapToTarget 和暂停时的画幅变化也执行限制。
+只给 Mapx11 绑定了边界，其他场景默认关闭。
+
+修改：Assets/Scripts/Camera/OutpostPlayerCamera.cs
+编辑器配置/验证：Assets/Editor/LevelArt/Mapx11CameraBoundsSetup.cs
+辅助 PlayerColorCamera 在编辑器初始画面也同步到主相机。
+角色尺寸、位置和地形碰撞未改。
+
+运行验证通过：开局与第一渲染帧、16:9、4:3、21:9、最大向左前瞻、
+子相机震屏、暂停画幅、离开边界后跟随，以及辅助相机同步。
+测试在实际相机渲染前取样，不在编辑状态移动玩家来冒充结果。
+测试期间的角色移动和禁用控制器仅发生于 Play 模式，退出后已还原。
+
+修改前备份：Logs/LevelArt/Backups/Mapx11_BeforeLeftCameraLimit_20261125_124547.unity
+同名前缀 _OutpostPlayerCamera.cs.txt 为相机脚本修改前备份。
+报告：Logs/LevelArt/Mapx11_CameraBounds_Report.json
