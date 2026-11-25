@@ -202,7 +202,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f3acb65337282444fa1e77fec14d6f99, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -254,7 +254,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f3acb65337282444fa1e77fec14d6f99, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -301,6 +301,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  wallSlideSpeed: 2.4
+  wallJumpHorizontalForce: 9
+  wallJumpVerticalMultiplier: 0.85
+  wallJumpInputBuffer: 0.16
 --- !u!114 &7836211694041405227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +335,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8217844626581164295, guid: 420a93978e044c1438049504c5018e3c, type: 3}
   muzzlePoint: {fileID: 6027169121647648221}
   fireRate: 0.05
+  slowFireScale: 0.15
   gunRecoil: {fileID: 1937884105138000427}
   gunPivot: {fileID: 3190269250265076927}
 --- !u!114 &3761644022436753964
@@ -371,6 +376,7 @@ MonoBehaviour:
   ghostPrefab: {fileID: 8183898262000101826, guid: 28282b0e2c121e64bbb1e8f4638ff5b3, type: 3}
   playerSprite: {fileID: 672144978062563988}
   gunPivot: {fileID: 3190269250265076927}
+  recordingHUD: {fileID: 0}
 --- !u!1 &4307079072467724428
 GameObject:
   m_ObjectHideFlags: 0
