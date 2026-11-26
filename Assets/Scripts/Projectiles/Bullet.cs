@@ -85,7 +85,7 @@ public class Bullet : MonoBehaviour
         // Movement without Rigidbody2D
         if (rb == null)
         {
-            float step = speed * TimeSlowPrototype.WorldScale * Time.deltaTime;
+            float step = speed * multiplier * TimeSlowPrototype.WorldScale * Time.deltaTime;
             if (TryHitTimeSwitchAlongPath(step))
                 return;
 
@@ -100,12 +100,13 @@ public class Bullet : MonoBehaviour
             return;
 
         Vector2 direction = transform.right;
-        float currentSpeed = speed * TimeSlowPrototype.WorldScale;
+        float currentSpeed = speed * SlowMultiplier * TimeSlowPrototype.WorldScale;
 
         if (TryHitTimeSwitchAlongPath(currentSpeed * Time.fixedDeltaTime))
             return;
 
-        if (TimeSlowPrototype.IsPresent && hitCollider != null)
+        // Sweep fast shots in every level so a thin moving switch head cannot be skipped.
+        if (hitCollider != null)
         {
             var filter = new ContactFilter2D { useTriggers = false };
             int count = hitCollider.Cast(direction, filter, solidHits, currentSpeed * Time.fixedDeltaTime);
@@ -176,6 +177,17 @@ public class Bullet : MonoBehaviour
             return true;
         }
 
+        // Hit rotating/turret trap
+        TurretHealth turret =
+            other.GetComponentInParent<TurretHealth>();
+
+        if (turret != null)
+        {
+            FinishImpact(other, hit);
+            turret.Hit(isGhostBullet);
+            return true;
+        }
+
         // Hit enemy
         EnemyHealth enemy =
             other.GetComponentInParent<EnemyHealth>();
@@ -184,6 +196,14 @@ public class Bullet : MonoBehaviour
         {
             FinishImpact(other, hit);
             enemy.TakeDamage(damage);
+            return true;
+        }
+
+        ShotPressureSwitch pressureSwitch = other.GetComponentInParent<ShotPressureSwitch>();
+        if (pressureSwitch != null)
+        {
+            FinishImpact(other, hit);
+            pressureSwitch.ReceiveShot(isGhostBullet);
             return true;
         }
 

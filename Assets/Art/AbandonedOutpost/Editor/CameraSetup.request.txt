@@ -1,0 +1,1 @@
+Configure camera and audit player/HUD in confirmed Mapx11 scene.

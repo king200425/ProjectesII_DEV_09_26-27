@@ -17,6 +17,32 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private bool isSprinting;
 
+    private static PhysicsMaterial2D runtimeNoFriction;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null) return;
+
+        // Input pushes against walls every physics step. Surface friction must not cancel gravity.
+        PhysicsMaterial2D material = rb.sharedMaterial;
+        if (material == null || material.friction != 0f || material.bounciness != 0f)
+        {
+            if (runtimeNoFriction == null)
+                runtimeNoFriction = new PhysicsMaterial2D("Player_NoFriction_Runtime")
+                {
+                    friction = 0f,
+                    bounciness = 0f,
+                    hideFlags = HideFlags.DontSave
+                };
+            material = runtimeNoFriction;
+        }
+        rb.sharedMaterial = material;
+        foreach (Collider2D body in GetComponentsInChildren<Collider2D>(true))
+            if (body.attachedRigidbody == rb && !body.isTrigger)
+                body.sharedMaterial = material;
+    }
+
     void Start()
     {
         // Get player components

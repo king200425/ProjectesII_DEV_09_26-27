@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 3db9a06ed4394e2cae3bc872ddc086df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5741146859467918485
+    second: 'animated-laser-wall-vertical-16x16_r00_c00'
+  - first:
+      213: 4881803025214307112
+    second: 'animated-laser-wall-vertical-16x16_r00_c01'
+  - first:
+      213: 4872291975514295266
+    second: 'animated-laser-wall-vertical-16x16_r00_c02'
+  - first:
+      213: 4791741359916483806
+    second: 'animated-laser-wall-vertical-16x16_r00_c03'
+  - first:
+      213: 5304136439119306216
+    second: 'animated-laser-wall-vertical-16x16_r01_c00'
+  - first:
+      213: 4708049848794790537
+    second: 'animated-laser-wall-vertical-16x16_r01_c01'
+  - first:
+      213: 5106974449183720364
+    second: 'animated-laser-wall-vertical-16x16_r01_c02'
+  - first:
+      213: 5351555552139401715
+    second: 'animated-laser-wall-vertical-16x16_r01_c03'
+  - first:
+      213: 5419441270471427732
+    second: 'animated-laser-wall-vertical-16x16_r02_c00'
+  - first:
+      213: 5190159275724219729
+    second: 'animated-laser-wall-vertical-16x16_r02_c01'
+  - first:
+      213: 4758018968827164503
+    second: 'animated-laser-wall-vertical-16x16_r02_c02'
+  - first:
+      213: 4677186354664986199
+    second: 'animated-laser-wall-vertical-16x16_r02_c03'
+  - first:
+      213: 5698029891734447009
+    second: 'animated-laser-wall-vertical-16x16_r03_c00'
+  - first:
+      213: 4748998955867788246
+    second: 'animated-laser-wall-vertical-16x16_r03_c01'
+  - first:
+      213: 4950577637075852128
+    second: 'animated-laser-wall-vertical-16x16_r03_c02'
+  - first:
+      213: 4814808102640212507
+    second: 'animated-laser-wall-vertical-16x16_r03_c03'
+  - first:
+      213: 4654984651294927465
+    second: 'animated-laser-wall-vertical-16x16_r03_c04'
+  - first:
+      213: 4939612743455266813
+    second: 'animated-laser-wall-vertical-16x16_r04_c00'
+  - first:
+      213: 4863636770440063165
+    second: 'animated-laser-wall-vertical-16x16_r04_c01'
+  - first:
+      213: 5024077626278284420
+    second: 'animated-laser-wall-vertical-16x16_r04_c02'
+  - first:
+      213: 5405087323463384367
+    second: 'animated-laser-wall-vertical-16x16_r04_c03'
+  - first:
+      213: 4860727797769836524
+    second: 'animated-laser-wall-vertical-16x16_r05_c00'
+  - first:
+      213: 5183460517402890051
+    second: 'animated-laser-wall-vertical-16x16_r05_c01'
+  - first:
+      213: 5355901803595730491
+    second: 'animated-laser-wall-vertical-16x16_r05_c02'
+  - first:
+      213: 5591713287306101127
+    second: 'animated-laser-wall-vertical-16x16_r05_c03'
+  - first:
+      213: 5282696130060156455
+    second: 'animated-laser-wall-vertical-16x16_r05_c04'
+  - first:
+      213: 5730384801352211637
+    second: 'animated-laser-wall-vertical-16x16_r06_c00'
+  - first:
+      213: 5330259366698655267
+    second: 'animated-laser-wall-vertical-16x16_r06_c01'
+  - first:
+      213: 4728659003936506918
+    second: 'animated-laser-wall-vertical-16x16_r06_c02'
+  - first:
+      213: 5002446923168141056
+    second: 'animated-laser-wall-vertical-16x16_r06_c03'
+  - first:
+      213: 4745805006205101428
+    second: 'animated-laser-wall-vertical-16x16_r06_c04'
+  - first:
+      213: 5425008181343144736
+    second: 'animated-laser-wall-vertical-16x16_r07_c01'
+  - first:
+      213: 5086955523479876096
+    second: 'animated-laser-wall-vertical-16x16_r07_c02'
+  - first:
+      213: 5195708616050311271
+    second: 'animated-laser-wall-vertical-16x16_r07_c03'
+  - first:
+      213: 5127825608880009895
+    second: 'animated-laser-wall-vertical-16x16_r07_c04'
+  - first:
+      213: 4983762375525471690
+    second: 'animated-laser-wall-vertical-16x16_r08_c00'
+  - first:
+      213: 4857827801825952526
+    second: 'animated-laser-wall-vertical-16x16_r08_c01'
+  - first:
+      213: 5465240380088152853
+    second: 'animated-laser-wall-vertical-16x16_r08_c02'
+  - first:
+      213: 4794904011222596826
+    second: 'animated-laser-wall-vertical-16x16_r08_c03'
+  - first:
+      213: 5739907871603010117
+    second: 'animated-laser-wall-vertical-16x16_r08_c04'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ef4c95a6a64facb49576440f0742ea
+      internalID: 5741146859467918485
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d537b28a5fc43bfa90f48489bf5878b
+      internalID: 4881803025214307112
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba840be2dbbc439d9474f785e1f51714
+      internalID: 4872291975514295266
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5e84deaf61427fa0ff2be60d3b72a4
+      internalID: 4791741359916483806
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e95de813fd499cbfd92acc413e4ad7
+      internalID: 5304136439119306216
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63eba895a644156a82ee1a87254a8dc
+      internalID: 4708049848794790537
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209783ac9e3446df804adb78eace2373
+      internalID: 5106974449183720364
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c109d9f38b6b4a449fc9fe80f9d428ce
+      internalID: 5351555552139401715
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8a8694b91f4b35b03e395ef1e38f66
+      internalID: 5419441270471427732
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53da551265c48078c70838881fea147
+      internalID: 5190159275724219729
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07837757e10b4207884adc8b302e033d
+      internalID: 4758018968827164503
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721c5657b43540e8bf3c6e658620f5bf
+      internalID: 4677186354664986199
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4063a3a177ff4f13867b956193b04edb
+      internalID: 5698029891734447009
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3353d6d56341e78ef4ccfc30dabf99
+      internalID: 4748998955867788246
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e61b60fc2144b38d93b4b67f6d5752
+      internalID: 4950577637075852128
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8ada1ba27542d1bf90098a8e1fab1e
+      internalID: 4814808102640212507
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r03_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f546a69d3e04099ae36bc874ef1155b
+      internalID: 4654984651294927465
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a4d7fd079e448dab9e3af1f2c8542e
+      internalID: 4939612743455266813
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29ba8bd1bdf437f8c8994c4c4f86e95
+      internalID: 4863636770440063165
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4e0c841bfb45b9bf306512f43cd0e2
+      internalID: 5024077626278284420
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87007d2fba484b0293b7a49334641cb2
+      internalID: 5405087323463384367
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f017ecc62d4374bb62aaf9b2acb829
+      internalID: 4860727797769836524
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0fcf4359e047efa0d8f004e79a2caf
+      internalID: 5183460517402890051
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r05_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47328e3bfc504a53911dbad6a97454a0
+      internalID: 5355901803595730491
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r05_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb64187c19b4d9986746d3051cf785b
+      internalID: 5591713287306101127
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r05_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3090fe27e824494f9726ed434bb66267
+      internalID: 5282696130060156455
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r06_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee55cb56a9d4f86a2adf9744a25ccc2
+      internalID: 5730384801352211637
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c59e23e2a749f8a9cc07a03741fcd7
+      internalID: 5330259366698655267
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81968426924f419fbbcccba8e17f770d
+      internalID: 4728659003936506918
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r06_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72ecf0042f8456cb030e3b92dfc1b0d
+      internalID: 5002446923168141056
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r06_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402025747c8241dca2c968f361dd7182
+      internalID: 4745805006205101428
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r07_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08bcb2080324b4998730fd19b5b636d
+      internalID: 5425008181343144736
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r07_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53ab2007f1846989585967c4de2817c
+      internalID: 5086955523479876096
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r07_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501d8067dd75481aa67ff93949873a9a
+      internalID: 5195708616050311271
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r07_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f71b2a7b239472987f8d31579959119
+      internalID: 5127825608880009895
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r08_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62715cae1794529918eaf43511374fd
+      internalID: 4983762375525471690
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r08_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbda430e78a5436a9d1d2d3e610c8911
+      internalID: 4857827801825952526
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r08_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4673156f2b4bd8a98ad091988f2705
+      internalID: 5465240380088152853
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r08_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3104bcdaebcb428a959d89bf4849fab9
+      internalID: 4794904011222596826
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated-laser-wall-vertical-16x16_r08_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425daa453fcc4fa8abadda347b762e51
+      internalID: 5739907871603010117
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: a91078581e9048269e606dd658b07830
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'animated-laser-wall-vertical-16x16_r00_c00': 5741146859467918485
+      'animated-laser-wall-vertical-16x16_r00_c01': 4881803025214307112
+      'animated-laser-wall-vertical-16x16_r00_c02': 4872291975514295266
+      'animated-laser-wall-vertical-16x16_r00_c03': 4791741359916483806
+      'animated-laser-wall-vertical-16x16_r01_c00': 5304136439119306216
+      'animated-laser-wall-vertical-16x16_r01_c01': 4708049848794790537
+      'animated-laser-wall-vertical-16x16_r01_c02': 5106974449183720364
+      'animated-laser-wall-vertical-16x16_r01_c03': 5351555552139401715
+      'animated-laser-wall-vertical-16x16_r02_c00': 5419441270471427732
+      'animated-laser-wall-vertical-16x16_r02_c01': 5190159275724219729
+      'animated-laser-wall-vertical-16x16_r02_c02': 4758018968827164503
+      'animated-laser-wall-vertical-16x16_r02_c03': 4677186354664986199
+      'animated-laser-wall-vertical-16x16_r03_c00': 5698029891734447009
+      'animated-laser-wall-vertical-16x16_r03_c01': 4748998955867788246
+      'animated-laser-wall-vertical-16x16_r03_c02': 4950577637075852128
+      'animated-laser-wall-vertical-16x16_r03_c03': 4814808102640212507
+      'animated-laser-wall-vertical-16x16_r03_c04': 4654984651294927465
+      'animated-laser-wall-vertical-16x16_r04_c00': 4939612743455266813
+      'animated-laser-wall-vertical-16x16_r04_c01': 4863636770440063165
+      'animated-laser-wall-vertical-16x16_r04_c02': 5024077626278284420
+      'animated-laser-wall-vertical-16x16_r04_c03': 5405087323463384367
+      'animated-laser-wall-vertical-16x16_r05_c00': 4860727797769836524
+      'animated-laser-wall-vertical-16x16_r05_c01': 5183460517402890051
+      'animated-laser-wall-vertical-16x16_r05_c02': 5355901803595730491
+      'animated-laser-wall-vertical-16x16_r05_c03': 5591713287306101127
+      'animated-laser-wall-vertical-16x16_r05_c04': 5282696130060156455
+      'animated-laser-wall-vertical-16x16_r06_c00': 5730384801352211637
+      'animated-laser-wall-vertical-16x16_r06_c01': 5330259366698655267
+      'animated-laser-wall-vertical-16x16_r06_c02': 4728659003936506918
+      'animated-laser-wall-vertical-16x16_r06_c03': 5002446923168141056
+      'animated-laser-wall-vertical-16x16_r06_c04': 4745805006205101428
+      'animated-laser-wall-vertical-16x16_r07_c01': 5425008181343144736
+      'animated-laser-wall-vertical-16x16_r07_c02': 5086955523479876096
+      'animated-laser-wall-vertical-16x16_r07_c03': 5195708616050311271
+      'animated-laser-wall-vertical-16x16_r07_c04': 5127825608880009895
+      'animated-laser-wall-vertical-16x16_r08_c00': 4983762375525471690
+      'animated-laser-wall-vertical-16x16_r08_c01': 4857827801825952526
+      'animated-laser-wall-vertical-16x16_r08_c02': 5465240380088152853
+      'animated-laser-wall-vertical-16x16_r08_c03': 4794904011222596826
+      'animated-laser-wall-vertical-16x16_r08_c04': 5739907871603010117
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

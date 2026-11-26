@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 1f393361c0794d6bab976c8b7b5e7cf2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4888548904450927522
+    second: 'tileset-elevator-16x16_r00_c01'
+  - first:
+      213: 5590831314785563285
+    second: 'tileset-elevator-16x16_r00_c02'
+  - first:
+      213: 5359478544337441926
+    second: 'tileset-elevator-16x16_r01_c00'
+  - first:
+      213: 5239208774264876209
+    second: 'tileset-elevator-16x16_r01_c01'
+  - first:
+      213: 5037036233351323505
+    second: 'tileset-elevator-16x16_r01_c02'
+  - first:
+      213: 4620119771988495617
+    second: 'tileset-elevator-16x16_r01_c03'
+  - first:
+      213: 5397009993488499986
+    second: 'tileset-elevator-16x16_r02_c00'
+  - first:
+      213: 5511048567636243264
+    second: 'tileset-elevator-16x16_r02_c01'
+  - first:
+      213: 4756925309280786510
+    second: 'tileset-elevator-16x16_r02_c02'
+  - first:
+      213: 5547867630293361115
+    second: 'tileset-elevator-16x16_r02_c03'
+  - first:
+      213: 5586302994409627284
+    second: 'tileset-elevator-16x16_r02_c04'
+  - first:
+      213: 4720208932023574874
+    second: 'tileset-elevator-16x16_r03_c00'
+  - first:
+      213: 4711073584072651560
+    second: 'tileset-elevator-16x16_r03_c01'
+  - first:
+      213: 5480666404242303272
+    second: 'tileset-elevator-16x16_r03_c02'
+  - first:
+      213: 4615685795499156789
+    second: 'tileset-elevator-16x16_r03_c03'
+  - first:
+      213: 4711691936564506026
+    second: 'tileset-elevator-16x16_r03_c04'
+  - first:
+      213: 4766137435942404154
+    second: 'tileset-elevator-16x16_r04_c00'
+  - first:
+      213: 5737464057470134258
+    second: 'tileset-elevator-16x16_r04_c01'
+  - first:
+      213: 5138601304831003068
+    second: 'tileset-elevator-16x16_r04_c02'
+  - first:
+      213: 4945499068790891300
+    second: 'tileset-elevator-16x16_r04_c03'
+  - first:
+      213: 5530725007584688383
+    second: 'tileset-elevator-16x16_r04_c04'
+  - first:
+      213: 5352070148254047644
+    second: 'tileset-elevator-16x16_r05_c00'
+  - first:
+      213: 5167978129317055082
+    second: 'tileset-elevator-16x16_r05_c01'
+  - first:
+      213: 4628821098864861248
+    second: 'tileset-elevator-16x16_r05_c02'
+  - first:
+      213: 5187026817469465476
+    second: 'tileset-elevator-16x16_r05_c03'
+  - first:
+      213: 5505356293904889502
+    second: 'tileset-elevator-16x16_r05_c04'
+  - first:
+      213: 4934199041431044816
+    second: 'tileset-elevator-16x16_r06_c01'
+  - first:
+      213: 5400891159892633243
+    second: 'tileset-elevator-16x16_r06_c02'
+  - first:
+      213: 4991702569618440610
+    second: 'tileset-elevator-16x16_r07_c01'
+  - first:
+      213: 4691660701188760869
+    second: 'tileset-elevator-16x16_r07_c02'
+  - first:
+      213: 5363809552938032969
+    second: 'tileset-elevator-16x16_r08_c01'
+  - first:
+      213: 5141270228186969513
+    second: 'tileset-elevator-16x16_r08_c02'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ec2ba29d5343d7866ebedff2e7f857
+      internalID: 4888548904450927522
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ec72959f754d96ad40084b32303e05
+      internalID: 5590831314785563285
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208f9486b1574a60abca9bd014b8598a
+      internalID: 5359478544337441926
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262aecb1689f48b59ad8513270ddb4e0
+      internalID: 5239208774264876209
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ad5f7125c445e781dd92246372e95c
+      internalID: 5037036233351323505
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45220d01f674401da549bd0d05ca22f1
+      internalID: 4620119771988495617
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971d851207fe4ae69989aa5ded55e813
+      internalID: 5397009993488499986
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e233402d794c7b998dd5d353d650e6
+      internalID: 5511048567636243264
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bf184efe5d4203b7ed455b02feaa65
+      internalID: 4756925309280786510
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448621dbfc374cfd8a3dd980b3e837ef
+      internalID: 5547867630293361115
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57c9e9488f94d869b65eee954df4244
+      internalID: 5586302994409627284
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e4215a8d034181ad46fc571e3730ce
+      internalID: 4720208932023574874
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e160732818764161802d4ed2eb5cce60
+      internalID: 4711073584072651560
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d47a9283d0e4c0f9df38e5b369df37f
+      internalID: 5480666404242303272
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8b253535c6400e9b0de03dc0381bf2
+      internalID: 4615685795499156789
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r03_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ffedaa4ada41639089e902b22fa5f6
+      internalID: 4711691936564506026
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f409c03ab8be4224b2bffbd9158a8df9
+      internalID: 4766137435942404154
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711427f291294f9f8af0e1d2ea7f2fb8
+      internalID: 5737464057470134258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cf89bcfaa9474f973aceccc6ae5696
+      internalID: 5138601304831003068
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604e6324f13344a1b0c533453d9e683c
+      internalID: 4945499068790891300
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r04_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637478ff15174cc1a4b9d78c56ebbee5
+      internalID: 5530725007584688383
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa79d9c5f714a46abae18c1fcd447de
+      internalID: 5352070148254047644
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cee4a6a58ba47b88476abf8e3f1af02
+      internalID: 5167978129317055082
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r05_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceac6040e043403ca038dd418326d0fc
+      internalID: 4628821098864861248
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r05_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb14384056847fca4044924ebccfe2e
+      internalID: 5187026817469465476
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r05_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7429769ef4614c66bfb3170843e0c6b1
+      internalID: 5505356293904889502
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9202d0cbe24479aa51d46553dd0922
+      internalID: 4934199041431044816
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff2a69bd1e54af3a2a91fb2ae58a613
+      internalID: 5400891159892633243
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r07_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368301a2170a454684ca3a0348a2c2ed
+      internalID: 4991702569618440610
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r07_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd042525208c411c954bda8dcae75791
+      internalID: 4691660701188760869
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r08_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b7df49145e4a70bef0987aec0e58c5
+      internalID: 5363809552938032969
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tileset-elevator-16x16_r08_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6035a97608475999fe345c197014df
+      internalID: 5141270228186969513
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: dec99fc2a3784d40910f4dcd072522da
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'tileset-elevator-16x16_r00_c01': 4888548904450927522
+      'tileset-elevator-16x16_r00_c02': 5590831314785563285
+      'tileset-elevator-16x16_r01_c00': 5359478544337441926
+      'tileset-elevator-16x16_r01_c01': 5239208774264876209
+      'tileset-elevator-16x16_r01_c02': 5037036233351323505
+      'tileset-elevator-16x16_r01_c03': 4620119771988495617
+      'tileset-elevator-16x16_r02_c00': 5397009993488499986
+      'tileset-elevator-16x16_r02_c01': 5511048567636243264
+      'tileset-elevator-16x16_r02_c02': 4756925309280786510
+      'tileset-elevator-16x16_r02_c03': 5547867630293361115
+      'tileset-elevator-16x16_r02_c04': 5586302994409627284
+      'tileset-elevator-16x16_r03_c00': 4720208932023574874
+      'tileset-elevator-16x16_r03_c01': 4711073584072651560
+      'tileset-elevator-16x16_r03_c02': 5480666404242303272
+      'tileset-elevator-16x16_r03_c03': 4615685795499156789
+      'tileset-elevator-16x16_r03_c04': 4711691936564506026
+      'tileset-elevator-16x16_r04_c00': 4766137435942404154
+      'tileset-elevator-16x16_r04_c01': 5737464057470134258
+      'tileset-elevator-16x16_r04_c02': 5138601304831003068
+      'tileset-elevator-16x16_r04_c03': 4945499068790891300
+      'tileset-elevator-16x16_r04_c04': 5530725007584688383
+      'tileset-elevator-16x16_r05_c00': 5352070148254047644
+      'tileset-elevator-16x16_r05_c01': 5167978129317055082
+      'tileset-elevator-16x16_r05_c02': 4628821098864861248
+      'tileset-elevator-16x16_r05_c03': 5187026817469465476
+      'tileset-elevator-16x16_r05_c04': 5505356293904889502
+      'tileset-elevator-16x16_r06_c01': 4934199041431044816
+      'tileset-elevator-16x16_r06_c02': 5400891159892633243
+      'tileset-elevator-16x16_r07_c01': 4991702569618440610
+      'tileset-elevator-16x16_r07_c02': 4691660701188760869
+      'tileset-elevator-16x16_r08_c01': 5363809552938032969
+      'tileset-elevator-16x16_r08_c02': 5141270228186969513
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

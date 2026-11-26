@@ -1,0 +1,16 @@
+{
+    "scene": "Assets/_Recovery/Mapx11.unity",
+    "playerCount": 1,
+    "mainCameraCount": 1,
+    "eventSystemCount": 1,
+    "missingScripts": 0,
+    "aimReferences": true,
+    "qHudReferences": true,
+    "eHudReferences": true,
+    "recordingHudReferences": true,
+    "hudScreenOverlay": true,
+    "secondaryCameraLinked": true,
+    "secondaryTextureLinked": true,
+    "cameraRig": "PlayerCameraRig",
+    "ready": true
+}

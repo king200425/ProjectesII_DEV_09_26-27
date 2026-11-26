@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: ed286e23a4674905a3b103cbeb94848a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5052362272049390209
+    second: 'tiles-fan-large-16x16_r00_c00'
+  - first:
+      213: 5339875137283441645
+    second: 'tiles-fan-large-16x16_r00_c01'
+  - first:
+      213: 5657688251211230972
+    second: 'tiles-fan-large-16x16_r00_c02'
+  - first:
+      213: 4744132407693646946
+    second: 'tiles-fan-large-16x16_r00_c03'
+  - first:
+      213: 4983662563482428710
+    second: 'tiles-fan-large-16x16_r00_c04'
+  - first:
+      213: 5531890909855711994
+    second: 'tiles-fan-large-16x16_r00_c05'
+  - first:
+      213: 5213119166364770070
+    second: 'tiles-fan-large-16x16_r01_c00'
+  - first:
+      213: 5700968060705494308
+    second: 'tiles-fan-large-16x16_r01_c01'
+  - first:
+      213: 5671988323660116132
+    second: 'tiles-fan-large-16x16_r01_c02'
+  - first:
+      213: 5742445090247360889
+    second: 'tiles-fan-large-16x16_r01_c03'
+  - first:
+      213: 5666741552364264415
+    second: 'tiles-fan-large-16x16_r01_c04'
+  - first:
+      213: 5238397041216278407
+    second: 'tiles-fan-large-16x16_r01_c05'
+  - first:
+      213: 5330369475978719160
+    second: 'tiles-fan-large-16x16_r02_c00'
+  - first:
+      213: 5242015135656220901
+    second: 'tiles-fan-large-16x16_r02_c01'
+  - first:
+      213: 5732084515592057008
+    second: 'tiles-fan-large-16x16_r02_c02'
+  - first:
+      213: 4713579638081249499
+    second: 'tiles-fan-large-16x16_r02_c03'
+  - first:
+      213: 4841712768732174501
+    second: 'tiles-fan-large-16x16_r02_c04'
+  - first:
+      213: 5311617020569158919
+    second: 'tiles-fan-large-16x16_r02_c05'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c616e28198b7461d9e24a3535e4f2d7a
+      internalID: 5052362272049390209
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb843ed0c254a1b8e1adc626798cafe
+      internalID: 5339875137283441645
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f58aefc257d4e848f1b2cd6e782fc70
+      internalID: 5657688251211230972
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fff9c628b4a41d687d9227c790f4943
+      internalID: 4744132407693646946
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c8652686b2452982fd4b8f2d2ebf80
+      internalID: 4983662563482428710
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r00_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2982fa39794cc5b2f1a7213d5f11a3
+      internalID: 5531890909855711994
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f3df16b8424858b078985fc4f29540
+      internalID: 5213119166364770070
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0632d524e83f4f1da5008e67625f53be
+      internalID: 5700968060705494308
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ecb0a4f3544eb697c4dc6c772c355a
+      internalID: 5671988323660116132
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8261417943624fb18854a275ee2cddaa
+      internalID: 5742445090247360889
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9e1bdf4f6b4ea48b45a05125f5c384
+      internalID: 5666741552364264415
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r01_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2274f87865a48b2aec568187094f110
+      internalID: 5238397041216278407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014befb846cc49f9af4cdfcddfe04d35
+      internalID: 5330369475978719160
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140298e560fe48bfb3cc1441d923d920
+      internalID: 5242015135656220901
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e61b0b0747f4f8c90c5dda124eccdce
+      internalID: 5732084515592057008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c58e0dbffb54169bbefdc2ca5b560f5
+      internalID: 4713579638081249499
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c04'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c118a5381c4331871af6ceee4ae1b2
+      internalID: 4841712768732174501
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'tiles-fan-large-16x16_r02_c05'
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf18507a78949b697f4a70f353655dc
+      internalID: 5311617020569158919
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 3e966bd01bc3425c80f16f0b3550bf7f
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'tiles-fan-large-16x16_r00_c00': 5052362272049390209
+      'tiles-fan-large-16x16_r00_c01': 5339875137283441645
+      'tiles-fan-large-16x16_r00_c02': 5657688251211230972
+      'tiles-fan-large-16x16_r00_c03': 4744132407693646946
+      'tiles-fan-large-16x16_r00_c04': 4983662563482428710
+      'tiles-fan-large-16x16_r00_c05': 5531890909855711994
+      'tiles-fan-large-16x16_r01_c00': 5213119166364770070
+      'tiles-fan-large-16x16_r01_c01': 5700968060705494308
+      'tiles-fan-large-16x16_r01_c02': 5671988323660116132
+      'tiles-fan-large-16x16_r01_c03': 5742445090247360889
+      'tiles-fan-large-16x16_r01_c04': 5666741552364264415
+      'tiles-fan-large-16x16_r01_c05': 5238397041216278407
+      'tiles-fan-large-16x16_r02_c00': 5330369475978719160
+      'tiles-fan-large-16x16_r02_c01': 5242015135656220901
+      'tiles-fan-large-16x16_r02_c02': 5732084515592057008
+      'tiles-fan-large-16x16_r02_c03': 4713579638081249499
+      'tiles-fan-large-16x16_r02_c04': 4841712768732174501
+      'tiles-fan-large-16x16_r02_c05': 5311617020569158919
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -16,6 +16,8 @@ public class TimeSlow : MonoBehaviour
     public float slowMultiplier = 0.02f;
     public float cooldown = 10f;
 
+    public static float WorldScale { get; private set; } = 1f;
+
     public bool IsTimeSlowed { get; private set; }
     public bool IsCooldown { get; private set; }
 
@@ -46,6 +48,7 @@ public class TimeSlow : MonoBehaviour
     {
         IsTimeSlowed = true;
         ActiveRemaining = duration;
+        WorldScale = slowMultiplier;
 
         UnityEngine.Debug.Log("Time Slow Activated!");
 
@@ -57,6 +60,7 @@ public class TimeSlow : MonoBehaviour
 
         ActiveRemaining = 0f;
         IsTimeSlowed = false;
+        WorldScale = 1f;
 
         UnityEngine.Debug.Log("Time Slow Ended!");
 
@@ -73,5 +77,10 @@ public class TimeSlow : MonoBehaviour
         IsCooldown = false;
 
         UnityEngine.Debug.Log("Time Slow Ready!");
+    }
+
+    void OnDisable()
+    {
+        WorldScale = 1f;
     }
 }

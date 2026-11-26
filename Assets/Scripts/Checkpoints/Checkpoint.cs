@@ -11,6 +11,19 @@ public class Checkpoint : MonoBehaviour
     public Sprite offSprite;
     public Sprite onSprite;
 
+    [Header("Visual")]
+    public SpriteRenderer visual;
+    public Sprite inactiveSprite;
+    public Sprite activeSprite;
+
+    private void Awake()
+    {
+        if (spriteRenderer != null && offSprite != null)
+            spriteRenderer.sprite = offSprite;
+        if (visual != null && inactiveSprite != null)
+            visual.sprite = inactiveSprite;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Ignore if already activated
@@ -26,6 +39,8 @@ public class Checkpoint : MonoBehaviour
 
             if (spriteRenderer != null && onSprite != null)
                 spriteRenderer.sprite = onSprite;
+            if (visual != null && activeSprite != null)
+                visual.sprite = activeSprite;
 
             // Save checkpoint position
             player.SetCheckpoint(spawnPoint.position);

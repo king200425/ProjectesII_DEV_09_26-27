@@ -1,0 +1,20 @@
+{
+    "complete": true,
+    "pointFiltered": true,
+    "interpolated": true,
+    "movedRight": true,
+    "movedLeft": true,
+    "cameraSynced": true,
+    "hudStayedFixed": true,
+    "interpolatedRenderFrames": true,
+    "crispRenderedAlpha": true,
+    "renderedFrames": 1862,
+    "interpolationSamples": 1857,
+    "partiallyTransparentPixels": 0,
+    "opaquePixels": 19741,
+    "rightViewportX": 0.42361828684806826,
+    "leftViewportX": 0.5764124393463135,
+    "horizontalDistance": 5.499996185302734,
+    "scene": "Assets/_Recovery/Mapx11.unity",
+    "errors": []
+}

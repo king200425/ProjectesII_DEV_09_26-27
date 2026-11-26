@@ -1,0 +1,37 @@
+Mapx11 第一小段 Sci-fi Lab 试铺（2026-11-25）
+
+已保存场景：Assets/_Recovery/Mapx11.unity
+处理范围：GroundMap 下 Ground、Ground (1)、Ground (4)、Ground (2)。
+前三块维持原有形状和碰撞。主角大小与其它地形碰撞没有改动。
+镜头随后增加了左侧边界，说明见同目录“左侧镜头边界说明.txt”。
+Ground (2) 是右侧落脚平台，已按用户修正为上长、下短的倒直角梯形。
+之前额外延长的 0.75 单位已收回，恢复原白块右边界；顶边宽 4.963，底边宽 2.113。
+底边先水平到地板边缘，再斜切到原平台的右上角，离下一平台约 5.772 单位。
+平台碰撞改为 PolygonCollider2D；原 BoxCollider2D 已关闭并保留。
+运行模式下用实际尺寸的角色碰撞体，在独立物理场景验证了三个落点，均可站稳。
+
+文件分布：
+图片、静态表面网格：Assets/Art/SciFiLab
+材质：Assets/Materials/LevelArt
+着色器：Assets/Shaders/LevelArt
+编辑器工具：Assets/Editor/LevelArt
+说明、CC0 许可：Docs/LevelArt
+报告、备份：Logs/LevelArt
+没有新增运行时脚本。
+
+原始白块 SpriteRenderer 仍保留，现已关闭；外观位于各 Ground 子物体 SciFiLab_Visual。
+表面使用 Point 过滤、无 Mipmap、无压缩。1.25 世界单位对应 32 像素，接近主角现有像素比例。
+当前是白块结构上的静态表面。移动父物体会一起移动外观；大幅缩放会一起拉伸，需要重新铺设时可重新生成外观。
+后续关卡可以继续用白块搭结构，再填充素材。
+
+Unity 菜单：地图 > Sci-fi Lab > 查看第一小段；右侧平台改为倒直角梯形。
+请勿在已铺过的部分重复执行“铺设第一小段”；工具会阻止重复叠加。
+
+本次修改前备份（含当时未保存的用户编辑）：
+Logs/LevelArt/Backups/Mapx11_BeforeSciFiLab_20261125_122308.unity
+工作目录中亦保留 Mapx11_BeforeSciFiLab.unity。
+梯形修正前备份：Logs/LevelArt/Backups/Mapx11_BeforeTrapezoid_20261125_123440.unity
+对应外观网格：同目录 Mapx11_BeforeTrapezoid_20261125_123440_PlatformMesh.asset（连同 .meta）。
+
+素材来源：https://foozlecc.itch.io/sci-fi-lab-tileset-decor-traps
+许可：CC0，详见 SciFiLab-License.txt。

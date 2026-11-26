@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 3f47245266bc4c38ac6240c9bfc2d6cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5269570782561567766
+    second: 'animated tiles-water-red-16x16_r00_c00'
+  - first:
+      213: 5352772843358347005
+    second: 'animated tiles-water-red-16x16_r00_c01'
+  - first:
+      213: 4942007663091810789
+    second: 'animated tiles-water-red-16x16_r00_c02'
+  - first:
+      213: 5569832893217995517
+    second: 'animated tiles-water-red-16x16_r00_c03'
+  - first:
+      213: 5394658918878439191
+    second: 'animated tiles-water-red-16x16_r01_c00'
+  - first:
+      213: 5420736939106036011
+    second: 'animated tiles-water-red-16x16_r01_c01'
+  - first:
+      213: 5757728100012267191
+    second: 'animated tiles-water-red-16x16_r01_c02'
+  - first:
+      213: 5681480588802391789
+    second: 'animated tiles-water-red-16x16_r01_c03'
+  - first:
+      213: 4675254005785404290
+    second: 'animated tiles-water-red-16x16_r02_c00'
+  - first:
+      213: 5421678584645922830
+    second: 'animated tiles-water-red-16x16_r02_c01'
+  - first:
+      213: 4859903294316542831
+    second: 'animated tiles-water-red-16x16_r02_c02'
+  - first:
+      213: 5049496406518940868
+    second: 'animated tiles-water-red-16x16_r02_c03'
+  - first:
+      213: 4857614470055697055
+    second: 'animated tiles-water-red-16x16_r03_c00'
+  - first:
+      213: 4628579144098095764
+    second: 'animated tiles-water-red-16x16_r03_c01'
+  - first:
+      213: 5173678844258378593
+    second: 'animated tiles-water-red-16x16_r03_c02'
+  - first:
+      213: 5146820508607460414
+    second: 'animated tiles-water-red-16x16_r03_c03'
+  - first:
+      213: 5743000736586046925
+    second: 'animated tiles-water-red-16x16_r04_c00'
+  - first:
+      213: 4715548547625209112
+    second: 'animated tiles-water-red-16x16_r04_c01'
+  - first:
+      213: 5758060903276521519
+    second: 'animated tiles-water-red-16x16_r04_c02'
+  - first:
+      213: 5264336618158918674
+    second: 'animated tiles-water-red-16x16_r04_c03'
+  - first:
+      213: 4632157147025875077
+    second: 'animated tiles-water-red-16x16_r05_c00'
+  - first:
+      213: 5023386187290453773
+    second: 'animated tiles-water-red-16x16_r05_c01'
+  - first:
+      213: 5478995814023448558
+    second: 'animated tiles-water-red-16x16_r05_c02'
+  - first:
+      213: 5583814756330279000
+    second: 'animated tiles-water-red-16x16_r05_c03'
+  - first:
+      213: 5064320596340469232
+    second: 'animated tiles-water-red-16x16_r06_c00'
+  - first:
+      213: 4942272984097281355
+    second: 'animated tiles-water-red-16x16_r06_c01'
+  - first:
+      213: 5006413219624387556
+    second: 'animated tiles-water-red-16x16_r06_c02'
+  - first:
+      213: 5380694891381364359
+    second: 'animated tiles-water-red-16x16_r06_c03'
+  - first:
+      213: 5725002907580701407
+    second: 'animated tiles-water-red-16x16_r07_c00'
+  - first:
+      213: 5603254659744263611
+    second: 'animated tiles-water-red-16x16_r07_c01'
+  - first:
+      213: 5665743290247383526
+    second: 'animated tiles-water-red-16x16_r07_c02'
+  - first:
+      213: 5367799707040811389
+    second: 'animated tiles-water-red-16x16_r07_c03'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r00_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155c041646b549218f81855f4bb9ffcc
+      internalID: 5269570782561567766
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r00_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bb5efdde8a4a48bba09e6f2071f411
+      internalID: 5352772843358347005
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r00_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d881e589c9449594d35a735a7e500b
+      internalID: 4942007663091810789
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r00_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928b7afd05814d4c86a4724953d20c07
+      internalID: 5569832893217995517
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r01_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60246717adb44add903357ec8789d49f
+      internalID: 5394658918878439191
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r01_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c40e92b53864b3aac3c134b97592e99
+      internalID: 5420736939106036011
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r01_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828416b78f334fe7b5bcf25ec6b387ae
+      internalID: 5757728100012267191
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r01_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d7feedac7e4ed890bffc3cccdc9975
+      internalID: 5681480588802391789
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r02_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698fa382d6bf40e1b00ec896c51bbb4e
+      internalID: 4675254005785404290
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r02_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c29b00eabf24b3db3f681627b763be1
+      internalID: 5421678584645922830
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r02_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7cfb6fd84c4371987f523e89a871d9
+      internalID: 4859903294316542831
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r02_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752c44c46a3a46139e08b3a2d3dbc949
+      internalID: 5049496406518940868
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r03_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af779a9fb69f4369996a6cf65a464db3
+      internalID: 4857614470055697055
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r03_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bfa2940435403c9862f70a5ec10ba4
+      internalID: 4628579144098095764
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r03_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df96361997f47cc897ab547799f02e4
+      internalID: 5173678844258378593
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r03_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3e343e2dfb476da865274cbff3613e
+      internalID: 5146820508607460414
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r04_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01049dcd3cbe4fb39b625713db563bf5
+      internalID: 5743000736586046925
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r04_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864f4d18fe6b41709d99745c7d56b0dc
+      internalID: 4715548547625209112
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r04_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edca82fbde24fe892df5f0eb7b35b99
+      internalID: 5758060903276521519
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r04_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37718c12ae43490e9385a4e325d71e92
+      internalID: 5264336618158918674
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r05_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c43a085ba624048aa965003298c3ae2
+      internalID: 4632157147025875077
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r05_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0d270da71f45b6903fea85184a7714
+      internalID: 5023386187290453773
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r05_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b847ee4da94c09b0d7cee2aa6335ab
+      internalID: 5478995814023448558
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r05_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a69058b1ef4d7d81805a883bc59c7b
+      internalID: 5583814756330279000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r06_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d916df014c046489fc34b1c43f70a47
+      internalID: 5064320596340469232
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r06_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0020d54b7b184496ac72ce3274bf2af0
+      internalID: 4942272984097281355
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r06_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528803e45a4c457aa6cc58a864348006
+      internalID: 5006413219624387556
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r06_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8b9687117e4aaca4cedf6e63ec8779
+      internalID: 5380694891381364359
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r07_c00'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46d1adf4bcf4f73ad1f90e969ef598f
+      internalID: 5725002907580701407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r07_c01'
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1bedbbc26c4dc2af8e4933049a78fa
+      internalID: 5603254659744263611
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r07_c02'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbf89e6c3814ea0927d57df314b27ad
+      internalID: 5665743290247383526
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 'animated tiles-water-red-16x16_r07_c03'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9d097d41644a7ea7ef9d1da1bdfb44
+      internalID: 5367799707040811389
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 723d85652b8544999efde137c0f1d5b7
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      'animated tiles-water-red-16x16_r00_c00': 5269570782561567766
+      'animated tiles-water-red-16x16_r00_c01': 5352772843358347005
+      'animated tiles-water-red-16x16_r00_c02': 4942007663091810789
+      'animated tiles-water-red-16x16_r00_c03': 5569832893217995517
+      'animated tiles-water-red-16x16_r01_c00': 5394658918878439191
+      'animated tiles-water-red-16x16_r01_c01': 5420736939106036011
+      'animated tiles-water-red-16x16_r01_c02': 5757728100012267191
+      'animated tiles-water-red-16x16_r01_c03': 5681480588802391789
+      'animated tiles-water-red-16x16_r02_c00': 4675254005785404290
+      'animated tiles-water-red-16x16_r02_c01': 5421678584645922830
+      'animated tiles-water-red-16x16_r02_c02': 4859903294316542831
+      'animated tiles-water-red-16x16_r02_c03': 5049496406518940868
+      'animated tiles-water-red-16x16_r03_c00': 4857614470055697055
+      'animated tiles-water-red-16x16_r03_c01': 4628579144098095764
+      'animated tiles-water-red-16x16_r03_c02': 5173678844258378593
+      'animated tiles-water-red-16x16_r03_c03': 5146820508607460414
+      'animated tiles-water-red-16x16_r04_c00': 5743000736586046925
+      'animated tiles-water-red-16x16_r04_c01': 4715548547625209112
+      'animated tiles-water-red-16x16_r04_c02': 5758060903276521519
+      'animated tiles-water-red-16x16_r04_c03': 5264336618158918674
+      'animated tiles-water-red-16x16_r05_c00': 4632157147025875077
+      'animated tiles-water-red-16x16_r05_c01': 5023386187290453773
+      'animated tiles-water-red-16x16_r05_c02': 5478995814023448558
+      'animated tiles-water-red-16x16_r05_c03': 5583814756330279000
+      'animated tiles-water-red-16x16_r06_c00': 5064320596340469232
+      'animated tiles-water-red-16x16_r06_c01': 4942272984097281355
+      'animated tiles-water-red-16x16_r06_c02': 5006413219624387556
+      'animated tiles-water-red-16x16_r06_c03': 5380694891381364359
+      'animated tiles-water-red-16x16_r07_c00': 5725002907580701407
+      'animated tiles-water-red-16x16_r07_c01': 5603254659744263611
+      'animated tiles-water-red-16x16_r07_c02': 5665743290247383526
+      'animated tiles-water-red-16x16_r07_c03': 5367799707040811389
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:
