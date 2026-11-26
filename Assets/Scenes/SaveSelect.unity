@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3956edc0ca0873446b74d0a58871b5fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveSelectManager
-  firstLevel: Level01_TorreDelOlvido
+  firstLevel: Mapx11
   mainMenu: MainMenu
   transitionMaterial: {fileID: 2100000, guid: 29b5155722a597840a3fd3a056e018c4, type: 2}
   previewExampleRecords: 0

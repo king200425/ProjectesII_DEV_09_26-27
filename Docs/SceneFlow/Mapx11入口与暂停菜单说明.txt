@@ -1,0 +1,23 @@
+Mapx11 关卡入口与暂停菜单
+
+游戏入口：MainMenu -> SaveSelect -> Mapx11。
+SaveSelectManager 的默认 firstLevel 和 SaveSelect 场景的序列化 firstLevel 均为 Mapx11。
+构建列表第 3 项替换为 Assets/_Recovery/Mapx11.unity，保留 MainMenu、SaveSelect 和 TrapTesting 的现有顺序。
+旧 Level01_TorreDelOlvido 场景文件保留，不再作为首关入口。
+
+Mapx11 已带有原关卡的 PauseManager、GameHUD/PauseMenu 和 EventSystem；本次沿用已有对象。
+核对结果：只有一个启用的 PauseMenuManager 和 EventSystem；暂停面板、ResumeGame、OpenSettings、QuitGame 的引用完整。
+Esc 打开暂停，再按 Esc 或点 Resume 继续；Quit 返回 MainMenu。
+Settings 沿用原来的占位回调，目前只输出提示日志。
+选档界面仍保留既有的展示逻辑；本次没有新增磁盘存档系统。
+
+Unity 实机流程验证通过：
+- 主菜单 Start 按钮进入 SaveSelect，第一个空档位提交进入 Mapx11。
+- 构建列表中的 Mapx11 可加载，初始暂停面板隐藏。
+- 实际 Esc 按键暂停，Time.timeScale 为 0，角色刚体位置保持不变；再次 Esc 恢复为 1。
+- Resume 按钮恢复游戏；暂停前的 0.2 时间倍率也能正确还原。
+- 暂停菜单 Quit 返回 MainMenu，选档界面 Back 返回 MainMenu，时间倍率正常。
+- 运行期间没有 Error、Exception 或 Assert。
+
+本次仅修改选档入口和构建场景配置；测试后恢复编辑器原先打开的 Mapx11。
+验证报告：本机 Logs/Mapx11Flow/report.json（Logs 不纳入 Git）。

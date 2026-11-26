@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public sealed class SaveSelectManager : MonoBehaviour
 {
     [Header("Scene navigation")]
-    [SerializeField] private string firstLevel = "Level01_TorreDelOlvido";
+    [SerializeField] private string firstLevel = "Mapx11";
     [SerializeField] private string mainMenu = "MainMenu";
     [SerializeField] private Material transitionMaterial;
     [Header("Presentation preview only; no save data is written")]
