@@ -8,6 +8,17 @@ public class Checkpoint : MonoBehaviour
     // Respawn position
     public Transform spawnPoint;
 
+    [Header("Visual")]
+    public SpriteRenderer visual;
+    public Sprite inactiveSprite;
+    public Sprite activeSprite;
+
+    private void Awake()
+    {
+        if (visual != null && inactiveSprite != null)
+            visual.sprite = inactiveSprite;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Ignore if already activated
@@ -20,6 +31,9 @@ public class Checkpoint : MonoBehaviour
         if (player != null)
         {
             isActivated = true;
+
+            if (visual != null && activeSprite != null)
+                visual.sprite = activeSprite;
 
             // Save checkpoint position
             player.SetCheckpoint(spawnPoint.position);
