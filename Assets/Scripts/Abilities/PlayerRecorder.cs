@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// One recorded movement frame
+// One recorded movement frame.
 [System.Serializable]
 public class RecordedFrame
 {
@@ -12,8 +11,7 @@ public class RecordedFrame
     public bool isMoving;
     public float gunAngle;
 
-    public RecordedFrame(Vector3 pos, float t, bool left,
-                         bool moving, float angle)
+    public RecordedFrame(Vector3 pos, float t, bool left, bool moving, float angle)
     {
         position = pos;
         time = t;
@@ -23,7 +21,6 @@ public class RecordedFrame
     }
 }
 
-// One recorded shot
 [System.Serializable]
 public class RecordedShot
 {
@@ -44,6 +41,7 @@ public class PlayerRecorder : MonoBehaviour
     public static event System.Action ReplayStarted;
 
     [Header("Recording Settings")]
+    [Min(0.01f), Tooltip("Maximum length. Press E again to finish recording early.")]
     public float recordDuration = 4f;
     [SerializeField] private bool requireEchoUnlock;
 
@@ -58,238 +56,179 @@ public class PlayerRecorder : MonoBehaviour
     public RecordingHUD recordingHUD;
 
     private GameObject currentGhost;
+    private bool isRecording;
+    private bool hasRecording;
+    private float recordStartTime;
+    private float replayStartTime;
+    private TimeSlow timeSlow;
+    private readonly List<RecordedFrame> recordedFrames = new List<RecordedFrame>();
+    private readonly List<RecordedShot> recordedShots = new List<RecordedShot>();
 
-    private bool isRecording = false;
-    private bool hasRecording = false;
-
+    private float MaximumDuration => Mathf.Max(0.01f, recordDuration);
     public bool IsRecording => isRecording;
     public bool IsReplaying { get; private set; }
     public bool HasRecording => hasRecording;
-
-    public float RecordingRemaining =>
-        isRecording
-            ? Mathf.Max(0f, recordDuration - (Time.time - recordStartTime))
-            : 0f;
-
-    public float RecordingElapsed =>
-        isRecording
-            ? Mathf.Clamp(Time.time - recordStartTime, 0f, recordDuration)
-            : 0f;
-
-    public float ReplayElapsed =>
-        IsReplaying
-            ? Mathf.Clamp(Time.time - replayStartTime, 0f, recordDuration)
-            : 0f;
-
-    private List<RecordedFrame> recordedFrames =
-        new List<RecordedFrame>();
-
-    private List<RecordedShot> recordedShots =
-        new List<RecordedShot>();
-
-    private float recordStartTime;
-    private float replayStartTime;
-
-    private TimeSlow timeSlow;
+    public float RecordedDuration { get; private set; }
+    public float RecordingElapsed => isRecording ? Mathf.Clamp(Time.time - recordStartTime, 0f, MaximumDuration) : 0f;
+    public float RecordingRemaining => isRecording ? Mathf.Max(0f, MaximumDuration - RecordingElapsed) : 0f;
+    public float ReplayElapsed => IsReplaying ? Mathf.Clamp(Time.time - replayStartTime, 0f, RecordedDuration) : 0f;
+    public float ReplayRemaining => IsReplaying ? Mathf.Max(0f, RecordedDuration - ReplayElapsed) : 0f;
 
     void Start()
     {
         if (playerSprite == null)
             playerSprite = GetComponentInChildren<SpriteRenderer>();
-
         timeSlow = GetComponent<TimeSlow>();
-
+        if (recordingHUD == null)
+            recordingHUD = FindFirstObjectByType<RecordingHUD>();
         if (recordingHUD != null)
         {
-            recordingHUD.duration = recordDuration;
+            recordingHUD.duration = MaximumDuration;
             recordingHUD.HideHUD();
         }
     }
 
     void Update()
     {
-        if (Time.timeScale == 0f || (requireEchoUnlock && !SkillUnlockState.EchoUnlocked))
+        if (Time.timeScale <= 0f)
             return;
-
-        // Update recording HUD
-        if (recordingHUD != null)
-        {
-            if (isRecording)
-            {
-                recordingHUD.ShowRecording(RecordingElapsed);
-            }
-            else if (IsReplaying)
-            {
-                recordingHUD.ShowPlaying(ReplayElapsed);
-            }
-            else if (hasRecording)
-            {
-                recordingHUD.ShowReady();
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.E))
+            UseEchoSkill();
+        RefreshHUD();
+    }
+
+    // E cycles: idle -> recording -> ready -> replaying. Replaying cannot be interrupted by E.
+    public bool UseEchoSkill()
+    {
+        if (!isActiveAndEnabled || Time.timeScale <= 0f ||
+            (requireEchoUnlock && !SkillUnlockState.EchoUnlocked) ||
+            (timeSlow != null && timeSlow.IsTimeSlowed) || IsReplaying)
+            return false;
+
+        if (isRecording)
         {
-            // Cannot use E while Q is active
-            if (timeSlow != null && timeSlow.IsTimeSlowed)
-                return;
-
-            // Cannot start another action while recording or replaying
-            if (isRecording || IsReplaying)
-                return;
-
-            if (!hasRecording)
-            {
-                StartCoroutine(Record());
-            }
-            else if (currentGhost != null)
-            {
-                PlayerGhost ghost =
-                    currentGhost.GetComponent<PlayerGhost>();
-
-                if (ghost != null)
-                {
-                    ghost.StartReplay(recordedFrames, recordedShots);
-                    if (ReplayStarted != null) ReplayStarted();
-                    hasRecording = false;
-
-                    // Keep the HUD in PLAY mode
-                    if (recordingHUD != null && IsReplaying)
-                    {
-                        recordingHUD.ShowPlaying(0f);
-                    }
-                }
-            }
+            FinishRecording();
+            return true;
         }
+        if (!hasRecording)
+        {
+            BeginRecording();
+            return true;
+        }
+
+        PlayerGhost ghost = currentGhost != null ? currentGhost.GetComponent<PlayerGhost>() : null;
+        if (ghost == null || !ghost.TryStartReplay(recordedFrames, recordedShots, this))
+            return false;
+
+        hasRecording = false;
+        ReplayStarted?.Invoke();
+        RefreshHUD();
+        return true;
     }
 
     void LateUpdate()
     {
-        if (isRecording && Time.timeScale > 0f)
+        if (!isRecording || Time.timeScale <= 0f)
+            return;
+        float elapsed = Time.time - recordStartTime;
+        if (elapsed >= MaximumDuration)
+            FinishRecording();
+        else
+            SaveFrame(elapsed);
+    }
+
+    void BeginRecording()
+    {
+        if (currentGhost != null)
+            Destroy(currentGhost);
+        recordedFrames.Clear();
+        recordedShots.Clear();
+        RecordedDuration = 0f;
+        recordStartTime = Time.time;
+        isRecording = true;
+        hasRecording = false;
+        SaveFrame(0f);
+
+        if (ghostPrefab != null)
         {
-            SaveFrame(Time.time - recordStartTime);
+            currentGhost = Instantiate(ghostPrefab, transform.position, Quaternion.identity);
+            var ghost = currentGhost.GetComponent<PlayerGhost>();
+            if (ghost != null)
+                ghost.SetInitialPose(recordedFrames[0].facingLeft, recordedFrames[0].gunAngle);
         }
+        RefreshHUD();
+    }
+
+    void FinishRecording()
+    {
+        // Keep both endpoints even for a very quick tap, so the clip is always replayable.
+        RecordedDuration = Mathf.Clamp(Time.time - recordStartTime, 0.0001f, MaximumDuration);
+        SaveFrame(RecordedDuration);
+        isRecording = false;
+        hasRecording = true;
+        RefreshHUD();
     }
 
     void SaveFrame(float time)
     {
-        bool facingLeft = playerSprite.flipX;
-
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        bool moving = Mathf.Abs(horizontal) > 0.01f;
-
-        float angle = gunPivot.eulerAngles.z;
-
-        recordedFrames.Add(
-            new RecordedFrame(
-                transform.position,
-                time,
-                facingLeft,
-                moving,
-                angle
-            )
-        );
+        recordedFrames.Add(new RecordedFrame(transform.position, time,
+            playerSprite != null && playerSprite.flipX,
+            Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.01f,
+            gunPivot != null ? gunPivot.eulerAngles.z : 0f));
     }
 
-    // Record actual shots during recording
     public void RecordShot(Vector3 position, Quaternion rotation)
     {
-        if (!isRecording)
+        if (!isRecording || Time.timeScale <= 0f)
             return;
-
-        float shotTime = Time.time - recordStartTime;
-
-        recordedShots.Add(
-            new RecordedShot(
-                shotTime,
-                position,
-                rotation
-            )
-        );
-
-        UnityEngine.Debug.Log("Shot recorded!");
+        float elapsed = Time.time - recordStartTime;
+        if (elapsed <= MaximumDuration)
+            recordedShots.Add(new RecordedShot(elapsed, position, rotation));
     }
 
-    // Called when ghost replay starts or ends
     public void SetReplaying(bool replaying)
     {
         IsReplaying = replaying;
-
         if (replaying)
-        {
             replayStartTime = Time.time;
-
-            if (recordingHUD != null)
-                recordingHUD.ShowPlaying(0f);
-        }
-        else
-        {
-            if (recordingHUD != null)
-                recordingHUD.HideHUD();
-        }
-
-        UnityEngine.Debug.Log(
-            "E Replay State: " + IsReplaying
-        );
+        RefreshHUD();
     }
 
-    IEnumerator Record()
+    void RefreshHUD()
     {
-        isRecording = true;
-        hasRecording = false;
+        if (recordingHUD == null)
+            return;
+        if (isRecording)
+        {
+            recordingHUD.duration = MaximumDuration;
+            recordingHUD.ShowRecording(RecordingElapsed);
+        }
+        else if (IsReplaying)
+        {
+            recordingHUD.duration = RecordedDuration;
+            recordingHUD.ShowPlaying(ReplayElapsed);
+        }
+        else if (hasRecording)
+        {
+            recordingHUD.duration = RecordedDuration;
+            recordingHUD.ShowReady();
+        }
+        else
+            recordingHUD.HideHUD();
+    }
 
+    void OnDisable()
+    {
+        isRecording = false;
+        IsReplaying = false;
+        hasRecording = false;
+        RecordedDuration = 0f;
         recordedFrames.Clear();
         recordedShots.Clear();
-
-        recordStartTime = Time.time;
-
-        // Show recording HUD
-        if (recordingHUD != null)
-            recordingHUD.ShowRecording(0f);
-
-        // Record starting position and direction
-        SaveFrame(0f);
-
-        // Spawn ghost at recording start
-        if (ghostPrefab != null)
-        {
-            currentGhost = Instantiate(
-                ghostPrefab,
-                transform.position,
-                Quaternion.identity
-            );
-
-            PlayerGhost ghost =
-                currentGhost.GetComponent<PlayerGhost>();
-
-            if (ghost != null)
-            {
-                ghost.SetInitialPose(
-                    recordedFrames[0].facingLeft,
-                    recordedFrames[0].gunAngle
-                );
-            }
-        }
-
-        UnityEngine.Debug.Log("Recording started!");
-
-        yield return new WaitForSeconds(recordDuration);
-
-        // Save final frame before finishing
-        SaveFrame(Time.time - recordStartTime);
-
-        isRecording = false;
-        hasRecording = true;
-
-        // Show READY HUD
-        if (recordingHUD != null)
-            recordingHUD.ShowReady();
-
-        UnityEngine.Debug.Log(
-            "Recording completed! Frames: " +
-            recordedFrames.Count +
-            " | Shots: " +
-            recordedShots.Count
-        );
+        if (currentGhost != null)
+            Destroy(currentGhost);
+        currentGhost = null;
+        if (recordingHUD != null && recordingHUD.isActiveAndEnabled)
+            recordingHUD.HideHUD();
     }
 }
