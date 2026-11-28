@@ -17,6 +17,8 @@ public class ESkillHUD : MonoBehaviour
 
     void Start()
     {
+        if (playerRecorder == null)
+            playerRecorder = FindFirstObjectByType<PlayerRecorder>();
         if (skillImage != null)
             originalColor = skillImage.color;
     }
@@ -47,11 +49,15 @@ public class ESkillHUD : MonoBehaviour
         {
             // Replaying: green
             skillImage.color = replayColor;
+            countdownText.gameObject.SetActive(true);
+            countdownText.text = playerRecorder.ReplayRemaining.ToString("0.0") + "s";
         }
         else if (playerRecorder.HasRecording)
         {
             // Recording completed: red
             skillImage.color = readyColor;
+            countdownText.gameObject.SetActive(true);
+            countdownText.text = playerRecorder.RecordedDuration.ToString("0.0") + "s";
         }
         else
         {

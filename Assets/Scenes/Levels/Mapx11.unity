@@ -18125,7 +18125,6 @@ MonoBehaviour:
   expandDuration: 0.3
   overlayAlpha: 0.63
   restoreDuration: 0.3
-  warningDuration: 1.5
   minFlickerSpeed: 0.5
   maxFlickerSpeed: 2.5
 --- !u!1001 &1827740842
@@ -19167,6 +19166,9 @@ MonoBehaviour:
   cooldownFill: {fileID: 356164764}
   countdownText: {fileID: 963640180}
   skillImage: {fileID: 1923250415}
+  normalColor: {r: 0.1, g: 0.8, b: 1, a: 1}
+  lowEnergyColor: {r: 1, g: 0.3, b: 0.2, a: 1}
+  blinkSpeed: 8
   highlightColor: {r: 0.7471075, g: 0.92748743, b: 0.9716981, a: 1}
   highlightDuration: 0.3
 --- !u!1 &1944319469
@@ -21541,6 +21543,14 @@ PrefabInstance:
       propertyPath: recordingHUD
       value: 
       objectReference: {fileID: 170376441}
+    - target: {fileID: 6836395663149107887, guid: cad7ecabf1484f544a3c5a8d0d9a2139, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836395663149107887, guid: cad7ecabf1484f544a3c5a8d0d9a2139, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6836395663149107887, guid: cad7ecabf1484f544a3c5a8d0d9a2139, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.56

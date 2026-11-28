@@ -75,8 +75,16 @@ public class PlayerGhost : MonoBehaviour
         List<RecordedFrame> recordedFrames,
         List<RecordedShot> recordedShots)
     {
-        if (isReplaying || recordedFrames.Count < 2)
-            return;
+        TryStartReplay(recordedFrames, recordedShots);
+    }
+
+    public bool TryStartReplay(
+        List<RecordedFrame> recordedFrames,
+        List<RecordedShot> recordedShots,
+        PlayerRecorder owner = null)
+    {
+        if (isReplaying || recordedFrames == null || recordedFrames.Count < 2)
+            return false;
 
         frames = new List<RecordedFrame>(recordedFrames);
         shots = new List<RecordedShot>(recordedShots);
@@ -84,7 +92,7 @@ public class PlayerGhost : MonoBehaviour
         isReplaying = true;
 
         // Find the player recorder
-        playerRecorder = FindFirstObjectByType<PlayerRecorder>();
+        playerRecorder = owner != null ? owner : FindFirstObjectByType<PlayerRecorder>();
 
         if (playerRecorder != null)
         {
@@ -92,6 +100,7 @@ public class PlayerGhost : MonoBehaviour
         }
 
         StartCoroutine(Replay());
+        return true;
     }
 
     IEnumerator Replay()
