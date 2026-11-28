@@ -1,8 +1,0 @@
-{
-    "completed": true,
-    "normalWallBlocks": true,
-    "normalWallRejectsWallJump": true,
-    "wallJumpWallDetected": true,
-    "actualWallJumpPushesAway": true,
-    "error": ""
-}

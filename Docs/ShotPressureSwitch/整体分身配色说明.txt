@@ -6,8 +6,8 @@ E 分身专用倒挂机关：整体青蓝配色
 普通版仍是灰色金属与红色指示灯，普通预制体、材质和着色器文件均未改。
 
 材质：Assets/Materials/Level/ShotPressureSwitch_GhostOnly_Blue.mat
-着色器：Assets/Shaders/ShotPressureSwitch/PressureSwitchGhostFlat2D.shader
-Editor 工具：Assets/Editor/ShotPressureSwitch/ShotPressureSwitchGhostColorSetup.cs
+着色器：Assets/Shaders/Traps/ShotPressureSwitch/PressureSwitchGhostFlat2D.shader
+Editor 工具：Assets/Scripts/Editor/ShotPressureSwitch/ShotPressureSwitchGhostColorSetup.cs
 材质中的 Echo body color 调整整体分身配色，Inactive blue lamp 调整未激活灯色。
 本次未修改或保存当前 TrapTesting 场景。
 

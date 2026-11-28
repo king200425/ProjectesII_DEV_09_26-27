@@ -1,9 +1,0 @@
-Animations for armed and unarmed variants:
-- idle
-- walk 
-- run
-- jump
-- hit
-- roll
-
-All Frames are 64x64 Pixels.

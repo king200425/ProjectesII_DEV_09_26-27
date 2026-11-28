@@ -1,1 +1,0 @@
-Create native Unity tile palettes and a ready-to-paint scene.

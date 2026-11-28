@@ -14,7 +14,7 @@ public class TimeSlowOverlayFX : MonoBehaviour
     public float restoreDuration = 0.3f;
 
     [Header("Warning Flicker")]
-    public float warningDuration = 1f;
+
     public float minFlickerSpeed = 3f;
     public float maxFlickerSpeed = 15f;
 
@@ -45,6 +45,13 @@ public class TimeSlowOverlayFX : MonoBehaviour
 
     void Start()
     {
+        if (timeSlow == null)
+            timeSlow = FindFirstObjectByType<TimeSlow>();
+        if (player == null && timeSlow != null)
+            player = timeSlow.transform;
+        if (mainCamera == null)
+            mainCamera = Camera.main;
+
         overlayRect = GetComponent<RectTransform>();
 
         Image background = GetComponent<Image>();
@@ -121,18 +128,18 @@ public class TimeSlowOverlayFX : MonoBehaviour
 
             float alpha = overlayAlpha;
 
-            // Flicker during the final second
-            if (timeSlow.ActiveRemaining <= warningDuration)
+            // Warn from the remaining energy, including after manually reopening Q.
+            if (timeSlow.IsLowEnergy)
             {
                 float remaining = Mathf.Clamp01(
-                    timeSlow.ActiveRemaining / warningDuration
+                    timeSlow.EnergyPercent / Mathf.Max(0.01f, timeSlow.lowEnergyThreshold)
                 );
 
                 flickerTimer += Time.deltaTime;
 
                 float flicker =
                     0.5f + 0.5f *
-                    Mathf.Cos(flickerTimer * Mathf.PI * 2f / 0.50f);
+                    Mathf.Cos(flickerTimer * Mathf.PI * 2f * Mathf.Lerp(maxFlickerSpeed, minFlickerSpeed, remaining));
 
                 alpha = Mathf.Lerp(
                     overlayAlpha * 0.6f,

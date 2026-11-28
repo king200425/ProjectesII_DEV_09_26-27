@@ -25,7 +25,7 @@ Accept Ghost Bullets：是否接受 E 技能分身的子弹，默认接受，与
 素材（更新）：当前使用精细侧视 2D 压头、竖直活塞和方形底座。原来用户提供的三个 PNG 原文件及 2.5D 预制体备份均保留。
 新素材在 Unity 中切为底座、轴、压头；底座固定、压头下移；完全压下后仅红色指示灯变绿。外形始终保持侧视 2D。下压行程增加，逐发变化更清楚。
 使用 Point 过滤、关闭 MipMap、无压缩。新图以 128 高度导入，提供更细的像素密度，部件按原来的世界尺寸配置；原始素材 16 PPU 保留。
-图片在 Assets/Art/ShotPressureSwitch；逻辑在 Assets/Scripts/Level；特效在 Assets/Scripts/Effects；预制体在 Assets/Prefabs/Level；材质和着色器在 Assets/Shaders/ShotPressureSwitch；编辑工具在 Assets/Editor/ShotPressureSwitch。
+图片在 Assets/Art/Traps/ShotPressureSwitch；逻辑在 Assets/Scripts/Level；特效在 Assets/Scripts/Effects；预制体在 Assets/Prefabs/Level；材质和着色器在 Assets/Shaders/Traps/ShotPressureSwitch；编辑工具在 Assets/Scripts/Editor/ShotPressureSwitch。
 备份在项目 Logs/ShotPressureSwitch/Backups，说明文档在 Docs/ShotPressureSwitch。
 
 切片工具采用 Unity 2D Sprite 1.0 的 Sprite Editor Data Provider API：

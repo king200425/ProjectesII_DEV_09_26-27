@@ -132,7 +132,7 @@ public class RecordingHUD : MonoBehaviour
         }
 
         timerText.text =
-            FormatTime(elapsed) + " / 04:00";
+            FormatTime(elapsed) + " / " + duration.ToString("0.0") + "s";
     }
 
     public void ShowReady()
@@ -148,7 +148,7 @@ public class RecordingHUD : MonoBehaviour
             "READY"
         );
 
-        timerText.text = "04.0s ECHO BUFFER";
+        timerText.text = duration.ToString("00.0") + "s ECHO BUFFER";
     }
 
     public void ShowPlaying(float elapsed)
@@ -165,7 +165,7 @@ public class RecordingHUD : MonoBehaviour
         }
 
         timerText.text =
-            FormatTime(elapsed) + " / 04:00";
+            FormatTime(elapsed) + " / " + duration.ToString("0.0") + "s";
     }
 
     public void HideHUD()
