@@ -1,6 +1,6 @@
 Mapx11 第一小段 Sci-fi Lab 试铺（2026-11-25）
 
-已保存场景：Assets/_Recovery/Mapx11.unity
+已保存场景：Assets/Scenes/Levels/Mapx11.unity
 处理范围：GroundMap 下 Ground、Ground (1)、Ground (4)、Ground (2)。
 前三块维持原有形状和碰撞。主角大小与其它地形碰撞没有改动。
 镜头随后增加了左侧边界，说明见同目录“左侧镜头边界说明.txt”。
@@ -11,10 +11,10 @@ Ground (2) 是右侧落脚平台，已按用户修正为上长、下短的倒直
 运行模式下用实际尺寸的角色碰撞体，在独立物理场景验证了三个落点，均可站稳。
 
 文件分布：
-图片、静态表面网格：Assets/Art/SciFiLab
+图片、静态表面网格：Assets/Art/Environment/SciFiLab
 材质：Assets/Materials/LevelArt
 着色器：Assets/Shaders/LevelArt
-编辑器工具：Assets/Editor/LevelArt
+编辑器工具：Assets/Scripts/Editor/LevelArt
 说明、CC0 许可：Docs/LevelArt
 报告、备份：Logs/LevelArt
 没有新增运行时脚本。

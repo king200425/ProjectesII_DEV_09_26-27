@@ -1,53 +1,41 @@
-# Assets 目录约定
+# Assets 目录
 
-按资源类型分类，同类资源再按用途划分。目前只创建已经用到的目录。
+按资源类型存放，类型内部再按角色、关卡或功能划分。
 
-```text
-Assets/
-├── Animations/                 动画片段和 Animator Controller
-│   ├── Player/
-│   └── Weapons/
-├── Art/                        图片、精灵及其他美术源资源
-│   ├── Enemies/
-│   ├── Player/
-│   │   ├── Assassin/
-│   │   └── Druid/
-│   ├── Projectiles/Bullets/
-│   └── Weapons/Guns/
-├── Input/                      Input Actions 输入配置
-├── Prefabs/                    可复用的预制体
-│   ├── Enemies/                DruidEnemy.prefab
-│   └── Projectiles/            Bullet.prefab
-├── Scenes/                     当前场景
-│   └── Recovery/               历史恢复场景，仅供找回内容
-├── Scripts/                    C# 玩法脚本
-│   ├── Enemies/
-│   ├── Player/
-│   ├── Projectiles/
-│   └── Weapons/
-└── Settings/
-    ├── Rendering/              URP、Renderer 和 Volume 配置
-    └── SceneTemplates/         Unity 场景模板及其依赖场景
-```
+| 目录 | 内容 |
+| --- | --- |
+| `Scripts/` | 所有 C# 代码；玩家、技能、敌人、机关、UI 等按功能分组 |
+| `Scripts/Editor/` | Unity 编辑器工具；该目录内代码不会进入游戏构建 |
+| `Art/` | 图片、精灵及美术源文件；角色、环境、特效、UI、武器、机关分类 |
+| `Animations/` | 动画片段和 Animator Controller |
+| `Fonts/` | 游戏界面字体 |
+| `Materials/` | 材质，包括 `Physics/` 物理材质 |
+| `Meshes/` | 关卡生成网格；不是原始美术图片 |
+| `Shaders/` | Shader、Shader Graph 和 GPU 着色代码 |
+| `Prefabs/` | 玩家、敌人、关卡对象、机关和 UI 预制体 |
+| `Scenes/Menu/` | MainMenu 和 SaveSelect |
+| `Scenes/Levels/` | Mapx11 和现有塔关场景 |
+| `Scenes/Tests/` | 玩家沙盒、机关测试场景 |
+| `Settings/` | 输入、渲染、构建配置及场景模板 |
+| `Tiles/` | Tile 资源和 Tile Palette；图片仍放在 Art |
+| `ThirdParty/` | 第三方完整依赖，保留包内结构 |
 
-## 新资源放哪里
+游戏流程：`MainMenu → SaveSelect → Mapx11`。
+打开正式关卡：`Scenes/Levels/Mapx11.unity`。
+原先打开的 `0 (2)` 改名为 `Scenes/Tests/PlayerSandbox.unity`，内容保留。
 
-- 新角色图片：`Art/Player/角色名/`；敌人图片：`Art/Enemies/敌人名/`。
-- 新动画：`Animations/Player/` 或 `Animations/Weapons/`。将来有多个角色时，再在对应目录内按角色细分。
-- 新预制体：`Prefabs/Player/`、`Prefabs/Enemies/`、`Prefabs/Weapons/` 等；需要时再创建。
-- 新脚本：放进 `Scripts/` 下对应的功能目录；例如玩家控制属于 `Scripts/Player/`。
-- 新关卡或测试场景：放进 `Scenes/`；数量增加后再建 `Levels/`、`Tests/`。
-- 新音频、材质、UI：首次用到时再建 `Audio/`、`Materials/`、`UI/`。
-- 第三方完整资源包：首次导入时优先使用 `ThirdParty/资源包名/`，保留包内结构和许可证。
+常用资源：
 
-## 命名和维护
+- 当前玩家：`Prefabs/Player/Player.prefab`。
+- E 分身：`Prefabs/Player/Ghost/`。
+- 旧塔关专用玩家：`Prefabs/Player/TowerPrototype/Player.prefab`。它仍被现有塔关和相关测试引用，和当前玩家的组件配置不同。
+- 射击按钮：`Prefabs/Level/`；按钮图片：`Art/Traps/ShotPressureSwitch/`。
+- 白块 Tile 与调色板：`Tiles/Blockout/`、`Tiles/Palettes/BlockoutPalette.prefab`。
+- 科幻实验室图片：`Art/Environment/SciFiLab/`；关卡网格：`Meshes/Environment/SciFiLab/`。
 
-- 文件夹使用清楚的英文名称，例如 `Assassin`，避免 `1`、`2`、`New Folder`。
-- 动画、脚本和预制体使用用途名称，例如 `RunBackward.anim`、`PlayerMovement.cs`、`Bullet.prefab`。
-- 导入素材已有的文件名和精灵切片名称可以保留，避免丢失来源信息。
-- 移动或重命名优先在 Unity 的 Project 窗口里进行；提交 Git 时包含对应的 `.meta` 文件。
-- `Scenes/Recovery/PlayerTest_Recovery.unity` 是旧恢复副本；当前开发场景是 `Scenes/PlayerTest.unity`。
-- `Scenes/SampleScene.unity` 仍是现有构建配置中的场景。目录整理没有调整构建入口。
-- 整理目录时保留资源；确认不再使用后再单独清理。
+已淘汰的 Aftertime 旧界面、旧素材包的未使用内容、恢复副本和无引用的生成网格已清理。
+仍被现有菜单引用的 SpaceMono 字体独立保存在 Fonts，许可证位于项目根目录 `Docs/Licenses/`。
+重复图片已共享同一纹理文件，原有精灵切片 ID、轴心和动画引用保留。
 
-本次移动通过 Unity 的 [AssetDatabase.MoveAsset](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AssetDatabase.MoveAsset.html) 执行，并核对原有 GUID、文件内容和引用。
+备份、检查报告和说明文件放在 Assets 之外：备份及报告在本机工作目录或 `Logs/`，说明与许可证在 `Docs/`。
+移动资源时连同 `.meta` 一起移动，优先使用 Unity Project 窗口，保留 GUID。

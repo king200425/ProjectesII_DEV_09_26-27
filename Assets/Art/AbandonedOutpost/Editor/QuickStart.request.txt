@@ -1,1 +1,0 @@
-Configure the current Mapx11 scene for immediate block painting.

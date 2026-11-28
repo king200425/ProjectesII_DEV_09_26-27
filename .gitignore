@@ -114,7 +114,7 @@ InitTestScene*.unity*
 /UpgradeLog.htm
 
 # Temporary editor scripts
-/Assets/Editor/
+/Assets/Scripts/Editor/Temporary/
 
 # Test / overview scenes
 /Assets/Scenes/Levels/Level01_ABCOverview.unity*

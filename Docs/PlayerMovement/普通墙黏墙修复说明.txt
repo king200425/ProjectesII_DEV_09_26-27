@@ -5,7 +5,7 @@
 回归测试用原默认摩擦复现：持续顶普通墙 30 个物理步，下落距离为 0。
 
 修复：仅给玩家刚体及其实体碰撞体使用零摩擦、零弹性的 PhysicsMaterial2D。
-材质：Assets/PhysicsMaterials/Player_NoFriction.physicsMaterial2D
+材质：Assets/Materials/Physics/Player_NoFriction.physicsMaterial2D
 已保存玩家预制体 Assets/Prefabs/Player/Player.prefab 和 Mapx11 中的现有玩家。
 Assets/Scripts/Player/PlayerMovement.cs 的 Awake 同时为其它关卡中未配置材质的玩家
 补上同样的零摩擦配置，避免复制旧玩家后再次出现黏墙。
@@ -19,7 +19,7 @@ WallJump 标签仍决定能否滑墙和蹬跳。
 - 平地松开方向键停止正常，落地后起跳正常。
 测试临时对象只存在于 Play 模式，退出后已还原正常关卡。
 
-Editor 工具：Assets/Editor/PlayerMovement/PlayerWallFrictionSetup.cs
+Editor 工具：Assets/Scripts/Editor/PlayerMovement/PlayerWallFrictionSetup.cs
 报告：Logs/PlayerMovement/WallFrictionReport.json
 修改前备份：Logs/PlayerMovement/Backups/BeforeWallFriction_20261125_235218_*
 其中分别保留了当前关卡、玩家预制体及其 meta、PlayerMovement 脚本。

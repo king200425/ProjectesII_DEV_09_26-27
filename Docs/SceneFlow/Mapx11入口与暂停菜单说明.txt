@@ -2,7 +2,7 @@ Mapx11 关卡入口与暂停菜单
 
 游戏入口：MainMenu -> SaveSelect -> Mapx11。
 SaveSelectManager 的默认 firstLevel 和 SaveSelect 场景的序列化 firstLevel 均为 Mapx11。
-构建列表第 3 项替换为 Assets/_Recovery/Mapx11.unity，保留 MainMenu、SaveSelect 和 TrapTesting 的现有顺序。
+构建列表第 3 项替换为 Assets/Scenes/Levels/Mapx11.unity，保留 MainMenu、SaveSelect 和 TrapTesting 的现有顺序。
 旧 Level01_TorreDelOlvido 场景文件保留，不再作为首关入口。
 
 Mapx11 已带有原关卡的 PauseManager、GameHUD/PauseMenu 和 EventSystem；本次沿用已有对象。

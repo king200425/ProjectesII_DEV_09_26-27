@@ -1,6 +1,6 @@
 Mapx11 左侧镜头边界（2026-11-25）
 
-已保存至 Assets/_Recovery/Mapx11.unity。
+已保存至 Assets/Scenes/Levels/Mapx11.unity。
 PlayerCameraRig > OutpostPlayerCamera > 关卡左边界：
 limitLeftEdge 已开启；leftBoundaryWall 绑定 GroundMap/Ground (4)。
 visibleLeftWallWidth = 0.75：画面左边保留一小条墙面。
@@ -12,7 +12,7 @@ visibleLeftWallWidth = 0.75：画面左边保留一小条墙面。
 只给 Mapx11 绑定了边界，其他场景默认关闭。
 
 修改：Assets/Scripts/Camera/OutpostPlayerCamera.cs
-编辑器配置/验证：Assets/Editor/LevelArt/Mapx11CameraBoundsSetup.cs
+编辑器配置/验证：Assets/Scripts/Editor/LevelArt/Mapx11CameraBoundsSetup.cs
 辅助 PlayerColorCamera 在编辑器初始画面也同步到主相机。
 角色尺寸、位置和地形碰撞未改。
 

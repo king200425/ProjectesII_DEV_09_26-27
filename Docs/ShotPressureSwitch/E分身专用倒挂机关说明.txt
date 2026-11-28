@@ -16,7 +16,7 @@ E 分身专用倒挂机关（2026-11-25）
 代码位置：Assets/Scripts/Level/ShotPressureSwitch.cs
 新增开关 ghostOnly 默认为 false，旧机关照常接受本体射击。
 E 分身和子弹原有脚本/预制体未改，沿用已有子弹类型标记。
-编辑器创建/验证工具：Assets/Editor/ShotPressureSwitch/ShotPressureSwitchGhostOnlySetup.cs
+编辑器创建/验证工具：Assets/Scripts/Editor/ShotPressureSwitch/ShotPressureSwitchGhostOnlySetup.cs
 工具菜单：地图 > 射击机关 > 创建 E 分身限定倒挂版。
 
 运行验证通过：
