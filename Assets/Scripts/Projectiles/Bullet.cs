@@ -199,6 +199,14 @@ public class Bullet : MonoBehaviour
             return true;
         }
 
+        CountdownDoorButton countdownButton = other.GetComponentInParent<CountdownDoorButton>();
+        if (countdownButton != null)
+        {
+            FinishImpact(other, hit);
+            countdownButton.Hit();
+            return true;
+        }
+
         ShotPressureSwitch pressureSwitch = other.GetComponentInParent<ShotPressureSwitch>();
         if (pressureSwitch != null)
         {
